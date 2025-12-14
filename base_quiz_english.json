@@ -1,0 +1,452 @@
+[
+    {
+        "question": "What percentage of vulnerabilities could AI agents exploit in the post-March 2025 benchmark, according to the Dec 2 cast?",
+        "correct_answer": "55.88%",
+        "wrong_answers": [
+            "2%",
+            "45.00%",
+            "75.33%"
+        ]
+    },
+    {
+        "question": "What total exploit revenue was attributed to AI agents in the Dec 2 cast, leaping from $5,000?",
+        "correct_answer": "$4.6 million",
+        "wrong_answers": [
+            "$55.88 million",
+            "$460,000",
+            "$500,000"
+        ]
+    },
+    {
+        "question": "What is the first item listed in Jesse Pollak's top priorities from November 26, 2025?",
+        "correct_answer": "Developer infra: Farcaster + onchain data",
+        "wrong_answers": [
+            "Neynar AI agent capabilities",
+            "App studio: vibe code mini apps",
+            "Scaling Redis latency"
+        ]
+    },
+    {
+        "question": "What goal does Jesse Pollak state in the quote: 'We read a chain now, we write to a chain next'?",
+        "correct_answer": "Writing to a chain next",
+        "wrong_answers": [
+            "Reading from a chain now",
+            "Scaling the indexing layer",
+            "Fixing webhooks filtering logic"
+        ]
+    },
+    {
+        "question": "On December 9, 2025, how many top Clanker tokens did Jesse Pollak claim to own out of 12 total?",
+        "correct_answer": "4",
+        "wrong_answers": [
+            "12",
+            "2",
+            "6"
+        ]
+    },
+    {
+        "question": "Jesse Pollak suggested DMing which user to try out the mini app building tool?",
+        "correct_answer": "@calvino",
+        "wrong_answers": [
+            "@priyanka",
+            "@tybook.eth",
+            "@aneri.base.eth"
+        ]
+    },
+    {
+        "question": "What request did Jesse Pollak make to @neynar on October 10 regarding the introduction to new followers?",
+        "correct_answer": "Look up my top 9 casts from the past two years",
+        "wrong_answers": [
+            "Analyze my biggest weakness",
+            "Tell me about my score, lies only",
+            "Find my casting age"
+        ]
+    },
+    {
+        "question": "How long ago were Neynar scores first introduced, according to the cast on October 2, 2025?",
+        "correct_answer": "10 months",
+        "wrong_answers": [
+            "One year",
+            "24 hours",
+            "5 minutes"
+        ]
+    },
+    {
+        "question": "What did Jesse Pollak state does NOT lower a user's Neynar score?",
+        "correct_answer": "Using farcaster through the Base app",
+        "wrong_answers": [
+            "Using a pseudo phone number",
+            "Muting Group DCs",
+            "Replying to /someone-build casts"
+        ]
+    },
+    {
+        "question": "Which company's new office opening was cited by a landlord in the Bay Area as justification for a rent increase?",
+        "correct_answer": "Anthropic",
+        "wrong_answers": [
+            "Coinbase",
+            "Neynar",
+            "Tesla"
+        ]
+    },
+    {
+        "question": "What was the specified duration of the Neynar incident on September 17, 2025?",
+        "correct_answer": "12:23 PM to 12:49 PM Pacific time",
+        "wrong_answers": [
+            "9:00 AM to 9:15 AM PT",
+            "1:00 PM to 1:30 PM EST",
+            "5 minutes"
+        ]
+    },
+    {
+        "question": "What was the stated root cause of the Neynar incident on September 17?",
+        "correct_answer": "An incorrectly configured secret",
+        "wrong_answers": [
+            "An AWS PPA failure",
+            "A memory corruption bug",
+            "Unauthorized API access"
+        ]
+    },
+    {
+        "question": "What major infrastructure migration was mentioned as a way to prevent future incidents like the one on September 17?",
+        "correct_answer": "Migrating services to Kubernetes",
+        "wrong_answers": [
+            "Implementing new Redis sharding",
+            "Moving to the Model YL",
+            "Switching to Claude code"
+        ]
+    },
+    {
+        "question": "What equation did Jesse Pollak post on September 3, 2025?",
+        "correct_answer": "mcp + sql = 🚀",
+        "wrong_answers": [
+            "AI + FIDs = ⚡",
+            "Base + Farcaster = 🪐",
+            "Redis + Sharding = ⬇️"
+        ]
+    },
+    {
+        "question": "What term did Jesse Pollak define on August 8, 2025, related to app development?",
+        "correct_answer": "time to mini app",
+        "wrong_answers": [
+            "onchain action",
+            "casting age",
+            "supply and demand"
+        ]
+    },
+    {
+        "question": "Which feature is listed as an advantage for building AI agents on Farcaster, related to API access?",
+        "correct_answer": "Permissionless access",
+        "wrong_answers": [
+            "High X API fees",
+            "Censored data feeds",
+            "Centralized database structure"
+        ]
+    },
+    {
+        "question": "What benefit of Farcaster for AI agents relates to cost compared to X?",
+        "correct_answer": "Way cheaper than X API fees",
+        "wrong_answers": [
+            "Base subsidies",
+            "Free AWS PPA savings",
+            "Zero gas costs"
+        ]
+    },
+    {
+        "question": "What did Jesse Pollak say he ended up doing to every single Group DC (Discord) he joined?",
+        "correct_answer": "Muting them",
+        "wrong_answers": [
+            "Leaving them within 24 hours",
+            "Building a mini app for them",
+            "Becoming the admin of them"
+        ]
+    },
+    {
+        "question": "Who was mentioned as having previously done 'hard work' on a system for sign-in + signer approval before Neynar simplified it?",
+        "correct_answer": "@ampsfun and @dashapp",
+        "wrong_answers": [
+            "@tybook.eth and @mcilroyc",
+            "@calvino and @priyanka",
+            "@aneri.base.eth and @dylsteck.eth"
+        ]
+    },
+    {
+        "question": "What is the key benefit of the Token Airdrops API mentioned on July 17, 2025?",
+        "correct_answer": "You don't even need to know the recipient's wallet addresses.",
+        "wrong_answers": [
+            "It only works for ERC-721 tokens.",
+            "It requires managing nonces for high volume.",
+            "It is restricted to Base mainnet."
+        ]
+    },
+    {
+        "question": "What information does the Token Airdrops API use instead of the recipient's wallet address?",
+        "correct_answer": "Their FID",
+        "wrong_answers": [
+            "Their FSD status",
+            "Their casting age",
+            "Their Neynar score"
+        ]
+    },
+    {
+        "question": "What movie did Jesse Pollak describe as an 'impressive prequel'?",
+        "correct_answer": "Furiosa",
+        "wrong_answers": [
+            "Starbirds",
+            "Fury Road",
+            "The Lion Ships Tonight"
+        ]
+    },
+    {
+        "question": "Which engineering win was credited to @tybook.eth on July 12, 2025?",
+        "correct_answer": "Reduced latency and time spent in Redis",
+        "wrong_answers": [
+            "Reduced latency for fetching Farcaster notifications",
+            "Fixing the memory corruption bug",
+            "Scaling the indexing layer horizontally"
+        ]
+    },
+    {
+        "question": "Who was credited with reducing latency for fetching Farcaster notifications?",
+        "correct_answer": "@mcilroyc",
+        "wrong_answers": [
+            "@tybook.eth",
+            "@priyanka",
+            "@calvino"
+        ]
+    },
+    {
+        "question": "Which category of Mini apps was listed as naturally beating everything across most platforms?",
+        "correct_answer": "Games",
+        "wrong_answers": [
+            "Finance",
+            "Social",
+            "Trader"
+        ]
+    },
+    {
+        "question": "What two categories followed 'Games' in popularity among Mini apps?",
+        "correct_answer": "Social and Finance",
+        "wrong_answers": [
+            "Utility and News",
+            "AI Agents and Infra",
+            "Trading and Clanker"
+        ]
+    },
+    {
+        "question": "The scheduled upgrades on July 9th were intended to help scale which part of the system?",
+        "correct_answer": "The indexing layer horizontally",
+        "wrong_answers": [
+            "The webhooks filtering logic vertically",
+            "The Farcaster write APIs",
+            "The Base app signers"
+        ]
+    },
+    {
+        "question": "What time duration was the scheduled downtime for Neynar services on July 9th?",
+        "correct_answer": "9AM to 9:15AM PT",
+        "wrong_answers": [
+            "12:23 PM to 12:49 PM PT",
+            "5 minutes",
+            "24 hours"
+        ]
+    },
+    {
+        "question": "During the scheduled July 9th downtime, which API types were stated to have 'No impact'?",
+        "correct_answer": "Farcaster write APIs",
+        "wrong_answers": [
+            "Farcaster read APIs",
+            "Webhooks and Kafka events",
+            "Neynar API"
+        ]
+    },
+    {
+        "question": "Which AI tool did Jesse Pollak say he was going to try the week of July 8, 2025?",
+        "correct_answer": "Claude code",
+        "wrong_answers": [
+            "Neynar AI",
+            "Anthropic Agents",
+            "FSD"
+        ]
+    },
+    {
+        "question": "What type of product built using the @neynar app studio did Jesse Pollak highly recommend and praise in November?",
+        "correct_answer": "Prints",
+        "wrong_answers": [
+            "Clanker tokens",
+            "NFTs",
+            "Mini app games"
+        ]
+    },
+    {
+        "question": "What unique feature did @priyanka set up for herself in the polished mini app built using the Neynar app studio?",
+        "correct_answer": "Admin view to see the orders coming in",
+        "wrong_answers": [
+            "Automated gas management",
+            "Pseudo phone number integration",
+            "FSD driving alerts"
+        ]
+    },
+    {
+        "question": "What specific vehicle model did Jesse Pollak state he would have preferred over the Model Y?",
+        "correct_answer": "Model YL",
+        "wrong_answers": [
+            "Model 3",
+            "Model X",
+            "CyberTruck"
+        ]
+    },
+    {
+        "question": "What year did Jesse Pollak ask if it was yet, hearing someone had a time machine?",
+        "correct_answer": "2061",
+        "wrong_answers": [
+            "2026",
+            "2025",
+            "2001"
+        ]
+    },
+    {
+        "question": "What company was involved in the 'hack' that had the side effect of difficulty using pseudo phone numbers?",
+        "correct_answer": "Coinbase",
+        "wrong_answers": [
+            "Anthropic",
+            "Neynar",
+            "Tesla"
+        ]
+    },
+    {
+        "question": "What information did Jesse Pollak ask @neynar to look up regarding farcaster users in September 2025?",
+        "correct_answer": "Android / iOS split",
+        "wrong_answers": [
+            "Top 5 users he replies to",
+            "His casting age",
+            "Total likes in the past 24 hours"
+        ]
+    },
+    {
+        "question": "What feature of AI agents on Farcaster makes onchain actions easier?",
+        "correct_answer": "Built-in wallet integration",
+        "wrong_answers": [
+            "AWS PPA savings",
+            "FSD capabilities",
+            "Kafka event streaming"
+        ]
+    },
+    {
+        "question": "The cast on October 10 requested that the introduction written by @neynar should begin with what phrase?",
+        "correct_answer": "\"manan is ...\"",
+        "wrong_answers": [
+            "\"jesse is ...\"",
+            "\"the founder is ...\"",
+            "\"@neynar reports ...\""
+        ]
+    },
+    {
+        "question": "On December 12, 2025, Jesse Pollak requested that @neynar make a ticket for which user?",
+        "correct_answer": "@grin",
+        "wrong_answers": [
+            "@calvino",
+            "@tybook.eth",
+            "@vrose.eth"
+        ]
+    },
+    {
+        "question": "In the July 17 token airdrop API, what action is eliminated because the API handles it?",
+        "correct_answer": "Handling nonces if doing high volume",
+        "wrong_answers": [
+            "Putting in FIDs",
+            "Selecting token type (fungible vs non-fungible)",
+            "Interfacing with the Base app"
+        ]
+    },
+    {
+        "question": "What topic did Jesse Pollak ask @neynar about on November 1?",
+        "correct_answer": "How many likes across the entire farcaster protocol in the past 24 hours",
+        "wrong_answers": [
+            "His biggest weakness",
+            "Who he replies to the most",
+            "His FSD status"
+        ]
+    },
+    {
+        "question": "What type of users was Jesse Pollak calling for on September 15, 2025?",
+        "correct_answer": "alpha testers for base x farcaster webhooks",
+        "wrong_answers": [
+            "skilled human attackers",
+            "mini app designers",
+            "Group DC managers"
+        ]
+    },
+    {
+        "question": "What part of the Farcaster experience was stated as still having a complicated UX to build, even after signer management was simplified?",
+        "correct_answer": "Requesting permissions for signers",
+        "wrong_answers": [
+            "Casting the initial message",
+            "Getting a high Neynar score",
+            "Using the Token Airdrops API"
+        ]
+    },
+    {
+        "question": "What was the date of the post where Jesse Pollak stated he was a 'TRADER' on a mini app?",
+        "correct_answer": "2025-12-09",
+        "wrong_answers": [
+            "2025-10-13",
+            "2025-11-26",
+            "2025-08-01"
+        ]
+    },
+    {
+        "question": "What did Jesse Pollak ask @neynar to analyze from his casts over the last year?",
+        "correct_answer": "His biggest weakness",
+        "wrong_answers": [
+            "His best cast of all time",
+            "His average reply count",
+            "His Farcaster reputation score"
+        ]
+    },
+    {
+        "question": "What type of bug was fixed in the webhooks filtering logic, mentioned on July 12, 2025?",
+        "correct_answer": "A particularly hard-to-find memory corruption bug",
+        "wrong_answers": [
+            "A Redis sharding bug",
+            "A Kubernetes configuration error",
+            "A Coinbase API failure"
+        ]
+    },
+    {
+        "question": "What project was linked in the context of improving Neynar scores and seeing how they were built?",
+        "correct_answer": "neynar.com/blog/neynar-scores-under-the-hood",
+        "wrong_answers": [
+            "red.anthropic.com/2025/smart-contracts/",
+            "kgs.link/starbirds",
+            "docs.neynar.com/reference/send-fungibles-to-users"
+        ]
+    },
+    {
+        "question": "What is the third item listed in Jesse Pollak's top priorities from November 26, 2025?",
+        "correct_answer": "App studio: vibe code mini apps",
+        "wrong_answers": [
+            "Developer infra",
+            "AWS PPA savings",
+            "FSD driving analysis"
+        ]
+    },
+    {
+        "question": "What was the key piece of information Jesse Pollak asked @neynar to provide regarding his replies on October 15?",
+        "correct_answer": "Top 5 users he replies to the most",
+        "wrong_answers": [
+            "Total reply count",
+            "Average reply speed",
+            "Percentage of replies containing a 🪐 emoji"
+        ]
+    },
+    {
+        "question": "What potential savings scheme did Jesse Pollak ask for experience with on August 25, 2025?",
+        "correct_answer": "AWS PPA savings",
+        "wrong_answers": [
+            "Coinbase tax deductions",
+            "Farcaster API rebates",
+            "Tesla FSD discounts"
+        ]
+    }
+]
