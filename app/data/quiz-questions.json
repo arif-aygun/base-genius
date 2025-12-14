@@ -1,0 +1,62 @@
+{
+  "lastUpdated": "2024-12-14T12:00:00Z",
+  "weekNumber": 50,
+  "totalQuestions": 50,
+  "questions": [
+    {
+      "id": 1,
+      "question": "What major performance upgrade did Base announce in Q4 2024?",
+      "options": ["Flashblocks (200ms transactions)", "Bitcoin integration", "Shutting down testnet", "Moving to Solana"],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/base",
+      "sourceCast": "Base is testing Flashblocks to reduce tx times from 2s to 200ms",
+      "explanation": "Base announced Flashblocks technology to dramatically reduce transaction processing times from 2 seconds to just 200 milliseconds.",
+      "difficulty": "medium",
+      "category": "product-update"
+    },
+    {
+      "id": 2,
+      "question": "Which blockchain did Base recently launch a cross-chain bridge with?",
+      "options": ["Ethereum", "Solana", "Polygon", "Avalanche"],
+      "correctIndex": 1,
+      "sourceUrl": "https://warpcast.com/base",
+      "sourceCast": "Base-Solana bridge now live using Chainlink CCIP",
+      "explanation": "Base launched a mainnet cross-chain bridge with Solana using Chainlink CCIP technology.",
+      "difficulty": "easy",
+      "category": "ecosystem"
+    },
+    {
+      "id": 3,
+      "question": "What is Base's ultimate transaction speed goal?",
+      "options": ["10,000 TPS", "100,000 TPS", "1 million TPS", "10 million TPS"],
+      "correctIndex": 2,
+      "sourceUrl": "https://cryptoslate.com",
+      "sourceCast": "Base roadmap targets 1M TPS with fees under $0.01",
+      "explanation": "Base aims to achieve 1 million transactions per second while keeping fees consistently under $0.01.",
+      "difficulty": "hard",
+      "category": "technology"
+    },
+    {
+      "id": 4,
+      "question": "What is the primary category of the Base ecosystem on the Base Build platform?",
+      "options": ["DeFi", "Social", "Gaming", "Onchain Economy"],
+      "correctIndex": 3,
+      "sourceUrl": "https://base.org",
+      "sourceCast": "Base focuses on bringing billions onchain",
+      "explanation": "Base focuses on expanding the on-chain economy and bringing the next billion users onchain.",
+      "difficulty": "medium",
+      "category": "ecosystem"
+    },
+    {
+      "id": 5,
+      "question": "Which company backs the Base blockchain?",
+      "options": ["Binance", "Coinbase", "Kraken", "Gemini"],
+      "correctIndex": 1,
+      "sourceUrl": "https://base.org",
+      "sourceCast": "Base is Coinbase's Layer 2 solution",
+      "explanation": "Base is an Ethereum Layer 2 solution developed and backed by Coinbase.",
+      "difficulty": "easy",
+      "category": "basics"
+    }
+  ]
+}
