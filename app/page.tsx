@@ -1,9 +1,10 @@
 "use client";
 import { useEffect, useState } from "react";
 import { useMiniKit } from "@coinbase/onchainkit/minikit";
-import { motion } from "framer-motion";
+import { useAccount } from "wagmi";
 import QuizCard from "./components/QuizCard";
 import ResultsCard from "./components/ResultsCard";
+import ConnectWallet from "./components/ConnectWallet";
 import type { Question } from "./types/quiz";
 import SkeletonLoader from "./components/SkeletonLoader";
 import Toast from "./components/Toast";
@@ -30,6 +31,9 @@ interface QuizResults {
   totalQuestions: number;
   isPerfectScore: boolean;
   weekNumber: number;
+  canMint?: boolean;
+  mintSignature?: string;
+  mintError?: string;
   results: {
     questionId: number;
     correct: boolean;
@@ -41,6 +45,7 @@ interface QuizResults {
 
 export default function Home() {
   const { isFrameReady, setFrameReady } = useMiniKit();
+  const { address } = useAccount(); // Get connected wallet address
   const [gameState, setGameState] = useState<GameState>('welcome');
   const [questions, setQuestions] = useState<Question[]>([]);
   const [weekNumber, setWeekNumber] = useState<number>(0);
@@ -75,7 +80,10 @@ export default function Home() {
       const response = await fetch('/api/submit-answers', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ answers }),
+        body: JSON.stringify({
+          answers,
+          walletAddress: address || undefined, // Send wallet address for NFT minting
+        }),
       });
       const results = await response.json();
       setQuizResults(results);
@@ -93,151 +101,117 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-gray-50 overflow-hidden relative">
-      
-      <Toast 
-        message={errorMsg} 
-        isVisible={!!errorMsg} 
-        onClose={() => setErrorMsg("")} 
-      />
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+      {/* Header Navigation */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200 shadow-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            {/* App Branding */}
+            <div className="flex items-center gap-3">
+              <span className="text-3xl">🧠</span>
+              <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                BaseGenius
+              </h1>
+            </div>
 
-      {/* ARKA PLAN EFEKTLERİ */}
-      <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-blue-400/20 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-[-10%] right-[-10%] w-[500px] h-[500px] bg-purple-400/20 rounded-full blur-3xl pointer-events-none" />
-
-      {/* HEADER */}
-      <div className="absolute top-0 left-0 w-full p-6 flex justify-between items-center z-20">
-        {/* Sol: Logo */}
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
-            B
+            {/* Wallet Connection */}
+            <ConnectWallet />
           </div>
-          <span className="font-bold text-gray-900 hidden sm:block">Base Quiz</span>
         </div>
+      </nav>
 
-        {/* --- 2. GERÇEK CÜZDAN BAĞLANTISI BURADA --- */}
-        <div className="flex justify-end">
-          <Wallet>
-            <ConnectWallet className="bg-white/80 backdrop-blur-md border border-gray-200 text-gray-900 font-bold hover:bg-gray-100 rounded-full px-4 py-2">
-              <Avatar className="h-6 w-6 mr-2" />
-              <Name />
-            </ConnectWallet>
-            <WalletDropdown>
-              <Identity className="px-4 pt-3 pb-2" hasCopyAddressOnClick>
-                <Avatar />
-                <Name />
-                <Address />
-                <EthBalance />
-              </Identity>
-              <WalletDropdownDisconnect />
-            </WalletDropdown>
-          </Wallet>
-        </div>
-        {/* ------------------------------------------- */}
-      </div>
+      {/* Main Content */}
+      <div className="flex flex-col items-center justify-center min-h-screen p-4 pt-20">
+        {gameState === 'welcome' && (
+          <div className="w-full max-w-2xl mx-auto text-center space-y-8">
+            <div className="space-y-4">
+              <div className="text-6xl mb-4">🧠</div>
+              <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                BaseGenius
+              </h1>
+              <p className="text-xl text-gray-600 max-w-xl mx-auto">
+                Test your knowledge of this week's Farcaster and Base ecosystem news!
+              </p>
+            </div>
 
-      {/* WELCOME SCREEN */}
-      {gameState === 'welcome' && (
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="w-full max-w-2xl mx-auto text-center space-y-8 relative z-10"
-        >
-          <div className="space-y-4 pt-8">
-            <motion.div 
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ type: "spring", stiffness: 260, damping: 20, delay: 0.1 }}
-              className="inline-block bg-white p-4 rounded-3xl shadow-xl shadow-blue-100 mb-2"
-            >
-              <div className="text-6xl animate-pulse">🧠</div>
-            </motion.div>
-            
-            <h1 className="text-6xl font-black tracking-tighter text-gray-900 leading-tight">
-              Base News<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
-                Weekly Quiz
-              </span>
-            </h1>
-            
-            <p className="text-xl text-gray-600 max-w-lg mx-auto font-medium">
-              Prove you're <span className="text-blue-600 font-bold">Based</span>. Ace the quiz, mint the badge.
-            </p>
-          </div>
+            <div className="bg-white rounded-2xl shadow-xl p-8 space-y-6">
+              <div className="grid grid-cols-3 gap-4 text-center">
+                <div className="space-y-2">
+                  <div className="text-3xl font-bold text-blue-600">5</div>
+                  <div className="text-sm text-gray-600">Questions</div>
+                </div>
+                <div className="space-y-2">
+                  <div className="text-3xl font-bold text-purple-600">50</div>
+                  <div className="text-sm text-gray-600">Question Pool</div>
+                </div>
+                <div className="space-y-2">
+                  <div className="text-3xl font-bold text-green-600">1</div>
+                  <div className="text-sm text-gray-600">NFT Badge</div>
+                </div>
+              </div>
 
-          <div className="grid grid-cols-2 gap-4">
-            <motion.div 
-              whileHover={{ scale: 1.02 }}
-              className="bg-white/60 backdrop-blur-md border border-white/50 p-6 rounded-2xl shadow-lg shadow-blue-500/5 text-left"
-            >
-              <div className="text-3xl mb-2">⚡</div>
-              <div className="font-bold text-gray-900 text-lg">5 Questions</div>
-              <div className="text-sm text-gray-500">Quick & sharp updates</div>
-            </motion.div>
+              <div className="border-t border-gray-200 pt-6 space-y-3">
+                <div className="flex items-start gap-3 text-left">
+                  <span className="text-2xl">✅</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">Answer 5 random questions</p>
+                    <p className="text-sm text-gray-600">Each quiz is unique!</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 text-left">
+                  <span className="text-2xl">🏆</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">Score 5/5 to win</p>
+                    <p className="text-sm text-gray-600">Perfect score earns an NFT badge</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 text-left">
+                  <span className="text-2xl">🔄</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">Retake anytime</p>
+                    <p className="text-sm text-gray-600">Get different questions each time</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-            <motion.div 
-              whileHover={{ scale: 1.02 }}
-              className="bg-gradient-to-br from-yellow-50 to-orange-50 border border-yellow-200/50 p-6 rounded-2xl shadow-lg shadow-orange-500/5 text-left"
-            >
-              <div className="text-3xl mb-2">🏆</div>
-              <div className="font-bold text-gray-900 text-lg">Win NFT Badge</div>
-              <div className="text-sm text-gray-500">Score 5/5 to mint</div>
-            </motion.div>
-          </div>
-
-          <motion.div 
-            initial={{ opacity: 0 }} 
-            animate={{ opacity: 1 }} 
-            transition={{ delay: 0.5 }}
-            className="pt-4"
-          >
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+            <button
               onClick={startQuiz}
-              className="w-full relative group overflow-hidden bg-black text-white font-bold py-6 px-8 rounded-2xl shadow-2xl transition-all duration-200 text-xl"
+              className="w-full max-w-md mx-auto bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold py-5 px-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-200 hover:scale-[1.02] text-lg"
             >
-              <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              <span className="relative flex items-center justify-center gap-3">
-                🚀 Start Quiz
-              </span>
-            </motion.button>
-            <p className="text-xs text-gray-400 mt-4 font-medium uppercase tracking-widest">
-              Week #42 is Live • 1,234 Players Participated
-            </p>
-          </motion.div>
-        </motion.div>
-      )}
+              🚀 Start Quiz
+            </button>
+          </div>
+        )}
 
-      {/* LOADING SCREEN */}
-      {gameState === 'loading' && (
-        <SkeletonLoader />
-      )}
+        {gameState === 'loading' && (
+          <div className="text-center space-y-4">
+            <div className="animate-spin text-6xl">⚡</div>
+            <p className="text-xl text-gray-600 font-medium">Loading questions...</p>
+          </div>
+        )}
 
-      {/* QUIZ SCREEN */}
-      {gameState === 'quiz' && questions.length > 0 && (
-        <div className="w-full relative z-10">
+        {gameState === 'quiz' && questions.length > 0 && (
           <QuizCard
             questions={questions}
             weekNumber={weekNumber}
             onComplete={handleQuizComplete}
           />
-        </div>
-      )}
+        )}
 
-      {/* RESULTS SCREEN */}
-      {gameState === 'results' && quizResults && (
-        <div className="w-full relative z-10">
+        {gameState === 'results' && quizResults && (
           <ResultsCard
             score={quizResults.score}
             totalQuestions={quizResults.totalQuestions}
             weekNumber={quizResults.weekNumber}
+            canMint={quizResults.canMint}
+            mintSignature={quizResults.mintSignature}
+            mintError={quizResults.mintError}
             results={quizResults.results}
             onRetry={handleRetry}
           />
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }

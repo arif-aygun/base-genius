@@ -7,8 +7,8 @@ import "@coinbase/onchainkit/styles.css";
 export function RootProvider({ children }: { children: ReactNode }) {
   return (
     <OnchainKitProvider
-      apiKey={process.env.NEXT_PUBLIC_ONCHAINKIT_API_KEY}
       chain={baseSepolia}
+      rpcUrl="https://sepolia.base.org"
       config={{
         appearance: {
           mode: "auto",

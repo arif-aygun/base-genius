@@ -1,4 +1,4 @@
-# Getting Started - Base Weekly News Quiz
+# Getting Started - BaseGenius
 
 Welcome to the team! 👋 This guide will get you up and running quickly.
 

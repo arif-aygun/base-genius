@@ -1,4 +1,4 @@
-# Base Weekly News Quiz
+# BaseGenius
 
 A dynamic quiz game where users answer 5 questions about recent Farcaster and Base ecosystem news. Score 5/5 to earn an exclusive NFT badge on Base blockchain!
 

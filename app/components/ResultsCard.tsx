@@ -1,13 +1,15 @@
 'use client';
+import { useAccount } from 'wagmi';
+import MintBadgeButton from './MintBadgeButton';
 
-import confetti from 'canvas-confetti';
-import { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion'; // Animasyon için
 
 interface ResultsCardProps {
     score: number;
     totalQuestions: number;
     weekNumber: number;
+    canMint?: boolean;
+    mintSignature?: string;
+    mintError?: string;
     results: {
         questionId: number;
         correct: boolean;
@@ -22,95 +24,16 @@ export default function ResultsCard({
     score,
     totalQuestions,
     weekNumber,
+    canMint,
+    mintSignature,
+    mintError,
     results,
     onRetry,
 }: ResultsCardProps) {
     const isPerfectScore = score === totalQuestions;
-    const [title, setTitle] = useState("");
-    const [subTitle, setSubTitle] = useState("");
-    
-    // Mint Durumu
-    const [mintStatus, setMintStatus] = useState<'idle' | 'loading' | 'success'>('idle');
-    // Ödül Ekranı Görünsün mü?
-    const [showRewardModal, setShowRewardModal] = useState(false);
+    const percentage = Math.round((score / totalQuestions) * 100);
+    const { address, isConnected } = useAccount();
 
-    // Başlık ve Mesaj Seçici
-    useEffect(() => {
-        // --- 5/5: MÜKEMMEL (Rastgele değişir) ---
-        if (score === 5) {
-            const titles = [
-                "ABSOLUTE LEGEND 🔵", // Unicorn gitti, Base mavisi geldi
-                "BIG BRAIN ENERGY 🧠", 
-                "YOU ARE BASED 🎩", 
-                "GOD MODE: ON ⚡"
-            ];
-            const subs = [
-                "Unstoppable. You own the network.",
-                "Too easy for you? Next week will be harder.",
-                "Vitalik would be proud.",
-                "Mint that badge ASAP!"
-            ];
-            const rand = Math.floor(Math.random() * titles.length);
-            setTitle(titles[rand]);
-            setSubTitle(subs[rand]);
-        } 
-        // --- 4/5: ÇOK YAKIN ---
-        else if (score === 4) {
-            setTitle("SO CLOSE! 🤏");
-            setSubTitle("Just one mistake! Don't give up.");
-        } 
-        // --- 3/5: ORTA ---
-        else if (score === 3) {
-            setTitle("NOT BAD 👍");
-            setSubTitle("You know your stuff, but can do better.");
-        } 
-        // --- 2/5: ZAYIF ---
-        else if (score === 2) {
-            setTitle("STILL EARLY 🌅"); // "Hala erken" (Kripto tesellisi)
-            setSubTitle("You need to spend more time onchain.");
-        } 
-        // --- 1/5: KÖTÜ ---
-        else if (score === 1) {
-            setTitle("NGMI (YET) 📉"); // "Not Gonna Make It" şakası
-            setSubTitle("Have you been living under a rock?");
-        } 
-        // --- 0/5: REZALET (Komik) ---
-        else {
-            setTitle("TOTALLY REKT 💀"); // "Mahvoldu/Battı"
-            setSubTitle("Ouch. Did you even read the questions?");
-        }
-    }, [score]);
-
-    // İLK KONFETİ (Sadece 5/5 olunca, sayfa açılışında)
-    useEffect(() => {
-        if (isPerfectScore) {
-            const duration = 2000;
-            const end = Date.now() + duration;
-
-            (function frame() {
-                const colors = ['#0052FF', '#FFD700', '#ffffff'];
-                confetti({ particleCount: 3, angle: 60, spread: 55, origin: { x: 0 }, colors: colors });
-                confetti({ particleCount: 3, angle: 120, spread: 55, origin: { x: 1 }, colors: colors });
-
-                if (Date.now() < end) {
-                    requestAnimationFrame(frame);
-                }
-            }());
-        }
-    }, [isPerfectScore]);
-
-    // MINT BUTONUNA BASINCA
-    const handleClaim = () => {
-        if (mintStatus !== 'idle') return;
-
-        setMintStatus('loading');
-
-        // 2 saniye işlem süresi simülasyonu
-        setTimeout(() => {
-            setMintStatus('success');
-            setShowRewardModal(true); // MODAL AÇILIYOR
-        }, 2000);
-    };
 
     return (
         <div className="w-full max-w-2xl mx-auto p-6 space-y-6 animate-in fade-in slide-in-from-bottom-8 duration-700 relative">
@@ -142,47 +65,24 @@ export default function ResultsCard({
 
             {/* MINT KARTI & BUTONU */}
             {isPerfectScore && (
-                // DİKKAT: 'animate-pulse' kaldırıldı. Yerine 'motion.div' ile Scale (Büyüme/Küçülme) eklendi.
-                <motion.div 
-                    animate={{ scale: [1, 1.02, 1] }} // %2 büyüyüp geri dönüyor (Kalp atışı)
-                    transition={{ 
-                        duration: 2, // 2 saniyede bir atar (Yavaş ve sakin)
-                        repeat: Infinity, // Sonsuz döngü
-                        ease: "easeInOut" // Yumuşak geçiş
-                    }}
-                    className="bg-gradient-to-r from-yellow-50 to-amber-50 border-2 border-yellow-400 rounded-2xl p-1 shadow-lg"
-                >
-                    <div className="bg-white/50 backdrop-blur-sm rounded-xl p-6 text-center space-y-4">
-                        <h3 className="text-2xl font-black text-yellow-800 uppercase tracking-wide">
-                            🎉 Reward Unlocked!
-                        </h3>
-                        <p className="text-gray-700 font-medium">
-                            You proved you are <b>Based</b>. Claim your exclusive NFT badge now.
-                        </p>
-                        
-                        <button 
-                            onClick={handleClaim}
-                            disabled={mintStatus !== 'idle'} 
-                            className={`w-full font-bold py-4 rounded-xl shadow-xl transition-all duration-300 flex items-center justify-center gap-3 text-lg overflow-hidden relative
-                                ${mintStatus === 'success' 
-                                    ? 'bg-green-600 text-white' 
-                                    : mintStatus === 'loading'
-                                        ? 'bg-gray-800 text-gray-300 cursor-wait'
-                                        : 'bg-black text-white hover:scale-[1.02] hover:bg-gray-900'
-                                }
-                            `}
-                        >
-                            {mintStatus === 'loading' && (
-                                <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
-                            )}
-                            <span>
-                                {mintStatus === 'idle' && "MINT BADGE 💎"}
-                                {mintStatus === 'loading' && "MINTING..."}
-                                {mintStatus === 'success' && "VIEW BADGE ✨"}
-                            </span>
-                        </button>
-                    </div>
-                </motion.div>
+                <div className="bg-gradient-to-r from-yellow-50 to-orange-50 border-2 border-yellow-400 rounded-xl p-6 text-center space-y-3">
+                    <div className="text-4xl">🎖️</div>
+                    <h3 className="text-xl font-bold text-gray-900">
+                        You've earned an NFT badge!
+                    </h3>
+                    <p className="text-gray-600">
+                        Claim your exclusive "Week {weekNumber} BaseGenius" badge on Base blockchain
+                    </p>
+                    <MintBadgeButton
+                        weekNumber={weekNumber}
+                        mintSignature={mintSignature}
+                        canMint={canMint || false}
+                        mintError={mintError}
+                        onMintSuccess={(txHash) => {
+                            console.log('NFT minted! Transaction:', txHash);
+                        }}
+                    />
+                </div>
             )}
 
             {/* --- BUTONLAR VE LİSTE AYNI KALIYOR --- */}
@@ -202,12 +102,34 @@ export default function ResultsCard({
             <div className="space-y-4 pt-2">
                 <h3 className="text-lg font-black text-gray-800 uppercase tracking-wider ml-2">Review</h3>
                 {results.map((result, index) => (
-                    <div key={result.questionId} className={`rounded-2xl border-l-8 p-5 shadow-sm transition-all ${result.correct ? 'border-green-500 bg-white' : 'border-red-500 bg-white'}`}>
-                        <div className="flex justify-between items-center mb-1">
-                            <p className="font-bold text-gray-400 text-xs uppercase">Question {index + 1}</p>
-                             <span className={`text-xs font-bold px-2 py-1 rounded ${result.correct ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
-                                {result.correct ? 'CORRECT' : 'WRONG'}
-                            </span>
+                    <div
+                        key={result.questionId}
+                        className={`rounded-xl border-2 p-4 ${result.correct
+                            ? 'border-green-200 bg-green-50'
+                            : 'border-red-200 bg-red-50'
+                            }`}
+                    >
+                        <div className="flex items-start gap-3">
+                            <div
+                                className={`text-2xl ${result.correct ? 'text-green-600' : 'text-red-600'
+                                    }`}
+                            >
+                                {result.correct ? '✓' : '✗'}
+                            </div>
+                            <div className="flex-1 space-y-2">
+                                <p className="font-medium text-gray-900">Question {index + 1}</p>
+                                <p className="text-sm text-gray-700">{result.explanation}</p>
+                                {result.sourceUrl && (
+                                    <a
+                                        href={result.sourceUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-xs text-blue-600 hover:underline inline-flex items-center gap-1"
+                                    >
+                                        View source →
+                                    </a>
+                                )}
+                            </div>
                         </div>
                         <p className="text-gray-800 font-medium leading-relaxed">{result.explanation}</p>
                     </div>

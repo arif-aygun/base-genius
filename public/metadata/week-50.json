@@ -1,0 +1,30 @@
+{
+    "name": "BaseGenius Week 50 Badge",
+    "description": "Earned by achieving a perfect score (5/5) on the BaseGenius Week 50 quiz about Base and Farcaster ecosystem news.",
+    "image": "https://your-cdn.com/images/week-50-badge.png",
+    "external_url": "https://basegenius.app",
+    "attributes": [
+        {
+            "trait_type": "Week Number",
+            "value": 50
+        },
+        {
+            "trait_type": "Year",
+            "value": 2024
+        },
+        {
+            "trait_type": "Achievement",
+            "value": "Perfect Score"
+        },
+        {
+            "trait_type": "Quiz Type",
+            "value": "Base Ecosystem News"
+        },
+        {
+            "trait_type": "Rarity",
+            "value": "Weekly Limited"
+        }
+    ],
+    "animation_url": "https://your-cdn.com/animations/week-50-badge.mp4",
+    "background_color": "0052FF"
+}

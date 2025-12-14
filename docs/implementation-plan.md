@@ -211,7 +211,7 @@ Replace template content with trivia game:
 #### [MODIFY] [minikit.config.ts](file:///c:/Users/arif/Documents/GitHub/mini-app-quickstart-template/minikit.config.ts)
 
 Update metadata:
-- name: "Base Weekly News Quiz"
+- name: "BaseGenius"
 - subtitle: "Stay Updated, Earn Rewards"
 - description: "Answer 5 questions about this week's Farcaster & Base news and earn an NFT badge!"
 - primaryCategory: "games"

@@ -1,4 +1,4 @@
-# Team Role Assignment - Base Weekly News Quiz
+# Team Role Assignment - BaseGenius
 
 ## Project Status
 ✅ **Core MVP Complete**: Quiz flow, randomization, scoring, UI  

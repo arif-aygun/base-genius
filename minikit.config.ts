@@ -21,7 +21,7 @@ export const minikitConfig = {
 
   miniapp: {
     version: "1",
-    name: "Base Weekly News Quiz",
+    name: "BaseGenius",
     subtitle: "Stay Updated, Earn Rewards",
     description:
       "Answer 5 questions about this week's Farcaster & Base news and earn an NFT badge! New questions every week.",
@@ -35,7 +35,7 @@ export const minikitConfig = {
     tags: ["games", "education", "news", "nft"],
     heroImageUrl: `${ROOT_URL}/hero.png`,
     tagline: "Test your Base knowledge, win NFT badges",
-    ogTitle: "Base Weekly News Quiz",
+    ogTitle: "BaseGenius",
     ogDescription:
       "Answer 5 questions about Farcaster & Base news. Score 5/5 to claim an exclusive NFT badge!",
     ogImageUrl: `${ROOT_URL}/hero.png`,
