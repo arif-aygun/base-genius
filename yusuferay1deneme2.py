@@ -2,7 +2,6 @@ import requests
 import json
 import os
 import google.generativeai as genai
-
 # =============================================================================
 # AYARLAR
 # =============================================================================
@@ -17,12 +16,10 @@ genai.configure(api_key=GEMINI_API_KEY)
 
 def get_jesse_pollak_casts():
     """
-    Kanal yerine direkt Base kurucusunun (Jesse Pollak) gönderilerini çeker.
-    Bu endpoint bazen daha esnek olabiliyor.
+    Jesse Pollak'ın (FID: 191) gönderilerini çeker.
     """
     print(f"📡 Base Kurucusu (FID: {TARGET_FID}) verileri çekiliyor...")
     
-    # Endpoint farklı! "feed/channel" DEĞİL, "feed/user/casts"
     url = "https://api.neynar.com/v2/farcaster/feed/user/casts"
     
     headers = {
@@ -32,8 +29,8 @@ def get_jesse_pollak_casts():
     
     params = {
         "fid": TARGET_FID,
-        "limit": 50,
-        "include_replies": "false" # Sadece ana gönderileri alalım
+        "limit": 50, # Daha fazla veri çekmek analiz kalitesini artırır
+        "include_replies": "false"
     }
     
     try:
@@ -55,7 +52,7 @@ def get_jesse_pollak_casts():
             return combined_text
             
         elif response.status_code == 402:
-            print("❌ HATA: Maalesef bu endpoint de paralı pakete dahil.")
+            print("❌ HATA: Paket limiti veya ödeme hatası (Neynar 402).")
             return None
         else:
             print(f"❌ Neynar Hatası: {response.status_code} - {response.text}")
@@ -69,46 +66,64 @@ def generate_questions(context_text):
     if not context_text:
         return []
 
+    # Güncel ve hızlı model
     model = genai.GenerativeModel('models/gemini-flash-latest')
 
+    # PROMPT GÜNCELLENDİ: İngilizce, Kısa Cevaplar, 3 Yanlış Seçenek
     prompt = f"""
-    Aşağıdaki metinler, Base ağının kurucusu Jesse Pollak'ın son paylaşımlarıdır.
+    Analyze the following social media posts by Jesse Pollak (Founder of Base).
     
-    GÖREV:
-    Bu paylaşımları analiz et. Base ağındaki yenilikleri ve gündemi tespit et.
-    Buna göre **tam 50 adet** soru ve cevabını oluştur.
+    TASK:
+    Generate exactly 50 quiz questions based on the content provided.
     
-    ÇIKTI:
-    Sadece JSON listesi: [ {{"soru": "...", "cevap": "..."}} ]
+    CONSTRAINTS:
+    1. Language: English only.
+    2. Style: Keep questions and answers short, direct, and concise.
+    3. Structure: For each question, provide 1 correct answer and 3 random incorrect answers (distractors).
+    4. Output Format: Return ONLY a valid JSON array. Do not include markdown formatting (like ```json).
     
-    METİN:
+    JSON SCHEMA:
+    [
+        {{
+            "question": "Short question text here?",
+            "correct_answer": "Correct answer",
+            "wrong_answers": ["Wrong A", "Wrong B", "Wrong C"]
+        }}
+    ]
+    
+    TEXT CONTENT TO ANALYZE:
     {context_text}
     """
 
-    print("⚡ Gemini soruları hazırlıyor...")
+    print("⚡ Gemini soruları (İngilizce + Şıklar) hazırlıyor...")
     
     try:
         response = model.generate_content(prompt)
+        # Markdown temizliği (Bazen Gemini ```json ekleyebiliyor)
         text_response = response.text.replace("```json", "").replace("```", "").strip()
         return json.loads(text_response)
     except Exception as e:
         print(f"❌ Gemini hatası: {e}")
+        # Hata ayıklama için ham yanıtı yazdırabiliriz
+        # print(response.text) 
         return []
 
-def save_to_json(data, filename="base_jesse_sorular.json"):
+def save_to_json(data, filename="base_quiz_english.json"):
     with open(filename, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
-    print(f"💾 Kaydedildi: {os.path.abspath(filename)}")
+    print(f"💾 Dosya kaydedildi: {os.path.abspath(filename)}")
 
 if __name__ == "__main__":
-    # 1. Base Kurucusunu Çek
-    data = get_jesse_pollak_casts()
+    # 1. Veriyi Çek
+    data_text = get_jesse_pollak_casts()
     
-    if data:
-        # 2. Soru Üret
-        questions = generate_questions(data)
+    if data_text:
+        # 2. Soruları Üret (İngilizce + Şıklı)
+        questions = generate_questions(data_text)
+        
         if questions:
+            # 3. Kaydet
             save_to_json(questions)
+            print(f"🎉 Toplam {len(questions)} soru oluşturuldu.")
     else:
-        print("\n💡 İPUCU: Eğer yine 402 hatası aldıysan, Neynar tamamen paralı olmuş demektir.")
-        print("Bu durumda 'Airstack' koduna (bir önceki verdiğim koda) dönmek ZORUNDASIN.")
+        print("\n⚠️ Veri çekilemediği için işlem yapılamadı.")
