@@ -30,6 +30,7 @@
   },
   "include": [
     "next-env.d.ts",
+    "hardhat.d.ts",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",

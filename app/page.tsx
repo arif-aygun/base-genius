@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { useMiniKit } from "@coinbase/onchainkit/minikit";
+import { useAccount } from "wagmi";
 import QuizCard from "./components/QuizCard";
 import ResultsCard from "./components/ResultsCard";
 import type { Question } from "./types/quiz";
@@ -12,6 +13,9 @@ interface QuizResults {
   totalQuestions: number;
   isPerfectScore: boolean;
   weekNumber: number;
+  nftMinted?: boolean;
+  nftTxHash?: string;
+  nftTokenId?: string;
   results: {
     questionId: number;
     correct: boolean;
@@ -23,6 +27,7 @@ interface QuizResults {
 
 export default function Home() {
   const { isFrameReady, setFrameReady } = useMiniKit();
+  const { address } = useAccount(); // Get connected wallet address
   const [gameState, setGameState] = useState<GameState>('welcome');
   const [questions, setQuestions] = useState<Question[]>([]);
   const [weekNumber, setWeekNumber] = useState<number>(0);
@@ -55,7 +60,10 @@ export default function Home() {
       const response = await fetch('/api/submit-answers', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ answers }),
+        body: JSON.stringify({
+          answers,
+          walletAddress: address || undefined, // Send wallet address for NFT minting
+        }),
       });
       const results = await response.json();
       setQuizResults(results);
@@ -156,6 +164,9 @@ export default function Home() {
           score={quizResults.score}
           totalQuestions={quizResults.totalQuestions}
           weekNumber={quizResults.weekNumber}
+          nftMinted={quizResults.nftMinted}
+          nftTxHash={quizResults.nftTxHash}
+          nftTokenId={quizResults.nftTokenId}
           results={quizResults.results}
           onRetry={handleRetry}
         />

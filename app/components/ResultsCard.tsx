@@ -4,6 +4,9 @@ interface ResultsCardProps {
     score: number;
     totalQuestions: number;
     weekNumber: number;
+    nftMinted?: boolean;
+    nftTxHash?: string;
+    nftTokenId?: string;
     results: {
         questionId: number;
         correct: boolean;
@@ -18,6 +21,9 @@ export default function ResultsCard({
     score,
     totalQuestions,
     weekNumber,
+    nftMinted,
+    nftTxHash,
+    nftTokenId,
     results,
     onRetry,
 }: ResultsCardProps) {
@@ -49,15 +55,43 @@ export default function ResultsCard({
             {isPerfectScore && (
                 <div className="bg-gradient-to-r from-yellow-50 to-orange-50 border-2 border-yellow-400 rounded-xl p-6 text-center space-y-3">
                     <div className="text-4xl">🎖️</div>
-                    <h3 className="text-xl font-bold text-gray-900">
-                        You've earned an NFT badge!
-                    </h3>
-                    <p className="text-gray-600">
-                        Claim your "Week {weekNumber} News Genius" badge on Base blockchain
-                    </p>
-                    <button className="w-full bg-gradient-to-r from-yellow-500 to-orange-500 text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02]">
-                        🎁 Claim Your Badge
-                    </button>
+                    {nftMinted ? (
+                        <>
+                            <h3 className="text-xl font-bold text-green-600">
+                                ✅ NFT Badge Claimed!
+                            </h3>
+                            <p className="text-gray-600">
+                                Your "Week {weekNumber} News Genius" badge has been minted to your wallet!
+                            </p>
+                            {nftTokenId && (
+                                <p className="text-sm font-mono text-gray-500">
+                                    Token ID: #{nftTokenId}
+                                </p>
+                            )}
+                            {nftTxHash && (
+                                <a
+                                    href={`https://sepolia.basescan.org/tx/${nftTxHash}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-block w-full bg-blue-600 text-white font-bold py-3 rounded-xl hover:bg-blue-700 transition-colors"
+                                >
+                                    View Transaction on BaseScan →
+                                </a>
+                            )}
+                        </>
+                    ) : (
+                        <>
+                            <h3 className="text-xl font-bold text-gray-900">
+                                You've earned an NFT badge!
+                            </h3>
+                            <p className="text-gray-600">
+                                Connect your wallet and complete the quiz to claim your "Week {weekNumber} News Genius" badge on Base blockchain
+                            </p>
+                            <div className="text-sm text-gray-500 bg-blue-50 border border-blue-200 rounded-lg p-3">
+                                💡 Tip: Connect your wallet before starting the quiz to automatically receive your NFT badge!
+                            </div>
+                        </>
+                    )}
                 </div>
             )}
 
@@ -86,8 +120,8 @@ export default function ResultsCard({
                     <div
                         key={result.questionId}
                         className={`rounded-xl border-2 p-4 ${result.correct
-                                ? 'border-green-200 bg-green-50'
-                                : 'border-red-200 bg-red-50'
+                            ? 'border-green-200 bg-green-50'
+                            : 'border-red-200 bg-red-50'
                             }`}
                     >
                         <div className="flex items-start gap-3">
