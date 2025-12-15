@@ -1,12 +1,21 @@
 # Base Genius — Mini App Quiz (Base / Farcaster)
 
-Introduction
+<!-- Badges -->
+[![Live on Vercel](https://img.shields.io/website?down_color=red&down_message=down&up_color=00C853&up_message=online&url=https%3A%2F%2Fbase-genius.vercel.app)](https://base-genius.vercel.app) [![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js&logoColor=white)](https://nextjs.org/) [![TypeScript](https://img.shields.io/badge/TypeScript-4.9-blue?logo=typescript&logoColor=white)](https://www.typescriptlang.org/) [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-v3.0-38B2AC?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+
+<p align="center">
+  <a href="https://base-genius.vercel.app">
+    <img src="public/screenshot.png" alt="Base Genius screenshot" width="650" style="border-radius:8px;">
+  </a>
+</p>
+
+## Introduction
 
 Base Genius is a lightweight, mobile-first mini-app built for the Base blockchain and Farcaster ecosystem. It runs a weekly 5-question quiz that tests users on recent Base/Farcaster news and community events. The app is optimized for mini-app frames and social wallet flows — players who score perfectly can mint a collectible on-chain badge NFT as proof of knowledge and engagement. The project is intended for community growth, low-friction educational engagement, and easy weekly updates.
 
-Live demo
+### Live demo
 
-https://base-genius.vercel.app/
+Visit the live deployment: https://base-genius.vercel.app/
 
 This repository is a Next.js 16 + TypeScript mini-app that runs a short weekly quiz about Base / Farcaster news. Users answer 5 randomized questions and — on a perfect score — can mint an on-chain badge NFT.
 
