@@ -39,24 +39,82 @@ if not GEMINI_API_KEY or not NEYNAR_API_KEY:
 # Configure Gemini
 genai.configure(api_key=GEMINI_API_KEY)
 
-# Jesse Pollak's correct FID
-JESSE_FID = 191  # Not 3!
+# Farcaster accounts to fetch from - Base ecosystem
+SOURCES = {
+    'jesse_pollak': 191,        # Jesse Pollak - Base founder (very active)
+    'base_official': 3613,      # Official Base account
+    'dan_romero': 3,            # Farcaster co-founder (often discusses Base)
+    'brian_armstrong': 8152,    # Coinbase CEO (Base parent company)
+    'coinbase': 5,              # Coinbase official account
+}
 OUTPUT_FILE = 'app/data/quiz-questions.json'
 
-def fetch_jesse_casts():
-    """Fetch Jesse Pollak's latest casts - using WORKING endpoint from yusufe
-
-ray.py"""
-    print(f"📡 Fetching Base founder (FID: {JESSE_FID}) posts...")
+def fetch_base_posts():
+    """Fetch posts from multiple Base-related accounts with smart dynamic limits"""
+    print(f"📡 Fetching posts from Base ecosystem accounts...\n")
     
+    MIN_TOTAL_POSTS = 60  # Minimum posts needed (lowered - 69 worked great!)
+    all_posts = []
+    source_stats = {}  # Track how many each source provided
+    
+    # Phase 1: Initial fetch (20 from each)
+    print("Phase 1: Initial fetch from all sources...")
+    for source_name, fid in SOURCES.items():
+        print(f"   → {source_name} (FID: {fid})...", end=" ")
+        
+        posts = fetch_from_fid(fid, source_name, limit=20)
+        all_posts.extend(posts)
+        source_stats[source_name] = len(posts)
+        
+        print(f"✅ {len(posts)} posts")
+    
+    initial_total = len(all_posts)
+    print(f"\n   Initial total: {initial_total} posts")
+    
+    # Phase 2: If needed, fetch more from active sources
+    if initial_total < MIN_TOTAL_POSTS:
+        needed = MIN_TOTAL_POSTS - initial_total
+        print(f"\n⚠️  Need {needed} more posts to reach {MIN_TOTAL_POSTS} minimum")
+        print("Phase 2: Fetching more from most active sources...\n")
+        
+        # Find sources that gave us the most posts (likely most active)
+        active_sources = sorted(source_stats.items(), key=lambda x: x[1], reverse=True)
+        
+        for source_name, count in active_sources[:2]:  # Top 2 most active
+            if len(all_posts) >= MIN_TOTAL_POSTS:
+                break
+            
+            fid = SOURCES[source_name]
+            
+            print(f"   → {source_name} (fetching 30 total)...", end=" ")
+            # Fetch 30 instead of 20 (gets 10 more)
+            more_posts = fetch_from_fid(fid, source_name, limit=30)
+            # Take only the NEW posts (skip first 20 we already have)
+            new_posts = more_posts[count:]  # Skip what we already got
+            all_posts.extend(new_posts)
+            source_stats[source_name] += len(new_posts)
+            
+            print(f"✅ {len(new_posts)} more posts")
+            needed -= len(new_posts)
+    
+    # Final summary
+    print(f"\n✅ Total: {len(all_posts)} posts from {len(SOURCES)} sources")
+    print(f"   Breakdown: {', '.join([f'{k}: {v}' for k, v in source_stats.items()])}")
+    
+    combined_text = "\n".join(all_posts)
+    return combined_text
+
+
+def fetch_from_fid(fid, source_name, limit=20):
+    """Helper to fetch posts from a single FID"""
     url = "https://api.neynar.com/v2/farcaster/feed/user/casts"
     headers = {
         "accept": "application/json",
         "api_key": NEYNAR_API_KEY
     }
     params = {
-        "fid": JESSE_FID,
-        "limit": 50,
+        "fid": fid,
+        "limit": limit,
         "include_replies": "false"
     }
     
@@ -67,23 +125,19 @@ ray.py"""
             data = response.json()
             casts = data.get('casts', [])
             
-            # Format like yusuferay.py does
-            combined_text = ""
+            posts = []
             for cast in casts:
                 text = cast.get('text', '').replace("\n", " ")
                 date = cast.get('timestamp', '')[:10]
                 if text:
-                    combined_text += f"- Jesse Pollak ({date}): {text}\n"
+                    posts.append(f"- {source_name} ({date}): {text}")
             
-            print(f"✅ Fetched {len(casts)} posts from Jesse Pollak")
-            return combined_text, casts
+            return posts
         else:
-            print(f"❌ Neynar error: {response.status_code} - {response.text}")
-            return None, None
+            return []
             
     except Exception as e:
-        print(f"❌ Connection error: {e}")
-        return None, None
+        return []
 
 def generate_questions_with_gemini(context_text):
     """Generate 50 quiz questions using Gemini"""
@@ -92,7 +146,7 @@ def generate_questions_with_gemini(context_text):
     
     model = genai.GenerativeModel('models/gemini-flash-latest')  # Same as yusuferay.py
     
-    prompt = f"""Based on these recent posts from Jesse Pollak (founder of Base blockchain):
+    prompt = f"""Based on these recent posts from the Base blockchain ecosystem (including Jesse Pollak and the official Base account):
 
 {context_text}
 
@@ -187,9 +241,9 @@ def validate_and_format(questions):
             "question": q['question'],
             "options": q['options'],
             "correctIndex": q['correctIndex'],
-            "sourceUrl": "https://warpcast.com/jessepollak",
-            "sourceCast": "Jesse Pollak on Farcaster",
-            "explanation": q.get('explanation', 'Based on Jesse Pollak\'s recent posts about Base.'),
+            "sourceUrl": "https://warpcast.com/~/channel/base",  # Base channel (multiple sources)
+            "sourceCast": "Base ecosystem on Farcaster",
+            "explanation": q.get('explanation', 'Based on recent Base ecosystem posts.'),
             "difficulty": q.get('difficulty', 'medium'),
             "category": q.get('category', 'general')
         })
@@ -226,8 +280,8 @@ def save_questions(questions):
 def main():
     print("🚀 Starting Weekly Quiz Generator\n")
     
-    # 1. Fetch Jesse's posts
-    context_text, casts = fetch_jesse_casts()
+    # 1. Fetch posts from Base ecosystem
+    context_text = fetch_base_posts()
     
     if not context_text:
         print("❌ Failed to fetch data")
