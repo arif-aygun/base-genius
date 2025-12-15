@@ -1,62 +1,807 @@
 {
-  "lastUpdated": "2024-12-14T12:00:00Z",
-  "weekNumber": 50,
+  "lastUpdated": "2025-12-15T11:53:32.415555Z",
+  "weekNumber": 0,
   "totalQuestions": 50,
   "questions": [
     {
       "id": 1,
-      "question": "What major performance upgrade did Base announce in Q4 2024?",
-      "options": ["Flashblocks (200ms transactions)", "Bitcoin integration", "Shutting down testnet", "Moving to Solana"],
+      "question": "What did Jesse Pollak state was the next goal after having achieved the ability to 'read a chain'?",
+      "options": [
+        "We write to a chain next.",
+        "We calculate fees on a chain next.",
+        "We optimize the reading mechanism next.",
+        "We index the entire chain next."
+      ],
       "correctIndex": 0,
-      "sourceUrl": "https://warpcast.com/base",
-      "sourceCast": "Base is testing Flashblocks to reduce tx times from 2s to 200ms.",
-      "explanation": "Base announced Flashblocks technology to dramatically reduce transaction processing times from 2 seconds to just 200 milliseconds.",
-      "difficulty": "medium",
-      "category": "product-update"
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "In the post dated 2025-12-04, Jesse stated: 'We read a chain now, we write to a chain next. 🪐'",
+      "difficulty": "easy",
+      "category": "technology"
     },
     {
       "id": 2,
-      "question": "Which blockchain did Base recently launch a cross-chain bridge with?",
-      "options": ["Ethereum", "Solana", "Polygon", "Avalanche"],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/base",
-      "sourceCast": "Base-Solana bridge now live using Chainlink CCIP",
-      "explanation": "Base launched a mainnet cross-chain bridge with Solana using Chainlink CCIP technology.",
+      "question": "What role did Jesse assign himself on a specific mini app after acquiring 4/12 top tokens, as mentioned on December 9th?",
+      "options": [
+        "TRADER",
+        "COLLECTOR",
+        "MINER",
+        "DEVELOPER"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "Jesse posted: 'I didn’t consider myself one but on this mini app I'm a TRADER! I have 4/12 top Clanker tokens.'",
       "difficulty": "easy",
       "category": "ecosystem"
     },
     {
       "id": 3,
-      "question": "What is Base's ultimate transaction speed goal?",
-      "options": ["10,000 TPS", "100,000 TPS", "1 million TPS", "10 million TPS"],
-      "correctIndex": 2,
-      "sourceUrl": "https://cryptoslate.com",
-      "sourceCast": "Base roadmap targets 1M TPS with fees under $0.01",
-      "explanation": "Base aims to achieve 1 million transactions per second while keeping fees consistently under $0.01.",
-      "difficulty": "hard",
-      "category": "technology"
+      "question": "What was the top priority listed under 'Developer infra' in Jesse's November 26th post?",
+      "options": [
+        "Farcaster + onchain data",
+        "Mini app transaction rails",
+        "Kubernetes migration",
+        "AI agent deployment"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "The priorities were: '1. Developer infra: Farcaster + onchain data 2. Neynar AI: add agent capabilities, build in-feed agents on neynar 3. App studio: vibe code mini apps'",
+      "difficulty": "medium",
+      "category": "product-update"
     },
     {
       "id": 4,
-      "question": "What is the primary category of the Base ecosystem on the Base Build platform?",
-      "options": ["DeFi", "Social", "Gaming", "Onchain Economy"],
-      "correctIndex": 3,
-      "sourceUrl": "https://base.org",
-      "sourceCast": "Base focuses on bringing billions onchain",
-      "explanation": "Base focuses on expanding the on-chain economy and bringing the next billion users onchain.",
-      "difficulty": "medium",
+      "question": "According to the Anthropic report Jesse referenced on December 2nd, what percentage of blockchain exploits carried out in 2025 (post-March) could have been executed autonomously by current AI agents?",
+      "options": [
+        "55.88%",
+        "2.00%",
+        "4.6%",
+        "75.00%"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "The post quotes: 'AI agents have gone from exploiting 2% of vulnerabilities... to 55.88%.'",
+      "difficulty": "hard",
       "category": "ecosystem"
     },
     {
       "id": 5,
-      "question": "Which company backs the Base blockchain?",
-      "options": ["Binance", "Coinbase", "Kraken", "Gemini"],
-      "correctIndex": 1,
-      "sourceUrl": "https://base.org",
-      "sourceCast": "Base is Coinbase's Layer 2 solution",
-      "explanation": "Base is an Ethereum Layer 2 solution developed and backed by Coinbase.",
+      "question": "What specific enhancement did Jesse prioritize for 'Neynar AI' in his list of top priorities?",
+      "options": [
+        "Add agent capabilities",
+        "Optimize scoring mechanisms",
+        "Integrate large language models",
+        "Reduce latency on API calls"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "Priority 2 was: 'Neynar AI: add agent capabilities, build in-feed agents on neynar'",
+      "difficulty": "medium",
+      "category": "technology"
+    },
+    {
+      "id": 6,
+      "question": "What is the specific focus mentioned for the App studio in the top priorities list?",
+      "options": [
+        "Vibe code mini apps",
+        "High-throughput APIs",
+        "Decentralized storage",
+        "Cross-chain compatibility"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "Priority 3 was: 'App studio: vibe code mini apps'",
       "difficulty": "easy",
-      "category": "basics"
+      "category": "product-update"
+    },
+    {
+      "id": 7,
+      "question": "What was the estimated total exploit revenue jump linked to AI agents, according to the Anthropic data cited by Jesse?",
+      "options": [
+        "A leap from $5,000 to $4.6 million",
+        "A leap from $50,000 to $4.6 billion",
+        "A leap from $2,000 to $5.5 million",
+        "A leap from $500 to $5 million"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "The post states the leap was 'from $5,000 to $4.6 million in total exploit revenue.'",
+      "difficulty": "hard",
+      "category": "ecosystem"
+    },
+    {
+      "id": 8,
+      "question": "In the context of the 'prints' mini app, what feature did Jesse highlight as his favorite part about the admin view?",
+      "options": [
+        "The ability to see the orders coming in",
+        "The integrated shipping tracker",
+        "The automated inventory management",
+        "The user feedback dashboard"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "He mentions: 'my favorite part was the admin view that @priyanka set up for herself to see the orders coming in.'",
+      "difficulty": "medium",
+      "category": "product-update"
+    },
+    {
+      "id": 9,
+      "question": "What type of data did Jesse ask Neynar to analyze from his casts over the last year, specifically asking for his 'biggest weakness'?",
+      "options": [
+        "His casts over the last year",
+        "His reply frequency to others",
+        "His highest engagement posts",
+        "His use of emojis and tone"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "Jesse asked: '@neynar can you analyze my casts over the last year and tell me my biggest weakness'",
+      "difficulty": "medium",
+      "category": "community"
+    },
+    {
+      "id": 10,
+      "question": "What phrase did Jesse ask Neynar to begin with when introducing him to new followers?",
+      "options": [
+        "manan is ...",
+        "Jesse Pollak is...",
+        "The Base founder is...",
+        "The man behind the curtain is..."
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "The instruction was: 'begin with \"manan is ...\"'",
+      "difficulty": "easy",
+      "category": "community"
+    },
+    {
+      "id": 11,
+      "question": "What information did Jesse specifically forbid Neynar from talking about when creating an introduction based on his top casts?",
+      "options": [
+        "Stats like followers or other internal data",
+        "Details about Base or Coinbase",
+        "Personal interests or hobbies",
+        "Specific mini app projects"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "The constraint was: 'don't talk about stats like followers or other internal data.'",
+      "difficulty": "medium",
+      "category": "community"
+    },
+    {
+      "id": 12,
+      "question": "What action does Jesse state does NOT lower a user's Neynar score?",
+      "options": [
+        "Using farcaster through the Base app",
+        "Failing to reply to top users",
+        "Casting outside the specified time window",
+        "Deleting previous casts"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "The post states: 'Using farcaster through the Base app does not lower your Neynar score'",
+      "difficulty": "easy",
+      "category": "community"
+    },
+    {
+      "id": 13,
+      "question": "After October 1st, what criteria will Neynar use to prioritize its responses to user questions?",
+      "options": [
+        "Questions related to farcaster + onchain dev building blocks",
+        "Questions related to Base token economics",
+        "Questions related to user scores and ranking",
+        "Questions related to Coinbase integration"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "Jesse stated: '@neynar will now respond with questions related to farcaster + onchain dev building blocks available on neynar.com'",
+      "difficulty": "medium",
+      "category": "product-update"
+    },
+    {
+      "id": 14,
+      "question": "What metric did Jesse ask Neynar to calculate across the entire Farcaster protocol in a 24-hour period on November 1st?",
+      "options": [
+        "The total number of likes",
+        "The total number of casts",
+        "The total number of new FIDs",
+        "The total number of mini app interactions"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "He asked: '@neynar how many likes across the entire farcaster protocol in the past 24 hours?'",
+      "difficulty": "easy",
+      "category": "community"
+    },
+    {
+      "id": 15,
+      "question": "What caused the fatal startup error that led to the Neynar outage on September 17th?",
+      "options": [
+        "An incorrectly configured secret",
+        "A flood of API requests",
+        "A breach in the database infrastructure",
+        "An external DNS failure"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "The root cause was: 'an incorrectly configured secret caused a fatal startup error on one of our primary services.'",
+      "difficulty": "medium",
+      "category": "technology"
+    },
+    {
+      "id": 16,
+      "question": "What infrastructure migration is Neynar undergoing to prevent future incidents of the class that occurred on September 17th?",
+      "options": [
+        "Migrating most of our services to Kubernetes",
+        "Migrating all services to AWS Lambda",
+        "Migrating database layers to SQL",
+        "Migrating to a multi-cloud environment"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "Jesse stated: 'We've been migrating most of our services to Kubernetes, which should prevent us from re-encounting this class of incidents.'",
+      "difficulty": "hard",
+      "category": "technology"
+    },
+    {
+      "id": 17,
+      "question": "What specific security practice was negatively affected by a side effect of the Coinbase hack, according to Jesse's post?",
+      "options": [
+        "The ability to use different/pseudo phone numbers across services",
+        "The security of private keys stored in Coinbase Wallets",
+        "The implementation of multi-factor authentication",
+        "The integrity of Farcaster signers"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "Jesse regretted the inability to use different/pseudo phone numbers across services like 'hide my email' addresses.",
+      "difficulty": "hard",
+      "category": "ecosystem"
+    },
+    {
+      "id": 18,
+      "question": "When defining 'time to mini app,' what does Jesse include in the measurement?",
+      "options": [
+        "The time it takes to ideate, build, deploy, and cast out a mini app.",
+        "The time it takes to code the app and publish the transaction.",
+        "The total user engagement time after deployment.",
+        "The time spent debugging the frame logic."
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "The definition provided was: 'the time it takes to ideate, build, deploy, and cast out a mini app.'",
+      "difficulty": "easy",
+      "category": "community"
+    },
+    {
+      "id": 19,
+      "question": "What is the huge advantage of Farcaster mentioned for AI agents that relates to cost efficiency compared to X API?",
+      "options": [
+        "Way cheaper than X API fees",
+        "Free compute for onchain transactions",
+        "High-volume data scraping is free",
+        "The use of decentralized storage"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "One listed advantage was: 'Way cheaper than X API fees'",
+      "difficulty": "medium",
+      "category": "technology"
+    },
+    {
+      "id": 20,
+      "question": "What Farcaster feature allows AI agents to 'DO things onchain' easily?",
+      "options": [
+        "Built-in wallet integration for onchain actions",
+        "Decentralized identifier system",
+        "Automatic gas sponsorship",
+        "Permissionless access to L2 networks"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "One listed advantage was: 'Built-in wallet integration for onchain actions'",
+      "difficulty": "easy",
+      "category": "technology"
+    },
+    {
+      "id": 21,
+      "question": "When using the Neynar Airdrop API to send fungible tokens to users, what information is required instead of the recipient's wallet address?",
+      "options": [
+        "Just put in their FID",
+        "Their preferred ENS name",
+        "Their Farcaster username",
+        "Their casting age score"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "The post states: 'You don't even need to know the recipient's wallet addresses. Just put in their FID, and the API will send it to their primary wallet.'",
+      "difficulty": "easy",
+      "category": "product-update"
+    },
+    {
+      "id": 22,
+      "question": "What was the purpose of the scheduled upgrade for Neynar services on July 9th?",
+      "options": [
+        "To help scale our indexing layer horizontally",
+        "To migrate the database to MongoDB",
+        "To deploy new AI scoring algorithms",
+        "To implement the new Farcaster write APIs"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "Jesse stated: 'Scheduled upgrades are done. This should help us scale our indexing layer horizontally.'",
+      "difficulty": "medium",
+      "category": "technology"
+    },
+    {
+      "id": 23,
+      "question": "What was Jesse soliciting alpha testers for in September?",
+      "options": [
+        "Base x Farcaster webhooks",
+        "Neynar AI agent deployment",
+        "New Base L2 features",
+        "The latest Neynar Signer component"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "The post mentions: 'call for alpha testers for base x farcaster webhooks ⬇️'",
+      "difficulty": "medium",
+      "category": "product-update"
+    },
+    {
+      "id": 24,
+      "question": "Which category of Mini apps 'naturally beats everything' across most platforms, according to Jesse?",
+      "options": [
+        "The Games category",
+        "The Finance category",
+        "The Social category",
+        "The Utility category"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "Jesse noted: 'The Games category naturally beats everything across most platforms.'",
+      "difficulty": "easy",
+      "category": "ecosystem"
+    },
+    {
+      "id": 25,
+      "question": "Which two categories followed Games in terms of Mini app popularity, according to the same post?",
+      "options": [
+        "Social and Finance",
+        "Utility and Entertainment",
+        "Finance and Utility",
+        "Art and Collectibles"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "The post states: 'Social and Finance being at 2nd & 3rd just reflects why we’re all here.'",
+      "difficulty": "medium",
+      "category": "ecosystem"
+    },
+    {
+      "id": 26,
+      "question": "Which component of Neynar's infrastructure was 'sharded' to reduce latency, as mentioned on July 12th?",
+      "options": [
+        "Redis",
+        "PostgreSQL database",
+        "Kafka queue",
+        "The snapchain gRPC API"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "Jesse mentioned: 'Reduced latency and time spent in Redis (ask @tybook.eth about the sharding)'",
+      "difficulty": "hard",
+      "category": "technology"
+    },
+    {
+      "id": 27,
+      "question": "What type of technical issue did the engineering team fix related to the webhooks filtering logic?",
+      "options": [
+        "A particularly hard-to-find memory corruption bug",
+        "A denial-of-service vulnerability",
+        "A race condition in the indexing queue",
+        "An error in the cryptographic hashing function"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "The team fixed: 'a particularly hard-to-find memory corruption bug within our webhooks filtering logic'",
+      "difficulty": "hard",
+      "category": "technology"
+    },
+    {
+      "id": 28,
+      "question": "The new Signer Component built by Neynar was designed to simplify the complex UX of requesting and approving signers to the point of being as simple as what?",
+      "options": [
+        "A component",
+        "A single API call",
+        "A QR code scan",
+        "A dedicated app"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "They 'decided to simplify it to the point where it's as simple as a component.'",
+      "difficulty": "medium",
+      "category": "product-update"
+    },
+    {
+      "id": 29,
+      "question": "What is the key security feature of the new Signer Component that prevents sensitive signer data from touching the client?",
+      "options": [
+        "The signer identifier and API key never touch the client.",
+        "It uses a zero-knowledge proof for verification.",
+        "It is secured by Base's native encryption layer.",
+        "It requires a hardware security module."
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "Jesse stated: 'It's secure - the signer identifier and API key never touch the client.'",
+      "difficulty": "hard",
+      "category": "product-update"
+    },
+    {
+      "id": 30,
+      "question": "The Airdrop API abstracts away several complexities for developers. Which of the following is NOT listed as a complexity it handles?",
+      "options": [
+        "Managing key rotation",
+        "Interfacing with the chain",
+        "Managing gas",
+        "Handling nonces if doing high volume"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "The post lists: 'No interfacing with the chain No managing gas No handling nonces if doing high volume'. Managing key rotation is not mentioned.",
+      "difficulty": "hard",
+      "category": "product-update"
+    },
+    {
+      "id": 31,
+      "question": "Which company's new office opening did Jesse mention was cited by his SF landlord as justification for a rent increase?",
+      "options": [
+        "Anthropic's",
+        "Coinbase's",
+        "OpenAI's",
+        "Tesla's"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "The landlord cited 'Anthropic's new office opened nearby.'",
+      "difficulty": "medium",
+      "category": "community"
+    },
+    {
+      "id": 32,
+      "question": "What equation did Jesse associate with rapid development (🚀)?",
+      "options": [
+        "mcp + sql = 🚀",
+        "dev + k8s = 🚀",
+        "ai + farcaster = 🚀",
+        "base + neynar = 🚀"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "The post stated: 'mcp + sql = 🚀'",
+      "difficulty": "hard",
+      "category": "technology"
+    },
+    {
+      "id": 33,
+      "question": "Who did Jesse instruct developers to DM to try out the Mini App studio in his October 13th post?",
+      "options": [
+        "@calvino",
+        "@priyanka",
+        "@tybook.eth",
+        "@grin"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "The post stated: 'DM @calvino to try it out.'",
+      "difficulty": "easy",
+      "category": "community"
+    },
+    {
+      "id": 34,
+      "question": "What specific negative personal trait did Jesse ask Neynar to identify from his casts over the last year?",
+      "options": [
+        "My biggest weakness",
+        "My lowest engagement topic",
+        "My most frequent argument",
+        "My most repetitive phrase"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "Jesse asked: '@neynar can you analyze my casts over the last year and tell me my biggest weakness'",
+      "difficulty": "medium",
+      "category": "community"
+    },
+    {
+      "id": 35,
+      "question": "During the scheduled downtime on July 9th, which Neynar API category was stated to have 'No impact'?",
+      "options": [
+        "Farcaster write APIs",
+        "Farcaster read APIs",
+        "Webhooks and Kafka",
+        "Indexing services"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "The announcement explicitly stated: 'No impact to Farcaster write APIs'",
+      "difficulty": "medium",
+      "category": "technology"
+    },
+    {
+      "id": 36,
+      "question": "Who did Jesse ask Neynar to create a ticket for on December 12th?",
+      "options": [
+        "@grin",
+        "@neynar",
+        "@calvino",
+        "@priyanka"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "Jesse posted: '@neynar make @grin a ticket for this'",
+      "difficulty": "easy",
+      "category": "community"
+    },
+    {
+      "id": 37,
+      "question": "What information did Jesse ask Neynar to provide regarding Farcaster users on September 29th?",
+      "options": [
+        "The android / ios split",
+        "The desktop / mobile split",
+        "The US / international split",
+        "The top 5 most active apps"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "He asked: 'what's the android / ios split for @farcaster users?'",
+      "difficulty": "easy",
+      "category": "ecosystem"
+    },
+    {
+      "id": 38,
+      "question": "What specific personal metric did Jesse ask Neynar to analyze on December 4th?",
+      "options": [
+        "What's my casting age?",
+        "What's my Neynar score?",
+        "What's my reply rate?",
+        "What's my follower count?"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "Jesse posted: '@neynar what's my casting age?'",
+      "difficulty": "easy",
+      "category": "community"
+    },
+    {
+      "id": 39,
+      "question": "What type of specialized software did Jesse mention he was going to try using that week, mentioning he loved the set up flow and interface?",
+      "options": [
+        "Claude code",
+        "GPT-5 code",
+        "Gemini Studio",
+        "Llama Pro"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "Jesse stated: 'Going to try Claude code this week.'",
+      "difficulty": "medium",
+      "category": "technology"
+    },
+    {
+      "id": 40,
+      "question": "What specific query did Jesse make regarding his own activity with other users on October 15th?",
+      "options": [
+        "@neynar who do you reply to the most?",
+        "Who follows me that I don't follow back?",
+        "Who are my most influential followers?",
+        "What percentage of my casts are replies?"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "He asked: '@neynar who do you reply to the most? give me the top 5 users'",
+      "difficulty": "medium",
+      "category": "community"
+    },
+    {
+      "id": 41,
+      "question": "What specific next step is planned for Mini Apps, according to Jesse's post on October 13th?",
+      "options": [
+        "Replying to /someone-build casts with the mini apps",
+        "Integrating Coinbase Pay directly into frames",
+        "Launching an official Mini App store",
+        "Adding support for Farcaster groups"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "He noted: 'next up - replying to /someone-build casts with the mini apps'",
+      "difficulty": "medium",
+      "category": "product-update"
+    },
+    {
+      "id": 42,
+      "question": "What URL did Jesse link to for an 'under the hood' look at how Neynar scores were built?",
+      "options": [
+        "neynar.com/blog/neynar-scores-under-the-hood",
+        "base.org/neynar-scores",
+        "farcaster.xyz/neynar/scores",
+        "docs.neynar.com/score-api"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "The blog post linked was: https://neynar.com/blog/neynar-scores-under-the-hood",
+      "difficulty": "medium",
+      "category": "technology"
+    },
+    {
+      "id": 43,
+      "question": "What specific Tesla model did Jesse express regret about not getting?",
+      "options": [
+        "Model YL",
+        "Model XL",
+        "Model S Plus",
+        "Cybertruck Pro"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "He stated: 'Would’ve gotten the Model YL over the Y any day!'",
+      "difficulty": "medium",
+      "category": "community"
+    },
+    {
+      "id": 44,
+      "question": "What was the estimated delay for data on indexing services and events on webhooks & Kafka during the July 9th downtime?",
+      "options": [
+        "5 minutes",
+        "15 minutes",
+        "1 hour",
+        "30 seconds"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "The announcement stated data 'will be delayed by 5 minutes.'",
+      "difficulty": "medium",
+      "category": "technology"
+    },
+    {
+      "id": 45,
+      "question": "What Farcaster advantage for AI agents ensures they 'Can't get banned or censored'?",
+      "options": [
+        "Permissionless access",
+        "Built-in wallet integration",
+        "Public social graph data",
+        "Cheaper API fees"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "Permissionless access is one of the four main advantages listed, implying it avoids central gatekeeping/censorship.",
+      "difficulty": "medium",
+      "category": "technology"
+    },
+    {
+      "id": 46,
+      "question": "What dramatic metaphor did Jesse use regarding a shipment/project leaving the studio on October 13th?",
+      "options": [
+        "The lion ships tonight",
+        "The rocket launches soon",
+        "The train leaves the station",
+        "The bird takes flight"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "He posted: 'in the studio, the mighty studio, the lion ships tonight'",
+      "difficulty": "medium",
+      "category": "community"
+    },
+    {
+      "id": 47,
+      "question": "What cast did Jesse reference when asking Neynar for his best cast of all time?",
+      "options": [
+        "https://farcaster.xyz/grin/0x35e76be1",
+        "A cast about Coinbase",
+        "A cast about AI agents",
+        "A cast about Mini apps"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "He included the link: 'https://farcaster.xyz/grin/0x35e76be1'",
+      "difficulty": "easy",
+      "category": "community"
+    },
+    {
+      "id": 48,
+      "question": "How long ago were Neynar user scores first introduced, according to Jesse's post on October 2nd, 2025?",
+      "options": [
+        "10 months ago",
+        "1 year ago",
+        "2 months ago",
+        "6 months ago"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "He mentioned scores have come a long way 'since being first introduced 10 months ago.'",
+      "difficulty": "medium",
+      "category": "product-update"
+    },
+    {
+      "id": 49,
+      "question": "What entity did Jesse suggest should be assembling the team of white hat agents in response to the massive increase in AI exploit capability?",
+      "options": [
+        "The security researchers who wrote the report",
+        "Decentralized Autonomous Organizations (DAOs)",
+        "The Base Foundation",
+        "Anthropic"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "Jesse explicitly asked: 'Who is assembling the team of white hat agents?' immediately following the Anthropic citation, implying the security community or foundation should be acting on the data.",
+      "difficulty": "hard",
+      "category": "ecosystem"
+    },
+    {
+      "id": 50,
+      "question": "Which platform was mentioned as receiving the new signer approval flows for the new Signer Component, coming as soon as they build the necessary flows?",
+      "options": [
+        "@baseapp.base.eth (iOS and Android apps)",
+        "Neynar's desktop application",
+        "Coinbase Wallet extension",
+        "The official Farcaster web portal"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/jessepollak",
+      "sourceCast": "Jesse Pollak on Farcaster",
+      "explanation": "The post mentioned it will work across 3. '@baseapp.base.eth - iOS and Android apps coming as soon as they build the signer approval flows.'",
+      "difficulty": "medium",
+      "category": "ecosystem"
     }
   ]
 }
