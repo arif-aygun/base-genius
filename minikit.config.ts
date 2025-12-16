@@ -27,18 +27,18 @@ export const minikitConfig = {
     description:
       "Answer 5 questions about this week's Farcaster & Base news and earn an NFT badge! New questions every week.",
     screenshotUrls: [],
-    iconUrl: `${ROOT_URL}/icon.png`,
-    splashImageUrl: `${ROOT_URL}/splash.png`,
+    iconUrl: `${ROOT_URL}/new_icon.png`,
+    splashImageUrl: `${ROOT_URL}/new_splash.png`,
     splashBackgroundColor: "#0a1628",
     homeUrl: ROOT_URL,
     webhookUrl: `${ROOT_URL}/api/webhook`,
     primaryCategory: "games",
     tags: ["games", "education", "news", "nft"],
-    heroImageUrl: `${ROOT_URL}/hero.png`,
+    heroImageUrl: `${ROOT_URL}/new_hero.png`,
     tagline: "Test Base knowledge, win NFT",
     ogTitle: "BaseGenius",
     ogDescription:
       "Answer 5 questions about Farcaster & Base news. Score 5/5 to claim an exclusive NFT badge!",
-    ogImageUrl: `${ROOT_URL}/hero.png`,
+    ogImageUrl: `${ROOT_URL}/new_hero.png`,
   },
 } as const;
