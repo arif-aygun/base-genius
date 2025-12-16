@@ -34,7 +34,7 @@ export const minikitConfig = {
     primaryCategory: "games",
     tags: ["games", "education", "news", "nft"],
     heroImageUrl: `${ROOT_URL}/hero.png`,
-    tagline: "Test your Base knowledge, win NFT badges",
+    tagline: "Test Base knowledge, win NFT",
     ogTitle: "BaseGenius",
     ogDescription:
       "Answer 5 questions about Farcaster & Base news. Score 5/5 to claim an exclusive NFT badge!",
