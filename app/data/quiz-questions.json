@@ -1,59 +1,171 @@
 {
-  "lastUpdated": "2026-01-18T02:12:02.153481Z",
-  "weekNumber": 6,
-  "totalQuestions": 50,
+  "lastUpdated": "2026-01-25T02:21:49.817763Z",
+  "weekNumber": 7,
+  "totalQuestions": 51,
   "questions": [
     {
       "id": 1,
-      "question": "Jesse Pollak noted that many people were surprisingly late to discovering which specific AI large language model provider?",
+      "question": "What key new feature, besides expanded web real estate, was included in the January 23, 2026 update to Neynar Studio?",
       "options": [
-        "Google's Gemini",
-        "OpenAI's GPT-4",
-        "Anthropic's Claude",
-        "Meta's Llama"
+        "Securely configuring Environment Variables & secrets",
+        "One-click deployment to Base mainnet",
+        "Integrated prediction market resolution tool",
+        "Native support for Python SDKs"
       ],
-      "correctIndex": 2,
+      "correctIndex": 0,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse Pollak was surprised people were discovering/trying Claude so late, noting it highlights the massive distribution advantage of ChatGPT and Gemini.",
-      "difficulty": "medium",
-      "category": "technology"
-    },
-    {
-      "id": 2,
-      "question": "What primary developer tool did Neynar automate documentation publishing for on January 2nd, 2026?",
-      "options": [
-        "REST API",
-        "Webhook Configuration",
-        "Node.js SDK",
-        "Farcaster Hub"
-      ],
-      "correctIndex": 2,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Neynar automated publishing documentation for their Node.js SDK, including linking functions back to the API reference.",
+      "explanation": "Jesse Pollak stated the update included secure configuration of Environment Variables & secrets, file browsing, and faster dev containers.",
       "difficulty": "easy",
       "category": "product-update"
     },
     {
-      "id": 3,
-      "question": "What are the three specific areas Jesse Pollak planned to upgrade on dev.neynar.com on January 13th, potentially causing minor downtime?",
+      "id": 2,
+      "question": "Jesse Pollak attributed the rapid improvement of their bot to visibility into what process?",
       "options": [
-        "Webhooks, API keys, and Analytics",
-        "Authentication, user management, and team management",
-        "SDK functions, Documentation, and Pricing",
-        "Front-end UI, Back-end storage, and Database"
+        "Bot monetization metrics",
+        "User feedback submission forms",
+        "Tool call visibility",
+        "API request throttling data"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "The planned upgrades were specific to authentication, user management, and team management.",
+      "explanation": "Jesse Pollak stated on 2026-01-21 that 'tool call visibility helps us improve the bot faster'.",
+      "difficulty": "medium",
+      "category": "technology"
+    },
+    {
+      "id": 3,
+      "question": "Which specific teams/individuals did Jesse Pollak thank for originally making Farcaster what it is, before discussing the shift to building the protocol itself?",
+      "options": [
+        "Coinbase Ventures and Paradigm",
+        "@rish and the entire Neynar team",
+        "@dwr, @v, and the amazing team at Merkle",
+        "The Base core team and Vitalik Buterin"
+      ],
+      "correctIndex": 2,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "JP thanked '@dwr, @v, and the amazing team at Merkle' for their foundational work.",
+      "difficulty": "easy",
+      "category": "community"
+    },
+    {
+      "id": 4,
+      "question": "Which specific AI platforms did Jesse Pollak suggest had superior distribution compared to people 'discovering / trying Claude and other Anthropic products this late'?",
+      "options": [
+        "Microsoft Copilot and Bing AI",
+        "Perplexity and Grok",
+        "ChatGPT and Gemini",
+        "Hugging Face and Llama 2"
+      ],
+      "correctIndex": 2,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "JP noted that the late adoption of Claude 'puts the ChatGPT and Gemini distribution into perspective.'",
+      "difficulty": "medium",
+      "category": "ecosystem"
+    },
+    {
+      "id": 5,
+      "question": "Which components were explicitly stated NOT to be impacted by the authentication, user management, and team management upgrades causing minor downtime on dev.neynar.com?",
+      "options": [
+        "API, webhooks, and other products",
+        "Farcaster Hubs and Snapchain",
+        "Neynar App Studio and Mini App charts",
+        "The Node.js SDK documentation"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "The post explicitly stated: 'API, webhooks and other products will not be impacted'.",
       "difficulty": "medium",
       "category": "product-update"
     },
     {
-      "id": 4,
-      "question": "According to the Anthropic report shared by Jesse Pollak, what percentage of blockchain exploits carried out in the post-March 2025 benchmark could have been executed autonomously by current AI agents?",
+      "id": 6,
+      "question": "Which US exchange did Jesse Pollak report as having the lowest noted market order spread on BTC/USD or BTC/USDC pairs, at 0.85%?",
+      "options": [
+        "Coinbase Advanced",
+        "Robinhood",
+        "Kraken Pro",
+        "Fidelity Crypto"
+      ],
+      "correctIndex": 1,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "JP listed Coinbase Advanced at 1% and Robinhood at 0.85%.",
+      "difficulty": "easy",
+      "category": "ecosystem"
+    },
+    {
+      "id": 7,
+      "question": "What product component was described as being 'made for the bots, curated by the humans at neynar'?",
+      "options": [
+        "Neynar App Studio",
+        "dev.neynar.com portal",
+        "@neynar/ui",
+        "The Node.js SDK"
+      ],
+      "correctIndex": 2,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "The post referenced '@neynar/ui was made for the bots, curated by the humans at neynar'.",
+      "difficulty": "easy",
+      "category": "product-update"
+    },
+    {
+      "id": 8,
+      "question": "What development experience improvement did Neynar implement for the Node.js SDK documentation on January 2nd, 2026?",
+      "options": [
+        "Integrated video tutorials for every function",
+        "Automated publishing of the documentation",
+        "Added support for WASM modules",
+        "Bilingual translation support"
+      ],
+      "correctIndex": 1,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "JP stated: 'We automated publishing documentation for our Node.js SDK.'",
+      "difficulty": "easy",
+      "category": "product-update"
+    },
+    {
+      "id": 9,
+      "question": "What specific user experience was JP seeking to simplify by improving webhook filter configuration (leading to natural language capabilities via an App Studio agent)?",
+      "options": [
+        "Figuring out what parent URL, parent hash, and other technical terms might mean",
+        "Connecting to the correct OP Mainnet RPC endpoint",
+        "Debugging smart contract storage variables",
+        "Managing team access levels on the dashboard"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "The simplification aimed to 'Skip figuring out what parent URL, parent hash, and other technical terms might mean.'",
+      "difficulty": "medium",
+      "category": "product-update"
+    },
+    {
+      "id": 10,
+      "question": "In the context of prediction markets, what action did Jesse Pollak state he wanted to perform, rather than making or betting on them?",
+      "options": [
+        "Auditing them",
+        "Regulating them",
+        "Resolving them",
+        "Marketing them"
+      ],
+      "correctIndex": 2,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "JP stated: 'everyone wants to make or bet on prediction markets. i want to resolve them.'",
+      "difficulty": "medium",
+      "category": "ecosystem"
+    },
+    {
+      "id": 11,
+      "question": "According to the Anthropic report cited by Jesse Pollak, what percentage of blockchain vulnerabilities in the post-March 2025 benchmark were exploited by AI agents?",
       "options": [
         "2%",
         "25.88%",
@@ -63,745 +175,649 @@
       "correctIndex": 2,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "The post cited that AI agents had gone from exploiting 2% to 55.88% of vulnerabilities in the specified benchmark period.",
-      "difficulty": "medium",
-      "category": "technology"
-    },
-    {
-      "id": 5,
-      "question": "What is the implied preceding activity that Jesse Pollak referred to when he stated, 'We read a chain now, we write to a chain next'?",
-      "options": [
-        "Building smart contracts",
-        "Resolving prediction markets",
-        "Building developer infrastructure",
-        "Reading data from the chain"
-      ],
-      "correctIndex": 3,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "The post implies Neynar is currently capable of reading chain data, and writing (executing transactions) is the next functional target.",
-      "difficulty": "hard",
-      "category": "technology"
-    },
-    {
-      "id": 6,
-      "question": "Which specific UI component did Jesse Pollak mention was 'made for the bots, curated by the humans at neynar' and was seeking human feedback on?",
-      "options": [
-        "@neynar/api",
-        "@neynar/docs",
-        "@neynar/ui",
-        "App Studio"
-      ],
-      "correctIndex": 2,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse Pollak was asking for feedback on the @neynar/ui framework.",
-      "difficulty": "medium",
-      "category": "product-update"
-    },
-    {
-      "id": 7,
-      "question": "What financial milestone did the official Base account mention achieving in March 2024?",
-      "options": [
-        "Doubling their user base",
-        "Doubling their revenue",
-        "Reaching $1 billion TVL",
-        "Doubling their team size"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "The account stated: 'last week we doubled our revenue and I have no idea why'.",
+      "explanation": "The citation noted agents 'have gone from exploiting 2% of vulnerabilities... to 55.88%'",
       "difficulty": "medium",
       "category": "ecosystem"
     },
     {
-      "id": 8,
-      "question": "Which developer priority listed by Jesse Pollak focuses on 'vibe code mini apps'?",
+      "id": 12,
+      "question": "What direction did Jesse Pollak indicate for Farcaster infrastructure development following the statement, 'We read a chain now'?",
       "options": [
-        "Developer Infra",
-        "Neynar AI",
-        "App Studio",
-        "Webhook Filters"
-      ],
-      "correctIndex": 2,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse Pollak listed 'App studio: vibe code mini apps' as one of the top priorities in November 2025.",
-      "difficulty": "easy",
-      "category": "product-update"
-    },
-    {
-      "id": 9,
-      "question": "What was the purpose of simplifying webhook filter configurations on dev.neynar.com, as mentioned in the December 23rd, 2025 post?",
-      "options": [
-        "To reduce API call fees",
-        "To allow configuration via natural language using an App Studio agent",
-        "To support custom SQL queries",
-        "To ensure asynchronous deployment"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "The ultimate goal of simplifying the underlying MCP tool was to power the App Studio agent, allowing users to configure filters using natural language.",
-      "difficulty": "easy",
-      "category": "product-update"
-    },
-    {
-      "id": 10,
-      "question": "Dan Romero identified the 'hobgoblin of the terminally online mind' as which specific trait?",
-      "options": [
-        "High confidence despite low context",
-        "An inability to delegate tasks",
-        "Obsession with aesthetic perfection",
-        "Over-reliance on centralized platforms"
+        "We write to a chain next",
+        "We scale the chain next",
+        "We monitor the chain next",
+        "We secure the chain next"
       ],
       "correctIndex": 0,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Dan Romero defined the hobgoblin as 'high confidence despite low context'.",
+      "explanation": "JP's post: 'We read a chain now, we write to a chain next.'",
       "difficulty": "medium",
-      "category": "community"
-    },
-    {
-      "id": 11,
-      "question": "Which specific crypto/meme standard did Brian Armstrong reference in a post on January 15th, 2026?",
-      "options": [
-        "the $pepe standard",
-        "the $dickbutt standard",
-        "the $degen standard",
-        "the $base standard"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Brian Armstrong posted simply: 'the $dickbutt standard'.",
-      "difficulty": "medium",
-      "category": "community"
-    },
-    {
-      "id": 12,
-      "question": "When discussing unsolved vibe coding problems, Dan Romero noted that subdomains are not consumer-grade and that which company currently 'seems best' for deployment flow/domain names?",
-      "options": [
-        "Netlify",
-        "Replit",
-        "Vercel",
-        "GitHub Pages"
-      ],
-      "correctIndex": 2,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Dan Romero mentioned Vercel as seemingly the best solution for domain names/subdomains.",
-      "difficulty": "hard",
       "category": "technology"
     },
     {
       "id": 13,
-      "question": "What did Brian Armstrong use the Neynar App Studio to generate and share on January 10th, 2026?",
+      "question": "In March 2024, the official Base account posted about doubling which key metric 'last week'?",
       "options": [
-        "A rating of his undies",
-        "His daily tarot card result",
-        "A list of his top besties on Farcaster",
-        "A quote cast with an image attachment"
+        "Developer grants distributed",
+        "On-chain transactions",
+        "Revenue",
+        "Total Value Locked (TVL)"
       ],
       "correctIndex": 2,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "He posted: 'Check out my top besties on Farcaster! ... created with @neynar app studio'.",
+      "explanation": "The post stated: 'last week we doubled our revenue and I have no idea why.'",
       "difficulty": "easy",
-      "category": "community"
+      "category": "ecosystem"
     },
     {
       "id": 14,
-      "question": "In Dan Romero's suggested app idea, 'Sunday Times,' what is the primary restriction on the content of the post?",
+      "question": "Dan Romero offered a $100 bounty for the fewest lines of code script that could send what specific cast directly to Snapchain?",
       "options": [
-        "Must be a full thought piece",
-        "Must only be a URL link",
-        "Cannot contain images or video",
-        "Must be less than 140 characters"
+        "A prediction market resolution",
+        "A profile update",
+        "A 'gm' cast",
+        "A mint command"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "The rule was: 'Post is only a URL, e.g. link to a cast, tweet, blog, etc.'",
+      "explanation": "The bounty was for a 'Fewest lines of code script that can send a 'gm' cast directly to Snapchain.'",
       "difficulty": "medium",
       "category": "community"
     },
     {
       "id": 15,
-      "question": "What specific type of market did Jesse Pollak state he wanted to resolve, rather than make or bet on?",
+      "question": "What was the specified deadline for Dan Romero's Snapchain 'gm' cast script bounty?",
       "options": [
-        "Liquidity pools",
-        "Spot markets",
-        "Prediction markets",
-        "Perpetual futures"
+        "Fri Jan 23 at 1pm PT",
+        "Sat Jan 24 at 5pm PT",
+        "Mon Jan 30 at 8am PT",
+        "End of January 2026"
       ],
-      "correctIndex": 2,
+      "correctIndex": 0,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse Pollak said: 'everyone wants to make or bet on prediction markets. i want to resolve them.'",
-      "difficulty": "easy",
-      "category": "ecosystem"
-    },
-    {
-      "id": 16,
-      "question": "Jesse Pollak compared the market order spread on BTC/USD or BTC/USDC pairs between which two US exchanges?",
-      "options": [
-        "Binance US and Kraken",
-        "Coinbase Advanced and Robinhood",
-        "Gemini and Coinbase Pro",
-        "Fidelity and Schwab"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "He specifically listed Coinbase Advanced (1%) and Robinhood (0.85%).",
-      "difficulty": "medium",
-      "category": "ecosystem"
-    },
-    {
-      "id": 17,
-      "question": "What specific critique did Dan Romero have regarding the default aesthetics in vibe coding, citing a 'herding effect'?",
-      "options": [
-        "They lack proper mobile responsiveness",
-        "They rely too heavily on AI generation",
-        "They are too similar, citing Bootstrap / Shadcn",
-        "They are too difficult for beginners to customize"
-      ],
-      "correctIndex": 2,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Dan Romero noted, 'Default aesthetics are too similar, e.g. Bootstrap (in a prior era) / Shadcn herding effect'.",
-      "difficulty": "hard",
-      "category": "technology"
-    },
-    {
-      "id": 18,
-      "question": "What analogy did the Base account use in November 2022 to compare current crypto journalism?",
-      "options": [
-        "The invention of the printing press",
-        "Early media coverage of the internet revolution",
-        "The rise of cable news",
-        "The first automobile patents"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Base shared a piece comparing early internet journalism to crypto journalism.",
-      "difficulty": "medium",
-      "category": "ecosystem"
-    },
-    {
-      "id": 19,
-      "question": "Based on Jesse Pollak's priorities listed in November 2025, what specific data sources were required for 'Developer infra'?",
-      "options": [
-        "Mini Apps + Transaction Data",
-        "Ethereum + Polygon Data",
-        "Farcaster + onchain data",
-        "API + Webhook Data"
-      ],
-      "correctIndex": 2,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Priority 1 was 'Developer infra: Farcaster + onchain data'.",
-      "difficulty": "easy",
-      "category": "product-update"
-    },
-    {
-      "id": 20,
-      "question": "What was the technical reason cited for the minor downtime on dev.neynar.com on January 13th, 2026?",
-      "options": [
-        "Database migration",
-        "Security audit failure",
-        "Asynchronous deployments across frontend and backend",
-        "Hub synchronization issues"
-      ],
-      "correctIndex": 2,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "The post attributed the minor downtime to 'asynchronous deployments across frontend and backend.'",
-      "difficulty": "medium",
-      "category": "product-update"
-    },
-    {
-      "id": 21,
-      "question": "What advice did the official Base account seek from 'Gym goers' in March 2023?",
-      "options": [
-        "Best methods for protein intake",
-        "Best advice for staying consistent but still pushing yourself",
-        "How to manage soreness",
-        "Optimal workout split schedules"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "The question asked for the best advice for 'staying consistent but still pushing yourself.'",
+      "explanation": "The post listed: 'Deadline: Fri Jan 23 at 1pm PT'",
       "difficulty": "medium",
       "category": "community"
     },
     {
-      "id": 22,
-      "question": "Which specific technology did the Coinbase account build an (incomplete) Python port of, to learn more about how Hubs work?",
+      "id": 16,
+      "question": "What specific issue did Dan Romero encounter regarding the `SignedKeyRequestValidator` address while debugging with Claude Code?",
       "options": [
-        "Base Node SDK",
-        "@farcaster/hub-nodejs",
-        "Geth Ethereum Client",
-        "Zora Data Indexer"
+        "Rate limiting due to excessive calls",
+        "ABI version incompatibility",
+        "EIP-55 checksum enforcement failure",
+        "Insufficient gas estimation"
+      ],
+      "correctIndex": 2,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "DR noted: 'viem rejected the SignedKeyRequestValidator address due to incorrect mixed-case checksum (Fa vs fA)' related to EIP-55.",
+      "difficulty": "hard",
+      "category": "technology"
+    },
+    {
+      "id": 17,
+      "question": "After closing a fundraising round in November 2023, what was the first role the Coinbase account stated they were hiring for?",
+      "options": [
+        "A Blockchain Engineer",
+        "A Smart Contract Auditor",
+        "A Product Designer",
+        "A Community Manager"
+      ],
+      "correctIndex": 2,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "Coinbase stated: 'the first role we're hiring for is a product designer.'",
+      "difficulty": "easy",
+      "category": "community"
+    },
+    {
+      "id": 18,
+      "question": "Dan Romero found that the `KeyGateway` expected metadata to be encoded in what specific format?",
+      "options": [
+        "As flat parameters",
+        "As a JSON object",
+        "As a tuple (struct with 0x20 offset prefix)",
+        "As base64 encoded strings"
+      ],
+      "correctIndex": 2,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "DR noted: 'KeyGateway expects metadata encoded as a tuple (struct with 0x20 offset prefix), not flat parameters.'",
+      "difficulty": "hard",
+      "category": "technology"
+    },
+    {
+      "id": 19,
+      "question": "In his debugging notes, Dan Romero found that the official gRPC endpoint (crackle:3383) required a password, but which specific service/port appeared publicly accessible?",
+      "options": [
+        "The plain HTTP API on port 80",
+        "The HTTPS HTTP API on port 3381",
+        "The Bootstrap node IPs on port 8080",
+        "The Opaque Revert endpoint"
       ],
       "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "The post explicitly links to a Python port of '@farcaster/hub-nodejs'.",
-      "difficulty": "medium",
+      "explanation": "DR stated: 'Only the HTTPS HTTP API on port 3381 appears publicly accessible.'",
+      "difficulty": "hard",
       "category": "technology"
     },
     {
-      "id": 23,
-      "question": "Which entity/person was Jesse Pollak trying to assemble a team of 'white hat agents' to counter the autonomous exploit risk?",
+      "id": 20,
+      "question": "Dan Romero mentioned using ChatGPT to help him navigate which common business/HR platform by feeding it screenshots of the page?",
       "options": [
-        "Neynar",
-        "Farcaster",
-        "Coinbase",
-        "No entity named; it was a general query."
+        "Jira",
+        "Salesforce",
+        "Rippling",
+        "Greenhouse"
       ],
-      "correctIndex": 3,
+      "correctIndex": 2,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse Pollak shared the Anthropic report and then asked, 'Who is assembling the team of white hat agents?'",
+      "explanation": "DR stated: 'Any time I need to do something in Rippling I just take a screenshot of the page, feed into ChatGPT and ask what to do next.'",
+      "difficulty": "medium",
+      "category": "community"
+    },
+    {
+      "id": 21,
+      "question": "What specific documentation detail did Dan Romero mention was missing, causing him to debug the `validate` function ABI mismatch?",
+      "options": [
+        "The correct required gas limit",
+        "The exact contract source on Etherscan",
+        "The correct number of arguments (3, not 5)",
+        "The proper encoding for the mnemonic"
+      ],
+      "correctIndex": 2,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "DR noted: 'validate was initially called with 5 arguments; actual signature takes 3.' and debugging required reading contract source.",
+      "difficulty": "hard",
+      "category": "technology"
+    },
+    {
+      "id": 22,
+      "question": "Brian Armstrong used which Neynar product to create his 'Check out my top besties on Farcaster!' cast?",
+      "options": [
+        "Neynar SDK",
+        "Neynar App Studio",
+        "Neynar Bots",
+        "Neynar/UI"
+      ],
+      "correctIndex": 1,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "The post included the tagline: '☝️ created with @neynar app studio'",
+      "difficulty": "easy",
+      "category": "product-update"
+    },
+    {
+      "id": 23,
+      "question": "When debugging Farcaster transaction broadcasting, Dan Romero noted he had the mnemonic but was missing which component needed for acquiring OP Mainnet ETH?",
+      "options": [
+        "An associated key pair",
+        "A free RPC to broadcast transaction",
+        "The transaction hash",
+        "A gas estimation wallet"
+      ],
+      "correctIndex": 1,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "DR stated: 'I had mnemonic but no signer. So needed to get OP Mainnet ETH. 2. No free RPC to broadcast transaction.'",
       "difficulty": "medium",
       "category": "technology"
     },
     {
       "id": 24,
-      "question": "What was the core reason Jesse Pollak cited for the 'joyful' nature of feature requests they've already shipped?",
+      "question": "What was the primary purpose of the `improvements.md` file format Dan Romero suggested generating after an AI coding session?",
       "options": [
-        "It validates market demand.",
-        "It proves the product development team is preemptive.",
-        "It results in positive casting age metrics.",
-        "It suggests the requests were technically trivial."
+        "Tracking feature requests for the AI model",
+        "Listing every time the API docs were unclear/incorrect/outdated",
+        "Benchmarking the AI speed and efficiency",
+        "Logging all successful transactions"
       ],
       "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "The statement suggests that Neynar is already anticipating and building features before users formally request them, validating the product vision.",
-      "difficulty": "hard",
-      "category": "product-update"
-    },
-    {
-      "id": 25,
-      "question": "In his general advice for builders, Jesse Pollak stated the desired progression is 'from 1 to N,' followed by what directive?",
-      "options": [
-        "deploy fast",
-        "build more",
-        "iterate quickly",
-        "ship daily"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "The full post was: 'from 1 to N - build more!'",
-      "difficulty": "easy",
-      "category": "ecosystem"
-    },
-    {
-      "id": 26,
-      "question": "What was the specific exchange spread listed for Coinbase Advanced (BTC/USD or BTC/USDC) that Jesse Pollak mentioned?",
-      "options": [
-        "0.5%",
-        "0.85%",
-        "1%",
-        "2%"
-      ],
-      "correctIndex": 2,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "He noted Coinbase Advanced is at 1% while Robinhood is at 0.85%.",
-      "difficulty": "medium",
-      "category": "ecosystem"
-    },
-    {
-      "id": 27,
-      "question": "Which AI agent was Dan Romero trying to convince Claude to give money to?",
-      "options": [
-        "ChatGPT",
-        "Grok",
-        "Sora",
-        "Gemini"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Dan Romero asked: 'Has anyone been able to convince Claude to give money to Grok yet?'",
+      "explanation": "The prompt specified the purpose: 'list every time the docs were unclear/incorrect/outdated and you had to troubleshoot.'",
       "difficulty": "medium",
       "category": "technology"
     },
     {
-      "id": 28,
-      "question": "What specific item did Brian Armstrong ask the AI service @robot to rate?",
+      "id": 25,
+      "question": "The tool (MCP) powering the simplified webhook filter configuration will also be used to power which other upcoming feature?",
       "options": [
-        "rate my casting age",
-        "rate my clout",
-        "rate my undies",
-        "rate my besties"
+        "The Node.js SDK",
+        "The App Studio agent",
+        "The official Base L2 rollup",
+        "The gRPC endpoint"
+      ],
+      "correctIndex": 1,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "JP stated: 'the same MCP tool powering it will also power the App Studio agent.'",
+      "difficulty": "medium",
+      "category": "product-update"
+    },
+    {
+      "id": 26,
+      "question": "Which specific Farcaster HTTP endpoint did Dan Romero reference as 'no longer resolv[ing]' and referenced in older docs?",
+      "options": [
+        "crackle.farcaster.xyz:3381",
+        "hoyt.farcaster.xyz",
+        "dev.neynar.com",
+        "keygateway.farcaster.xyz"
+      ],
+      "correctIndex": 1,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "DR noted: 'hoyt.farcaster.xyz (referenced in older docs) no longer resolves.'",
+      "difficulty": "hard",
+      "category": "technology"
+    },
+    {
+      "id": 27,
+      "question": "Dan Romero mentioned that opaque revert behavior on `KeyGateway/KeyRegistry` returned no data, requiring what action to isolate the failures?",
+      "options": [
+        "Checking the global error log database",
+        "Manually simulating sub-calls (validator, IdRegistry)",
+        "Increasing the gas limit by 50%",
+        "Changing the RPC provider to a premium tier"
+      ],
+      "correctIndex": 1,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "DR stated it 'Required manual simulation of sub-calls (validator, IdRegistry) to isolate failures.'",
+      "difficulty": "hard",
+      "category": "technology"
+    },
+    {
+      "id": 28,
+      "question": "In his January 2026 posts, Dan Romero announced his plan to unfollow everyone and slowly rebuild his follow graph. What was his reasoning?",
+      "options": [
+        "To find new bots and agents",
+        "To improve engagement metrics",
+        "To clear out old/inactive accounts",
+        "To focus on niche developer APIs"
       ],
       "correctIndex": 2,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "He asked: 'rate my undies @robot'.",
+      "explanation": "DR stated: 'Planning to unfollow everyone and rebuild my follow graph slowly.' The implication is curation, not a specific technical reason.",
       "difficulty": "medium",
       "category": "community"
     },
     {
       "id": 29,
-      "question": "Which Coinbase co-founder shared a personal blog post discussing their recent discovery of being on the autism spectrum?",
+      "question": "Which specific company did Brian Armstrong repeatedly thank for sending him a 'beep' in January 2026?",
       "options": [
-        "Fred Ehrsam",
-        "Brian Armstrong",
-        "Mircea Pasoi",
-        "Dan Romero"
+        "@neynar",
+        "@beeper",
+        "@loground",
+        "@ace"
       ],
       "correctIndex": 2,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "The post linked to a personal blog by Mircea Pasoi.",
+      "explanation": "BA thanked @loground on 2026-01-23.",
       "difficulty": "easy",
       "category": "community"
     },
     {
       "id": 30,
-      "question": "Jesse Pollak mentioned that the same MCP tool powering dev.neynar.com would also power the App Studio agent to handle what specific data flow?",
+      "question": "What product update category did Jesse Pollak announce 'Just in time' for the holidays?",
       "options": [
-        "Natural language API calls",
-        "User authentication flows",
-        "Handling incoming webhooks",
-        "Database synchronization"
+        "Mainnet launch preparations",
+        "App Studio updates",
+        "Tokenomics revisions",
+        "Hub stability fixes"
       ],
-      "correctIndex": 2,
+      "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "The MCP tool helps users configure filters and 'handle incoming webhooks for their mini apps'.",
-      "difficulty": "medium",
+      "explanation": "JP announced: 'Just in time App Studio updates for you to build something over the holidays 🪐'",
+      "difficulty": "easy",
       "category": "product-update"
     },
     {
       "id": 31,
-      "question": "What concept did Dan Romero criticize in German energy policy in January 2026?",
+      "question": "What specific feature was added to the Node.js SDK documentation that allows users to quickly jump between the function page and API reference?",
       "options": [
-        "Reliance on wind energy",
-        "Shutting down nuclear plants and replacing them with coal",
-        "Over-dependence on solar power",
-        "High taxation on renewable sources"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "He listed the policy as: 'Shut down nuclear plants Replace with coal (!)'",
-      "difficulty": "medium",
-      "category": "ecosystem"
-    },
-    {
-      "id": 32,
-      "question": "What was the specific action Brian Armstrong mentioned he would perform to celebrate Beep v2.0?",
-      "options": [
-        "Buy a $DICKBUTT token",
-        "Change his username for a week",
-        "Send a beep to 100 people",
-        "Make a quote cast with an image"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "He stated: 'i will change my username for a week to celebrate beep v2.0'.",
-      "difficulty": "easy",
-      "category": "community"
-    },
-    {
-      "id": 33,
-      "question": "What specific gap in the planning process did Dan Romero believe an agent should fill for vibe coding, acting like a rigorous product/engineer thinker?",
-      "options": [
-        "Automating code deployment to Vercel",
-        "Determining the optimal database schema",
-        "Exposing the creator to more decisions upfront for a better initial product",
-        "Writing unit tests automatically"
-      ],
-      "correctIndex": 2,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "He thought the agent should help expose the creator to more decisions upfront, emphasizing curation and editing.",
-      "difficulty": "hard",
-      "category": "technology"
-    },
-    {
-      "id": 34,
-      "question": "Which Neynar employee did Jesse Pollak credit specifically for curating the @neynar/ui framework?",
-      "options": [
-        "@grin",
-        "@obringer.eth",
-        "@horsefacts.eth",
-        "@ace"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "The post credits the framework as 'curated by the humans at neynar (all @obringer.eth really)'.",
-      "difficulty": "hard",
-      "category": "community"
-    },
-    {
-      "id": 35,
-      "question": "When did the official Base account make its 'First cast'?",
-      "options": [
-        "October 24, 2022",
-        "March 25, 2023",
-        "April 18, 2023",
-        "March 15, 2024"
+        "An automated 'Try it now' experience",
+        "A live code editor",
+        "Integrated bug reporting",
+        "A QR code generator"
       ],
       "correctIndex": 0,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "The post dated October 24, 2022 stated: 'First cast - can’t wait to see where this road takes me!'",
-      "difficulty": "easy",
-      "category": "community"
-    },
-    {
-      "id": 36,
-      "question": "Jesse Pollak mentioned that automating the publishing documentation for the Node.js SDK allowed each function page to also link to which two corresponding elements?",
-      "options": [
-        "The GitHub repository and a video tutorial",
-        "The relevant API reference page and an easy 'Try it now' experience",
-        "The pricing page and the bug bounty report",
-        "The App Studio mini app and the webhook console"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "The links go to the relevant API reference page and back to the SDK page for an easy 'Try it now' experience.",
-      "difficulty": "hard",
+      "explanation": "The post mentioned 'an easy 'Try it now' experience' linking the pages.",
+      "difficulty": "medium",
       "category": "product-update"
     },
     {
-      "id": 37,
-      "question": "What type of cryptocurrency asset did Jesse Pollak mention he was trading on a mini app, noting he had 4/12 top tokens?",
+      "id": 32,
+      "question": "According to the cited Anthropic report, how much did AI agent exploit revenue increase from March 2025 until the report date?",
       "options": [
-        "TRADER tokens",
-        "Clanker tokens",
-        "Ape tokens",
-        "Beep tokens"
+        "From $500 to $4.6 million",
+        "From $5,000 to $4.6 million",
+        "From $50,000 to $500,000",
+        "From $5 million to $46 million"
       ],
       "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "He stated: 'I have 4/12 top Clanker tokens.'",
+      "explanation": "The report noted a leap 'from $5,000 to $4.6 million in total exploit revenue.'",
       "difficulty": "medium",
       "category": "ecosystem"
     },
     {
-      "id": 38,
-      "question": "What was Dan Romero's analogy for signing up for a new service?",
+      "id": 33,
+      "question": "What kind of media coverage was compared to 'crypto reporting of today' in a Base official post from 2022?",
       "options": [
-        "When he feels inspired by a trend",
-        "When the service he uses for hours a day is down",
-        "When he needs to solve an unsolved vibe coding problem",
-        "When he gets a notification from a competitor"
+        "Early television reporting",
+        "Early radio journalism",
+        "Early internet journalism",
+        "Early railroad coverage"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "He posted: 'I often sign up for a new service when the service I use for hours a day is down.'",
+      "explanation": "The post referred to 'how early media coverage of the internet revolution compares to that of crypto reporting of today.'",
+      "difficulty": "medium",
+      "category": "ecosystem"
+    },
+    {
+      "id": 34,
+      "question": "Brian Armstrong made a reference to a religious confession ('forgive me father, for i have beeped') while interacting with which application?",
+      "options": [
+        "TryEmerge",
+        "The $DICKBUTT standard",
+        "Beep.works",
+        "Neynar App Studio"
+      ],
+      "correctIndex": 2,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "The post followed a series of posts mentioning Beep.works and asking for beeps.",
       "difficulty": "medium",
       "category": "community"
     },
     {
-      "id": 39,
-      "question": "What was the initial job role Coinbase was hiring for after closing their fundraising round in November 2023?",
+      "id": 35,
+      "question": "The Coinbase user (Mircea Pasoi) stated they had built an incomplete Python port of which Farcaster component to better understand how it works?",
       "options": [
-        "Blockchain Engineer",
-        "Product Designer",
-        "Community Manager",
-        "Head of Research"
+        "@farcaster/hub-nodejs",
+        "Neynar APIs",
+        "Snapchain Validator",
+        "KeyRegistry contract"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "The user built a Python port of '@farcaster/hub-nodejs'.",
+      "difficulty": "easy",
+      "category": "technology"
+    },
+    {
+      "id": 36,
+      "question": "In his troubleshooting notes, Dan Romero found that the Snapchain endpoints (like Bootstrap node IPs and crackle) required what undocumented security requirement?",
+      "options": [
+        "Multi-factor authentication",
+        "Password protection",
+        "VPC whitelisting",
+        "HTTPS-only communication"
+      ],
+      "correctIndex": 3,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "DR noted: 'Bootstrap node IPs and crackle reject plain HTTP (“Client sent an HTTP request to an HTTPS server”). This requirement is undocumented.'",
+      "difficulty": "hard",
+      "category": "technology"
+    },
+    {
+      "id": 37,
+      "question": "What was the specified reward amount for Dan Romero's 'gm' cast script bounty?",
+      "options": [
+        "$50 in ETH",
+        "$100 in USDC",
+        "$250 in BASE",
+        "1 Clanker Token"
       ],
       "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "The first role hiring for was a product designer to help shape the product from the ground up.",
+      "explanation": "Bounty: '$100 in USDC'",
+      "difficulty": "medium",
+      "category": "community"
+    },
+    {
+      "id": 38,
+      "question": "During his Claude Code debugging, Dan Romero noted that which specific address/validator was rejected due to EIP-55 checksum issues?",
+      "options": [
+        "The KeyGateway address",
+        "The Validator function address",
+        "The SignedKeyRequestValidator address",
+        "The crackle.farcaster.xyz endpoint"
+      ],
+      "correctIndex": 2,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "DR stated 'viem rejected the SignedKeyRequestValidator address due to incorrect mixed-case checksum'.",
+      "difficulty": "hard",
+      "category": "technology"
+    },
+    {
+      "id": 39,
+      "question": "What was the status of the 'dev container' that Jesse Pollak hoped to achieve following the January 23rd update to Neynar Studio?",
+      "options": [
+        "Always ready",
+        "WASM optimized",
+        "Fully deprecated",
+        "On-chain verified"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "The goal was 'faster availability for the dev container (goal is to get to always ready)'",
       "difficulty": "easy",
-      "category": "ecosystem"
+      "category": "product-update"
     },
     {
       "id": 40,
-      "question": "What item did Brian Armstrong reference as part of his 'daily routine' alongside buying a megapot if he gets a lucky card?",
+      "question": "What action did the Coinbase account announce in October 2023 regarding the 'Farcaster Is Open For Everyone' collectible?",
       "options": [
-        "Checking his $DICKBUTT standard",
-        "Pulling his daily tarot card",
-        "Sending a beep to his bestie",
-        "Analyzing his casts over the last year"
+        "Burned the token",
+        "Traded the token",
+        "Minted the token",
+        "Delisted the token"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "His routine included: 'pull my daily tarot card buy a megapot if i get a lucky card'.",
+      "explanation": "The post states: 'I just minted Farcaster Is Open For Everyone'.",
       "difficulty": "easy",
       "category": "community"
     },
     {
       "id": 41,
-      "question": "What capability did Jesse Pollak ask @neynar to analyze regarding his casts over the last year?",
+      "question": "Dan Romero suggested using a specific prompt for which AI tool to help generate improvements for API documentation?",
       "options": [
-        "His top performing cast",
-        "His average engagement rate",
-        "His biggest weakness",
-        "His total casting age"
+        "ChatGPT",
+        "Gemini Advanced",
+        "Claude Code",
+        "Perplexity"
       ],
       "correctIndex": 2,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "He asked @neynar to 'analyze my casts over the last year and tell me my biggest weakness'.",
+      "explanation": "The prompt was found 'to be a useful prompt at the end of a Claude Code session'.",
       "difficulty": "medium",
-      "category": "community"
+      "category": "technology"
     },
     {
       "id": 42,
-      "question": "What method of communication did Brian Armstrong encourage people to use to reach him, mentioning he would read every single one?",
+      "question": "Which specific Farcaster infrastructure components did Dan Romero note returned 'opaque revert behavior' (no error data)?",
       "options": [
-        "Twitter DMs",
-        "Email",
-        "Beep",
-        "A quote cast"
+        "The Neynar API and dev portal",
+        "The Snapchain and Bootstrap node",
+        "KeyGateway/KeyRegistry",
+        "The Node.js SDK"
       ],
       "correctIndex": 2,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "He referenced the Beep application several times, saying he'd read every 'beep' sent.",
-      "difficulty": "medium",
-      "category": "community"
-    },
-    {
-      "id": 43,
-      "question": "Based on Jesse Pollak's data point, what was the total exploit revenue generated in 2025 by human attackers, $4.6 million of which AI could have executed autonomously?",
-      "options": [
-        "$5,000",
-        "$4.6 million",
-        "$55.88 million",
-        "The total amount was not specified, only the AI executable portion."
-      ],
-      "correctIndex": 3,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "The text states AI exploits jumped 'from $5,000 to $4.6 million in total exploit revenue.' $4.6 million is the measure of revenue from *AI executable* exploits, not the total revenue generated by all human attackers.",
+      "explanation": "DR stated: 'KeyGateway/KeyRegistry reverts return no data (“execution reverted”).'",
       "difficulty": "hard",
       "category": "technology"
     },
     {
-      "id": 44,
-      "question": "What specific item did Brian Armstrong request an AI image generator (@tryemerge) to create for him?",
+      "id": 43,
+      "question": "In his January posts, Brian Armstrong requested which bot to 'rate my undies'?",
       "options": [
-        "An image of him next to a megapot",
-        "A quote cast with an image attachment",
-        "A full body image of him sitting across from the Dino priest",
-        "A depiction of the $dickbutt standard"
+        "@neynar",
+        "@beeper",
+        "@robot",
+        "@tryemerge"
       ],
       "correctIndex": 2,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "He requested an image of himself sitting on the other side of a confessional with the Dino priest.",
+      "explanation": "BA posted: 'rate my undies @robot'",
       "difficulty": "medium",
       "category": "community"
     },
     {
-      "id": 45,
-      "question": "Which of these was NOT listed by Dan Romero as an unsolved vibe coding problem?",
+      "id": 44,
+      "question": "What percentage of 'top Clanker tokens' did Jesse Pollak claim to own on a mini app on December 9th, 2025?",
       "options": [
-        "Deployment flow with database, auth, payments",
-        "Domain names / subdomains complexity",
-        "Lack of high-quality educational resources",
-        "Default aesthetics being too similar"
+        "1/12",
+        "4/12",
+        "8/12",
+        "10/12"
       ],
-      "correctIndex": 2,
+      "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "He listed deployment flow, domain names, aesthetics, and planning/agents. Lack of educational resources was not mentioned.",
-      "difficulty": "medium",
-      "category": "technology"
-    },
-    {
-      "id": 46,
-      "question": "What did Jesse Pollak mention the App Studio updates were 'Just in time' for?",
-      "options": [
-        "Farcaster V3 launch",
-        "App Studio agent deployment",
-        "Building something over the holidays",
-        "Neynar AI rollout"
-      ],
-      "correctIndex": 2,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "The updates were 'Just in time App Studio updates for you to build something over the holidays'.",
+      "explanation": "JP stated: 'I have 4/12 top Clanker tokens.'",
       "difficulty": "easy",
       "category": "community"
     },
     {
-      "id": 47,
-      "question": "What kind of flow did Jesse Pollak specifically mention simplifying by abstracting terms like 'parent URL' and 'parent hash'?",
+      "id": 45,
+      "question": "What product update did Jesse Pollak refer to as 'the most joyful feature requests'?",
       "options": [
-        "Authentication protocols",
-        "Webhook filters configuration",
-        "SDK function calls",
-        "Mini app charts display"
+        "The ones requested by community leaders",
+        "The ones we've already shipped",
+        "The ones that involve scaling architecture",
+        "The ones implemented by AI agents"
       ],
       "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "These changes were made to simplify configuring webhook filters.",
+      "explanation": "JP stated: 'the most joyful feature requests are the ones we've already shipped'",
+      "difficulty": "easy",
+      "category": "product-update"
+    },
+    {
+      "id": 46,
+      "question": "What 'easy experience' was included in the automated Node.js SDK documentation alongside the relevant API reference page?",
+      "options": [
+        "A link back to the SDK page for an easy 'Try it now' experience",
+        "A simplified JSON viewer",
+        "A button to connect to a free RPC",
+        "Integrated prediction markets"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "The documentation links 'back to the SDK page for an easy 'Try it now' experience.'",
       "difficulty": "medium",
       "category": "product-update"
     },
     {
-      "id": 48,
-      "question": "What was the purpose of the notification system in Dan Romero's 'Sunday Times' app idea?",
+      "id": 47,
+      "question": "Dan Romero mentioned that he had to inspect the `docker-compose bootstrap config` to eventually find the IP for which Farcaster component?",
       "options": [
-        "To send users a curated feed of trending links",
-        "To notify users with a list of 1 link from everyone they follow",
-        "To alert users when a new post is available",
-        "To remind users to post their weekly URL"
+        "crackle.farcaster.xyz:3381",
+        "The KeyRegistry",
+        "The gRPC password endpoint",
+        "The Snapchain writing guide"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "The goal was a 'Notification with a list of 1 link from everyone you follow'.",
+      "explanation": "He eventually discovered 'crackle.farcaster.xyz:3381 via the Snapchain writing guide' after inspecting docker-compose to find IPs.",
+      "difficulty": "hard",
+      "category": "technology"
+    },
+    {
+      "id": 48,
+      "question": "Brian Armstrong requested which image generation AI tool to create a 'full body image of me sitting on the other side of this confessional, sharing my deepest darkest thoughts with the Dino priest'?",
+      "options": [
+        "@tryemerge",
+        "@robot",
+        "Claude Code",
+        "DALL-E 3"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "BA tagged '@tryemerge make a full body image of me...' in the post.",
       "difficulty": "medium",
       "category": "community"
     },
     {
       "id": 49,
-      "question": "What was the first service the Coinbase account mentioned needing to hire for after its funding round?",
+      "question": "What news source did Dan Romero link on January 24th, 2026, regarding 'Exodus - The largest wealth flight'?",
       "options": [
-        "Engineer to build a Python Hub port",
-        "Product Designer to shape the product",
-        "Marketer to focus on web3 articles",
-        "Recruiter for AI agents"
+        "The Verge",
+        "Pirate Wires",
+        "TechCrunch",
+        "Quorum Media"
       ],
       "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "They were hiring a product designer to shape the product from the ground up.",
-      "difficulty": "easy",
+      "explanation": "DR linked to 'https://www.piratewires.com/p/exodus-the-largest-wealth-flight'.",
+      "difficulty": "medium",
       "category": "ecosystem"
     },
     {
       "id": 50,
-      "question": "Based on Jesse Pollak's stated priorities, which development goal involves adding agent capabilities and building in-feed agents on Neynar?",
+      "question": "Dan Romero noted a 'sudden uptick in obvious (?) spam' in his inbox, linking an article suggesting which specific email filter was broken?",
       "options": [
-        "App Studio",
-        "Developer Infra",
-        "Neynar AI",
-        "Onchain Data"
+        "Outlook's Junk Mail filter",
+        "ProtonMail's spam protection",
+        "iCloud Mail's filter",
+        "Gmail's spam filter"
       ],
-      "correctIndex": 2,
+      "correctIndex": 3,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Priority 2 was 'Neynar AI: add agent capabilities, build in-feed agents on neynar'.",
+      "explanation": "DR linked a Verge article titled 'Gmail’s spam filter broken'.",
       "difficulty": "medium",
-      "category": "technology"
+      "category": "ecosystem"
+    },
+    {
+      "id": 51,
+      "question": "What was the noted market order spread percentage for BTC/USD or BTC/USDC pairs on Coinbase Advanced, according to Jesse Pollak?",
+      "options": [
+        "0.85%",
+        "1.00%",
+        "0.05%",
+        "2.00%"
+      ],
+      "correctIndex": 1,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "JP stated: 'coinbase advanced is at 1%'",
+      "difficulty": "easy",
+      "category": "ecosystem"
     }
   ]
 }
