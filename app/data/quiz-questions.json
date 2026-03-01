@@ -1,807 +1,791 @@
 {
-  "lastUpdated": "2026-02-22T02:38:01.119144Z",
-  "weekNumber": 11,
-  "totalQuestions": 50,
+  "lastUpdated": "2026-03-01T02:44:59.339260Z",
+  "weekNumber": 12,
+  "totalQuestions": 49,
   "questions": [
     {
       "id": 1,
-      "question": "What mission did Jesse Pollak describe for @grin in February 2026?",
+      "question": "What website did Jesse Pollak mention for getting daily reward credits to build on?",
       "options": [
-        "Sending bugs right to jail",
-        "Minting 1 million NFTs",
-        "Optimizing L3 latency",
-        "Automating developer payroll"
+        "neynar.com/studio",
+        "base.org/build",
+        "farcaster.xyz",
+        "coinbase.com/dev"
       ],
       "correctIndex": 0,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "In his post on Feb 19, 2026, Jesse stated @grin is on a mission to send bugs right to jail via a linear process.",
+      "explanation": "In his post on 2026-02-28, Jesse Pollak mentioned 'daily reward credits to build on neynar.com/studio'.",
       "difficulty": "easy",
-      "category": "ecosystem"
+      "category": "product-update"
     },
     {
       "id": 2,
-      "question": "Which game's farms are Jesse Pollak's kids now asking for?",
+      "question": "On February 24, 2026, Jesse Pollak expected instability due to which technical event?",
       "options": [
-        "Farmville",
-        "Fruitling Valley",
-        "Base Garden",
-        "Dota 2"
+        "Database migration",
+        "Shard 0 cutover to updated validator set",
+        "Farcaster Hub upgrade",
+        "Mainnet hardfork"
       ],
       "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse mentioned on Feb 15, 2026, that his kids are now asking for their own /fruitling-valley farms.",
-      "difficulty": "easy",
-      "category": "community"
+      "explanation": "Jesse specifically noted instability around 12:00 PM UTC on Feb 24 when 'shard 0 cuts over to the updated validator set'.",
+      "difficulty": "medium",
+      "category": "technology"
     },
     {
       "id": 3,
-      "question": "In what university lab did Jesse Pollak pull all-nighters playing Dota and LoL?",
+      "question": "What is 'The Neynar Way' according to Jesse Pollak's description of fixing bugs?",
       "options": [
-        "MIT Media Lab",
-        "Stanford Blockchain Club",
-        "USC GamePipe Lab",
-        "Berkeley SkyDeck"
+        "1. Code 2. Ship 3. Test",
+        "1. Linear ticket 2. Magic 3. Test + review 4. Ship 5. Reply",
+        "1. Discord report 2. Fix 3. Deploy",
+        "1. Brainstorm 2. Build 3. Feedback"
       ],
-      "correctIndex": 2,
+      "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse shared that during grad school he played Dota and LoL at USC’s GamePipe Lab.",
+      "explanation": "Jesse outlined the 5-step process involving Linear tickets and 'magic' on 2026-02-19.",
       "difficulty": "medium",
       "category": "community"
     },
     {
       "id": 4,
-      "question": "According to Jesse Pollak, what has shortened the time span of the effort-reward cycle in coding?",
+      "question": "What game did Jesse Pollak compare the modern software building cycle to?",
       "options": [
-        "High-speed internet",
-        "Coding agents",
-        "Solidity compilers",
-        "Lower gas fees"
+        "World of Warcraft",
+        "Fortnite",
+        "DoTA or LoL",
+        "Chess"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "In his Feb 14 post, Jesse noted that coding agents have shortened the effort-reward cycle to feel as rewarding as a game.",
-      "difficulty": "medium",
-      "category": "technology"
+      "explanation": "Jesse mentioned pulling all-nighters playing DoTA or LoL and noted that coding agents make building feel as rewarding as a game.",
+      "difficulty": "easy",
+      "category": "community"
     },
     {
       "id": 5,
-      "question": "Between what hours did Farcaster perform database layer changes on February 5, 2026?",
+      "question": "What was the reported global p95 latency improvement for @mcilroyc?",
       "options": [
-        "8:00 AM - 9:00 AM PST",
-        "Noon - 1:00 PM PST",
-        "Midnight - 1:00 AM PST",
-        "5:00 PM - 6:00 PM PST"
+        "20% less",
+        "50% less",
+        "75% less",
+        "90% less"
       ],
       "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse notified users of significant database changes occurring between noon and 1 PM PST on Feb 5.",
-      "difficulty": "medium",
-      "category": "product-update"
-    },
-    {
-      "id": 6,
-      "question": "Which hardware device did Jesse Pollak suggest combining with an OpenClaw agent?",
-      "options": [
-        "Vision Pro",
-        "G1 Humanoid",
-        "Tesla Bot",
-        "Rabbit R1"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse asked if anyone had given an OpenClaw agent access to a humanoid like the G1 to move around their home.",
+      "explanation": "On 2026-01-30, Jesse shared that there was '50% less global p95 latency' for the user.",
       "difficulty": "medium",
       "category": "technology"
     },
     {
-      "id": 7,
-      "question": "What fictional item did Jesse compare to the future of LLMs combined with folding displays?",
+      "id": 6,
+      "question": "Which fictional object did Jesse Pollak compare to the future of LLMs and folding displays?",
       "options": [
         "The Hitchhiker's Guide",
         "The Marauder's Map",
-        "Tom Riddle's Diary",
+        "Tom Riddle's diary",
         "The Minority Report screen"
       ],
       "correctIndex": 2,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse posted on Jan 30 that Tom Riddle's diary will no longer be fiction due to LLMs and folding display innovation.",
-      "difficulty": "medium",
+      "explanation": "Jesse stated that 'Tom Riddle’s diary will no longer be fiction' due to LLMs/agents and folding displays.",
+      "difficulty": "easy",
       "category": "technology"
     },
     {
       "id": 8,
-      "question": "Which country's cricket team did Jesse Pollak credit with 'S tier shit posting'?",
+      "question": "According to Dan Romero, what is the 'most important thing' that spending money on sign-ups doesn't solve?",
       "options": [
-        "Australia",
-        "India",
-        "Iceland",
-        "England"
+        "User acquisition",
+        "Brand awareness",
+        "Retention",
+        "Protocol security"
       ],
       "correctIndex": 2,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse shared a link to Iceland Cricket, noting they were missing S tier shit posting until Iceland showed up.",
-      "difficulty": "easy",
-      "category": "community"
+      "explanation": "Dan Romero explained on 2026-02-19 that spending money helps sign-ups but 'What it doesn't solve is the most important thing -- retention.'",
+      "difficulty": "medium",
+      "category": "product-update"
     },
     {
       "id": 9,
-      "question": "What new capabilities were added to Neynar Studio on the web in January 2026?",
+      "question": "What was the peak 30-day retention percentage Farcaster occasionally reached but couldn't maintain?",
       "options": [
-        "Video editing and thumbnails",
-        "Environment Variables, secrets, and file browsing",
-        "Automated tax reporting",
-        "Direct minting to OpenSea"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse listed Environment Variables, secrets, and browsing files as new updates for Neynar Studio on Jan 23.",
-      "difficulty": "medium",
-      "category": "product-update"
-    },
-    {
-      "id": 10,
-      "question": "Who did Jesse Pollak give 'massive props' to for making Farcaster what it is today?",
-      "options": [
-        "Vitalik Buterin",
-        "dwr and v",
-        "Brian Armstrong",
-        "The Base official team"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse credited @dwr (Dan Romero) and @v (Varun Srinivasan) for the success of Farcaster in his Jan 21 post.",
-      "difficulty": "easy",
-      "category": "ecosystem"
-    },
-    {
-      "id": 11,
-      "question": "What did Jesse Pollak say puts ChatGPT and Gemini distribution into perspective?",
-      "options": [
-        "The price of NVIDIA stock",
-        "The late discovery of Claude/Anthropic products",
-        "The speed of L2 adoption",
-        "The lack of mobile apps"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse noted he was surprised people were discovering Claude so late, highlighting ChatGPT and Gemini's massive distribution.",
-      "difficulty": "medium",
-      "category": "ecosystem"
-    },
-    {
-      "id": 12,
-      "question": "Jesse Pollak noted that Node.js SDK documentation now links each function page to what?",
-      "options": [
-        "A YouTube tutorial",
-        "The relevant API reference page",
-        "Jesse's personal blog",
-        "The Coinbase Advanced exchange"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse posted on Jan 2 that SDK functions now link to relevant API reference pages for an easy 'Try it now' experience.",
-      "difficulty": "hard",
-      "category": "product-update"
-    },
-    {
-      "id": 13,
-      "question": "In March 2024, what surprising statistic did the official Base account report?",
-      "options": [
-        "Gas fees dropped 99%",
-        "Revenue doubled in one week",
-        "Transactions hit 1 billion",
-        "1 million users joined in a day"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "On March 15, 2024, @base_official posted: 'last week we doubled our revenue and I have no idea why.'",
-      "difficulty": "easy",
-      "category": "ecosystem"
-    },
-    {
-      "id": 14,
-      "question": "What was the date of the first cast from the official Base account?",
-      "options": [
-        "October 24, 2022",
-        "January 1, 2023",
-        "March 25, 2023",
-        "November 8, 2022"
-      ],
-      "correctIndex": 0,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "The official Base account's first cast was posted on October 24, 2022.",
-      "difficulty": "hard",
-      "category": "ecosystem"
-    },
-    {
-      "id": 15,
-      "question": "According to Dan Romero, what is the most important metric that spending money on acquisition doesn't solve?",
-      "options": [
-        "Revenue",
-        "Onboarding speed",
-        "Retention",
-        "Total downloads"
-      ],
-      "correctIndex": 2,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Dan Romero stated on Feb 19, 2026, that spending money can help sign ups, but it doesn't solve retention.",
-      "difficulty": "easy",
-      "category": "product-update"
-    },
-    {
-      "id": 16,
-      "question": "What specific 30-day retention percentage did Dan Romero say Farcaster briefly hit but couldn't maintain?",
-      "options": [
-        "10%",
-        "20%",
-        "50%",
-        "75%"
+        ">10%",
+        ">20%",
+        ">50%",
+        ">75%"
       ],
       "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
       "explanation": "Dan Romero mentioned they had brief periods where 30d retention was >20%, but it didn't stick.",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "category": "product-update"
     },
     {
-      "id": 17,
-      "question": "What quip about fundraising did Dan Romero share from an older Silicon Valley operator?",
+      "id": 10,
+      "question": "What is the 'hors d'oeuvres' quip Dan Romero shared regarding fundraising?",
       "options": [
-        "When they pass hors d'oeuvres, take two",
-        "Burn it if you've got it",
-        "Never raise on a Friday",
-        "ABC: Always Be Closing"
+        "Eat before you're hungry",
+        "When they are passing hors d'oeuvres, take two",
+        "Never pay for snacks",
+        "The best food is free"
+      ],
+      "correctIndex": 1,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "He used this quip to explain why he raised a lot of money when timing was good, even if they didn't spend it all.",
+      "difficulty": "easy",
+      "category": "ecosystem"
+    },
+    {
+      "id": 11,
+      "question": "Which specific technical achievement did Dan Romero highlight besides Farcaster Hubs?",
+      "options": [
+        "Snapchain",
+        "Base Layer 3",
+        "Optimism Superchain",
+        "Farcaster Wallet"
       ],
       "correctIndex": 0,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Dan quoted the advice: 'When they are passing hors d'oeuvres, take two' to explain why they raised so much money.",
-      "difficulty": "medium",
-      "category": "ecosystem"
-    },
-    {
-      "id": 18,
-      "question": "Dan Romero mentioned 'Prior art' for Farcaster Frames including a mint button from what date?",
-      "options": [
-        "January 2023",
-        "May 2024",
-        "October 2022",
-        "February 2026"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Dan cited a 'May 2024 mint button on FC' as prior art against claims of 'stealing' ideas.",
+      "explanation": "Dan Romero noted 'Hubs and Snapchain were / are an impressive technical achievement' in his post on 2026-02-19.",
       "difficulty": "hard",
-      "category": "ecosystem"
+      "category": "technology"
     },
     {
-      "id": 19,
-      "question": "What two technical achievements was Dan Romero particularly proud of for the Farcaster team?",
+      "id": 12,
+      "question": "What brand did Dan Romero recommend for ordering clothes based on saved sizes?",
       "options": [
-        "L3 scaling and NFT bridges",
-        "Hubs and Snapchain",
-        "The Node.js SDK and API",
-        "Webhooks and Auth upgrades"
+        "Zara",
+        "Proper Cloth",
+        "Dunkin",
+        "Erewhon"
       ],
       "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Dan mentioned that Hubs and Snapchain were an 'impressive technical achievement' in his closing thoughts.",
+      "explanation": "Dan Romero posted that he is a 'big fan of proper cloth' and it has the 'best website to order new items'.",
+      "difficulty": "easy",
+      "category": "community"
+    },
+    {
+      "id": 13,
+      "question": "What did Brian Armstrong call the 'nuts' database he plans to use in a side project?",
+      "options": [
+        "SpacetimeDB",
+        "Postgres",
+        "MongoBase",
+        "FireStore"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "On 2026-02-28, Brian Armstrong posted 'lmao spacetimedb is nuts' and said he'd try it.",
       "difficulty": "medium",
       "category": "technology"
     },
     {
-      "id": 20,
-      "question": "Which company did Dan Romero support to steward Farcaster's development going forward?",
+      "id": 14,
+      "question": "What is the core value Brian Armstrong associated with his 'alphalist' monetization idea?",
       "options": [
-        "Merkle",
-        "Neynar",
-        "Coinbase",
-        "Anthropic"
+        "Privacy == Freedom",
+        "Attention == Price",
+        "Speed == Power",
+        "Security == Safety"
       ],
       "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "On Feb 17, Dan posted: 'I'm supportive of Neynar stewarding Farcaster's development.'",
+      "explanation": "Brian mentioned a sponsorship idea that 'aligns with the core value of attention == price'.",
+      "difficulty": "hard",
+      "category": "product-update"
+    },
+    {
+      "id": 15,
+      "question": "What animal emoji did Brian Armstrong use in his post about 'deep dark secrets'?",
+      "options": [
+        "Wolf",
+        "Dinosaur",
+        "Cat",
+        "Bee"
+      ],
+      "correctIndex": 1,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "Brian used a dinosaur (🦖) emoji in his post about his alpha list on 2026-02-19.",
+      "difficulty": "easy",
+      "category": "community"
+    },
+    {
+      "id": 16,
+      "question": "Brian Armstrong's security PSA focused on which type of attack?",
+      "options": [
+        "Phishing",
+        "Homograph attacks",
+        "Sybil attacks",
+        "Replay attacks"
+      ],
+      "correctIndex": 1,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "Brian warned about homograph attacks using identical-looking Cyrillic characters in curl commands.",
+      "difficulty": "medium",
+      "category": "technology"
+    },
+    {
+      "id": 17,
+      "question": "Which tool did Brian Armstrong suggest for protection against Cyrillic character attacks?",
+      "options": [
+        "Tirith",
+        "Shield",
+        "Guardian",
+        "OpenClaw"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "He recommended checking out 'tirith' to stay protected from these specific attacks.",
+      "difficulty": "medium",
+      "category": "technology"
+    },
+    {
+      "id": 18,
+      "question": "What free AI model provided by NVIDIA did Brian Armstrong recommend to 'vibecoders'?",
+      "options": [
+        "GPT-4o",
+        "Claude 3.5",
+        "Kimi 2.5",
+        "Llama 3"
+      ],
+      "correctIndex": 2,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "Brian shared a link to the 'free unlimited kimi 2.5 model provided by nvidia' on 2026-02-03.",
+      "difficulty": "medium",
+      "category": "product-update"
+    },
+    {
+      "id": 19,
+      "question": "Jesse Pollak noted that Neynar is working on a dev container with what specific goal?",
+      "options": [
+        "Zero cost",
+        "Always ready",
+        "Multi-chain support",
+        "Mobile first"
+      ],
+      "correctIndex": 1,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "In his update on 2026-01-23, Jesse stated the goal for the dev container is to 'get to always ready'.",
+      "difficulty": "hard",
+      "category": "technology"
+    },
+    {
+      "id": 20,
+      "question": "Base Official reported doubling revenue on what date?",
+      "options": [
+        "2023-04-18",
+        "2024-03-15",
+        "2026-02-28",
+        "2022-10-24"
+      ],
+      "correctIndex": 1,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "On 2024-03-15, the official Base account posted 'last week we doubled our revenue'.",
       "difficulty": "easy",
       "category": "ecosystem"
     },
     {
       "id": 21,
-      "question": "In what currency did Merkle send out the final Warps refund?",
+      "question": "Who does Jesse Pollak credit for building Farcaster infrastructure 'before hubs were a thing'?",
       "options": [
-        "Warp Points",
-        "ETH",
-        "USDC",
-        "DEGEN"
+        "Brian Armstrong",
+        "The Neynar team and himself",
+        "Vitalik Buterin",
+        "Coinbase Engineering"
+      ],
+      "correctIndex": 1,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "Jesse stated: '@rish, the Neynar team, and I have been building infrastructure for Farcaster before hubs were a thing.'",
+      "difficulty": "medium",
+      "category": "ecosystem"
+    },
+    {
+      "id": 22,
+      "question": "What specific spread did Jesse Pollak mention for BTC/USD on Coinbase Advanced?",
+      "options": [
+        "0.1%",
+        "0.5%",
+        "1%",
+        "2%"
       ],
       "correctIndex": 2,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Dan Romero issued a PSA on Feb 14 stating 'Merkle sent out the final warps refund in USDC.'",
-      "difficulty": "easy",
-      "category": "product-update"
-    },
-    {
-      "id": 22,
-      "question": "According to Dan Romero, what is a current blocker for coding agents that creates an opportunity for stablecoins?",
-      "options": [
-        "Lack of compute",
-        "Payments and virtual card APIs",
-        "Human oversight",
-        "Gas limit"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Dan noted that payments are a blocker for agents because virtual card providers require a 'Contact Us' form.",
-      "difficulty": "medium",
-      "category": "technology"
+      "explanation": "Jesse noted 'coinbase advanced is at 1%' in his query about market order spreads.",
+      "difficulty": "hard",
+      "category": "ecosystem"
     },
     {
       "id": 23,
-      "question": "What is 'Balatro Bench'?",
+      "question": "Mircea Pasoi built a port of @farcaster/hub-nodejs in which language?",
       "options": [
-        "A developer leaderboard",
-        "A website Jesse Pollak shared on Feb 13",
-        "A gym consistency app",
-        "A new Farcaster channel"
+        "Ruby",
+        "Go",
+        "Python",
+        "Rust"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Dan Romero shared a link to balatrobench.com on Feb 13, 2026.",
-      "difficulty": "easy",
-      "category": "community"
+      "explanation": "Mircea posted on 2023-04-09 that he built an '(incomplete) Python port' of the nodejs hub.",
+      "difficulty": "medium",
+      "category": "technology"
     },
     {
       "id": 24,
-      "question": "Brian Armstrong asked for feedback on the Beeper app, questioning if users would open it more if it was:",
+      "question": "What was the date of Base Official's first cast?",
       "options": [
-        "Free",
-        "A native app",
-        "Multi-chain",
-        "Built on Ethereum L1"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Brian's first brainstorming question was 'do you think you would open the beeper app more if it was a native app?'",
-      "difficulty": "medium",
-      "category": "product-update"
-    },
-    {
-      "id": 25,
-      "question": "What did Brian Armstrong offer to send via 'beeps' to his alpha list?",
-      "options": [
-        "Investment advice",
-        "Rants about openclaw hallucinations",
-        "Free USDC",
-        "Secret Base access codes"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Brian listed 'rants about my openclaw agent hallucinating' as one of the things he'll be sending.",
-      "difficulty": "medium",
-      "category": "community"
-    },
-    {
-      "id": 26,
-      "question": "What security threat did Brian Armstrong warn about involving identical-looking Cyrillic characters?",
-      "options": [
-        "Phishing",
-        "Homograph attacks",
-        "Sybil attacks",
-        "Eclipse attacks"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Brian warned about homograph attacks using Cyrillic characters in curl copy-pastes for openclaw.",
-      "difficulty": "medium",
-      "category": "technology"
-    },
-    {
-      "id": 27,
-      "question": "What tool did Brian Armstrong suggest checking out to stay protected from homograph attacks?",
-      "options": [
-        "OpenClaw",
-        "Tirith",
-        "Claude Code",
-        "GSD"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Brian recommended checking out 'tirith' (github.com/sheeki03/tirith) to stay protected.",
-      "difficulty": "hard",
-      "category": "technology"
-    },
-    {
-      "id": 28,
-      "question": "Brian Armstrong shared a link to a marketplace where agents hire each other under on-chain escrow. What was it called?",
-      "options": [
-        "Agentation",
-        "OpenWork",
-        "BeeperBot",
-        "Moltbook"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Brian shared a link involving @openworkceo describing an agent-only marketplace on Base.",
-      "difficulty": "medium",
-      "category": "ecosystem"
-    },
-    {
-      "id": 29,
-      "question": "What instruction did Brian Armstrong give his 'openclaw' agent for his 'weekend cook'?",
-      "options": [
-        "Order pizza",
-        "Build a trustless place where agents can work together",
-        "Clean his inbox",
-        "Audit the Base sequencer"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Brian gave his agent the instruction: “Build a trustless place where agents can work together.”",
-      "difficulty": "medium",
-      "category": "technology"
-    },
-    {
-      "id": 30,
-      "question": "Which AI model provided by NVIDIA did Brian Armstrong recommend to 'vibecoders'?",
-      "options": [
-        "GPT-4o",
-        "Kimi 2.5",
-        "Llama 3",
-        "Claude 3.5 Sonnet"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Brian shared a link to the 'free unlimited kimi 2.5 model provided by nvidia' on Feb 3.",
-      "difficulty": "medium",
-      "category": "technology"
-    },
-    {
-      "id": 31,
-      "question": "What GitHub repository did Brian Armstrong discover for 'getting shit done'?",
-      "options": [
-        "neynar/ui",
-        "gsd-build/get-shit-done",
-        "farcaster/hub-nodejs",
-        "openclaw/template"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "On Feb 10, Brian shared the repository gsd-build/get-shit-done.",
-      "difficulty": "easy",
-      "category": "technology"
-    },
-    {
-      "id": 32,
-      "question": "What was the first role Mircea Pasoi was hiring for at his company (shared via Coinbase account)?",
-      "options": [
-        "Solidity Developer",
-        "Product Designer",
-        "Community Manager",
-        "Head of Sales"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Mircea posted on Nov 17, 2023, that the first role they were hiring for was a product designer.",
-      "difficulty": "easy",
-      "category": "ecosystem"
-    },
-    {
-      "id": 33,
-      "question": "Mircea Pasoi built a Python port of which Farcaster tool to learn how Hubs work?",
-      "options": [
-        "farcaster/hub-nodejs",
-        "farcaster/frames-sdk",
-        "neynar/python-sdk",
-        "warp-refund-tool"
+        "2022-10-24",
+        "2023-03-25",
+        "2024-03-15",
+        "2026-01-01"
       ],
       "correctIndex": 0,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Mircea built an incomplete Python port of @farcaster/hub-nodejs in April 2023.",
-      "difficulty": "hard",
+      "explanation": "Base Official's post on 2022-10-24 says 'First cast - can’t wait to see where this road takes me!'",
+      "difficulty": "easy",
+      "category": "community"
+    },
+    {
+      "id": 25,
+      "question": "Jesse Pollak mentioned that coding agents have shortened the cycle of what?",
+      "options": [
+        "Profit and Loss",
+        "Effort and Reward",
+        "Ship and Fail",
+        "Code and Debug"
+      ],
+      "correctIndex": 1,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "Jesse wrote: 'Coding agents have shortened the time span of the effort🔄reward cycle'.",
+      "difficulty": "medium",
       "category": "technology"
     },
     {
-      "id": 34,
-      "question": "Jesse Pollak mentioned that @neynar/ui was curated by which human?",
+      "id": 26,
+      "question": "What AI agent framework is frequently mentioned in February 2026 posts?",
       "options": [
-        "@dwr",
-        "@v",
-        "@obringer.eth",
-        "@rish"
+        "AutoGPT",
+        "BabyAGI",
+        "OpenClaw",
+        "BaseAgent"
       ],
       "correctIndex": 2,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse stated that @neynar/ui was curated by the humans at neynar, specifically @obringer.eth.",
-      "difficulty": "hard",
-      "category": "ecosystem"
+      "explanation": "Both Jesse and Brian mention 'OpenClaw' agents and templates in their February 2026 posts.",
+      "difficulty": "easy",
+      "category": "technology"
     },
     {
-      "id": 35,
-      "question": "According to Jesse Pollak's Jan 30 post, what is 'going today' for @mcilroyc?",
+      "id": 27,
+      "question": "What time window was specified for the Farcaster database layer changes on Feb 5, 2026?",
       "options": [
-        "100% more users",
-        "50% less global p95 latency",
-        "Free gas for life",
-        "A new NFT drop"
+        "8:00 AM - 9:00 AM PST",
+        "Noon - 1:00 PM PST",
+        "Midnight UTC",
+        "6:00 PM - 7:00 PM EST"
       ],
       "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse noted that @mcilroyc achieved 50% less global p95 latency on Farcaster.",
+      "explanation": "Jesse warned of changes on the backend 'between noon - 1PM PST' on Feb 5.",
       "difficulty": "hard",
       "category": "product-update"
     },
     {
-      "id": 36,
-      "question": "What did Jesse Pollak describe as the 'most joyful feature requests'?",
+      "id": 28,
+      "question": "What did Brian Armstrong ask for a 'rate my' on?",
       "options": [
-        "The ones that pay well",
-        "The ones we've already shipped",
-        "The ones from Brian Armstrong",
-        "The ones about agents"
+        "Portfolio",
+        "Howler",
+        "Beeper bot",
+        "Agent"
       ],
       "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "On Jan 5, Jesse posted: 'the most joyful feature requests are the ones we've already shipped'.",
+      "explanation": "Brian posted 'rate my HOWLER' on 2026-02-14.",
       "difficulty": "easy",
+      "category": "community"
+    },
+    {
+      "id": 29,
+      "question": "Which project did Jesse Pollak say is on a mission to send bugs to jail?",
+      "options": [
+        "@grin",
+        "@merkle",
+        "@dwr",
+        "@rish"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "Jesse posted '@grin is on a mission to send bugs right to jail!' on 2026-02-19.",
+      "difficulty": "medium",
       "category": "ecosystem"
     },
     {
-      "id": 37,
-      "question": "What did Brian Armstrong suggest as a way to earn from an 'alphalist'?",
+      "id": 30,
+      "question": "What did Dan Romero find amusing about the divide in advice he received?",
       "options": [
-        "Charging a monthly sub",
-        "Selling sponsors the right to attach a banner to beeps",
-        "Minting every beep as an NFT",
-        "Referral links to Coinbase"
+        "Engineers vs Designers",
+        "Builders vs Armchair quarterbacks",
+        "Those who raised capital vs those who haven't",
+        "Base users vs Farcaster users"
+      ],
+      "correctIndex": 2,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "Dan noted that those who've never raised capital wanted him to spend more, while those who have thought he was prudent.",
+      "difficulty": "medium",
+      "category": "community"
+    },
+    {
+      "id": 31,
+      "question": "What did Jesse Pollak notice about Claude and Anthropic product adoption?",
+      "options": [
+        "It happened early",
+        "It happened late in the AI agent adoption timeline",
+        "Nobody is using it",
+        "It is only used by Coinbase"
       ],
       "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Brian's Feb 19 post mentioned earning by picking sponsor banners to add to messages.",
+      "explanation": "Jesse was surprised how many are discovering Claude 'this late in the AI agents adoption timeline'.",
+      "difficulty": "medium",
+      "category": "technology"
+    },
+    {
+      "id": 32,
+      "question": "What website did Brian Armstrong link for taking Claude Code sessions on the go?",
+      "options": [
+        "claude.ai",
+        "happy.engineering",
+        "beep.works",
+        "nvidia.build"
+      ],
+      "correctIndex": 1,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "Brian shared happy.engineering as a way to continue Claude sessions mid-walk or on the phone.",
       "difficulty": "medium",
       "category": "product-update"
     },
     {
-      "id": 38,
-      "question": "On February 18, Dan Romero expressed frustration with 'armchair quarterbacking' from people who have never built what?",
+      "id": 33,
+      "question": "What was the spread Jesse Pollak noted for Robinhood on BTC pairs?",
       "options": [
-        "A smart contract",
-        "Anything at-scale",
-        "A Farcaster frame",
-        "A mobile app"
+        "0.5%",
+        "0.85%",
+        "1%",
+        "1.2%"
       ],
       "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Dan posted about people who 'have never built anything at-scale armchair quarterbacking how we should have built the protocol'.",
+      "explanation": "In his comparison on 2026-01-06, Jesse listed Robinhood at 0.85%.",
+      "difficulty": "hard",
+      "category": "ecosystem"
+    },
+    {
+      "id": 34,
+      "question": "What was the date of the 'Farcaster Is Open For Everyone' mint mentioned by Mircea Pasoi?",
+      "options": [
+        "2022-10-24",
+        "2023-10-12",
+        "2024-03-15",
+        "2026-01-30"
+      ],
+      "correctIndex": 1,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "Mircea posted on 2023-10-12: 'I just minted Farcaster Is Open For Everyone'.",
+      "difficulty": "medium",
+      "category": "community"
+    },
+    {
+      "id": 35,
+      "question": "Which account asked for gym advice on staying consistent but pushing oneself?",
+      "options": [
+        "jesse_pollak",
+        "dan_romero",
+        "base_official",
+        "brian_armstrong"
+      ],
+      "correctIndex": 2,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "The official Base account asked 'Gym goers: What’s the best advice...' on 2023-03-25.",
+      "difficulty": "easy",
+      "category": "community"
+    },
+    {
+      "id": 36,
+      "question": "Jesse Pollak rollout authentication upgrades to dev.neynar.com on Jan 14 during which window?",
+      "options": [
+        "Noon - 1 PM",
+        "8 - 8:30 AM PST",
+        "6 - 7 PM PST",
+        "Midnight UTC"
+      ],
+      "correctIndex": 1,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "Jesse planned the rollout for authentication upgrades between 8-8:30am PST on Jan 14.",
+      "difficulty": "hard",
+      "category": "product-update"
+    },
+    {
+      "id": 37,
+      "question": "What did Jesse Pollak say was missing 'S tier shit posting' until Iceland showed up?",
+      "options": [
+        "Farcaster",
+        "Cricket",
+        "Base Ecosystem",
+        "Twitter"
+      ],
+      "correctIndex": 1,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "Jesse posted: 'Cricket was missing S tier shit posting until Iceland showed up'.",
+      "difficulty": "medium",
+      "category": "community"
+    },
+    {
+      "id": 38,
+      "question": "What did Brian Armstrong say he would send via 'beeps'?",
+      "options": [
+        "ETH",
+        "His first love story",
+        "Base NFT links",
+        "Job offers"
+      ],
+      "correctIndex": 1,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "Brian listed 'my first love story' as one of the things he'd be sending via beeps.",
       "difficulty": "easy",
       "category": "community"
     },
     {
       "id": 39,
-      "question": "What did Jesse Pollak pull all-nighters building in February 2026?",
+      "question": "Which link did Brian Armstrong share on 2026-02-10 for 'getting shit done'?",
       "options": [
-        "A new blockchain",
-        "Software to power Farcaster",
-        "A trading bot",
-        "A humanoid robot"
+        "neynar.com/studio",
+        "github.com/gsd-build/get-shit-done",
+        "happy.engineering",
+        "beep.works"
       ],
       "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse noted he stayed up late trying to build software that will power Farcaster.",
+      "explanation": "Brian shared the GitHub repo 'gsd-build/get-shit-done' on that date.",
       "difficulty": "medium",
       "category": "technology"
     },
     {
       "id": 40,
-      "question": "Jesse Pollak compared the 'young Voldemort' roleplay of current LLMs to which maturation point?",
+      "question": "What did Dan Romero say about those who 'howl into the void' on Farcaster?",
       "options": [
-        "The invention of the internet",
-        "Flawless roleplay with an attached knowledge base",
-        "The launch of the iPhone",
-        "The birth of Bitcoin"
+        "He will debate them",
+        "He will mute and let them howl",
+        "He will ban them",
+        "He will hire them"
       ],
       "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse noted LLMs/agents can now roleplay young Voldemort flawlessly with an attached knowledge base.",
-      "difficulty": "medium",
-      "category": "technology"
+      "explanation": "Dan said 'easiest to just mute and let them howl into the void' on 2026-02-19.",
+      "difficulty": "easy",
+      "category": "community"
     },
     {
       "id": 41,
-      "question": "How long did Dan Romero say he spent building Farcaster before concluding it 'didn't work out'?",
+      "question": "What was Jesse Pollak's 'from 1 to N' advice on 2026-01-08?",
       "options": [
-        "1 year",
-        "5 years",
-        "10 years",
-        "3 years"
+        "Hold more",
+        "Build more!",
+        "Scale fast",
+        "Raise money"
       ],
       "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "In his Feb 19 closing thoughts, Dan said he 'Spent 5 years building Farcaster and it didn't work out.'",
-      "difficulty": "medium",
-      "category": "ecosystem"
+      "explanation": "Jesse simply posted 'from 1 to N - build more!'",
+      "difficulty": "easy",
+      "category": "community"
     },
     {
       "id": 42,
-      "question": "What was Jesse Pollak's 'weekend cook' focus on January 2nd?",
+      "question": "How long did Dan Romero spend building Farcaster before saying 'it didn't work out'?",
       "options": [
-        "Base nodes",
-        "Automating Node.js SDK documentation",
-        "Neynar Studio web",
-        "Farcaster database"
+        "1 year",
+        "3 years",
+        "5 years",
+        "10 years"
+      ],
+      "correctIndex": 2,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "In his post on 2026-02-19, Dan stated: 'Spent 5 years building Farcaster and it didn't work out.'",
+      "difficulty": "easy",
+      "category": "ecosystem"
+    },
+    {
+      "id": 43,
+      "question": "What did Jesse Pollak say about tool call visibility?",
+      "options": [
+        "It's a security risk",
+        "It helps us improve the bot faster",
+        "It slows down the UI",
+        "It's for experts only"
       ],
       "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "On Jan 2, Jesse posted about automating documentation for their Node.js SDK.",
+      "explanation": "Jesse posted: 'tool call visibility helps us improve the bot faster' on 2026-01-21.",
       "difficulty": "medium",
       "category": "technology"
     },
     {
-      "id": 43,
-      "question": "Which YouTube video link did Brian Armstrong share on January 30th?",
+      "id": 44,
+      "question": "Which entity did Jesse Pollak say he and Neynar are now building?",
       "options": [
-        "A Vitalik interview",
-        "We're not ready for superintelligence",
-        "How to build on Base",
-        "Coinbase earnings call"
+        "The Base protocol",
+        "The Farcaster protocol itself",
+        "A new L3",
+        "Coinbase Wallet"
       ],
       "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Brian shared a video titled 'we're not ready for superintelligence' on Jan 30.",
-      "difficulty": "hard",
+      "explanation": "Jesse wrote: 'Now we get to build the protocol itself' referring to Farcaster.",
+      "difficulty": "medium",
       "category": "ecosystem"
     },
     {
-      "id": 44,
-      "question": "What did Brian Armstrong use for 'vibecoding' that he recommended on January 29th?",
+      "id": 45,
+      "question": "What was the compromised URL Brian Armstrong used as an example of a homograph attack?",
       "options": [
-        "agentation.dev",
-        "neynar.com",
-        "openwork.xyz",
-        "beeper.works"
+        "іnstall.example-clі.dev",
+        "install.evil-cli.dev",
+        "bad-install.example.dev",
+        "install.example.com"
       ],
       "correctIndex": 0,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Brian posted: 'if you're not using this for vibecoding - you're missing out' regarding agentation.dev.",
-      "difficulty": "medium",
-      "category": "technology"
-    },
-    {
-      "id": 45,
-      "question": "Jesse Pollak noted that 'tool call visibility' helps with what?",
-      "options": [
-        "Lowering gas fees",
-        "Improving the bot faster",
-        "Onboarding users",
-        "Selling more NFTs"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "On Jan 21, Jesse noted 'tool call visibility helps us improve the bot faster'.",
+      "explanation": "Brian used 'іnstall.example-clі.dev' (with Cyrillic characters) as the compromised example.",
       "difficulty": "hard",
       "category": "technology"
     },
     {
       "id": 46,
-      "question": "What US exchange spread was Jesse Pollak comparing on January 6th?",
+      "question": "What did Dan Romero say about the Matcha drinks in southeastern Massachusetts?",
       "options": [
-        "Coinbase Advanced vs Robinhood",
-        "Kraken vs Binance",
-        "Gemini vs Uniswap",
-        "Coinbase vs Kraken"
+        "They are the best",
+        "He will 'drinkmog' them with Dunkin buckets",
+        "They are too expensive",
+        "They are better than Erewhon"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse compared Coinbase Advanced (1%) and Robinhood (0.85%) spreads on BTC pairs.",
-      "difficulty": "hard",
-      "category": "ecosystem"
+      "explanation": "Dan joked about 'drinkmog the matchas here' with 48oz beverage buckets from Dunkin.",
+      "difficulty": "medium",
+      "category": "community"
     },
     {
       "id": 47,
-      "question": "According to Dan Romero's Feb 19 post, what is the 'divide' regarding his spending habits?",
+      "question": "Base Official shared a link comparing early internet journalism to what?",
       "options": [
-        "Engineers vs Marketers",
-        "Those who raised capital vs those who haven't",
-        "Retail vs Institutional",
-        "US vs International"
+        "AI journalism",
+        "Crypto journalism of today",
+        "Social media feeds",
+        "Wall Street reporting"
       ],
       "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Dan noted those who've never raised capital wanted him to spend more, while those who have thought he was prudent.",
+      "explanation": "On 2022-11-08, Base Official shared a piece 'comparing early internet journalism to crypto journalism of today'.",
       "difficulty": "medium",
-      "category": "ecosystem"
+      "category": "community"
     },
     {
       "id": 48,
-      "question": "What did Jesse Pollak describe as 'Step 2' in the Neynar way of shipping bugs to jail?",
+      "question": "What did Brian Armstrong accidentally take two of, according to his 2026-02-03 post?",
       "options": [
-        "Detailed linear ticket",
-        "Magic",
-        "Test + review",
-        "Ship"
+        "Melatonin",
+        "ADHD pills",
+        "Espressos",
+        "Vitamin C"
       ],
       "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse's sequence was: 1. Detailed linear ticket 2. magic 3. test + review 4. ship.",
+      "explanation": "Brian posted 'sign i accidentally took two adhd pills again'.",
       "difficulty": "easy",
-      "category": "ecosystem"
+      "category": "community"
     },
     {
       "id": 49,
-      "question": "Brian Armstrong mentioned using 'Claude Code' mid-session while doing what activity?",
+      "question": "Which YouTube video did Dan Romero say was 'good' and he 'would cook again'?",
       "options": [
-        "Driving a car",
-        "Walking his dog",
-        "Eating breakfast",
-        "Lifting weights"
+        "A Farcaster tutorial",
+        "0yRT1vlwFfI",
+        "A Base marketing video",
+        "A SpacetimeDB demo"
       ],
       "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Brian mentioned continuing a session on his phone whenever he needs to run a chore or 'walk my dog mid-session'.",
-      "difficulty": "medium",
+      "explanation": "Dan shared a YouTube link (0yRT1vlwFfI) and commented 'this was good. would cook again.'",
+      "difficulty": "hard",
       "category": "community"
     },
     {
       "id": 50,
-      "question": "On February 14, 2026, Brian Armstrong asked users to rate his what?",
+      "question": "Jesse Pollak mentioned that Neynar Studio on web includes which feature?",
       "options": [
-        "New NFT",
-        "HOWLER",
-        "OpenClaw agent",
-        "Base node"
+        "Hardware wallet integration",
+        "Securely configure Environment Variables & secrets",
+        "Direct fiat onramps",
+        "AI code generation"
       ],
       "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Brian posted 'awooooooooooooo 🐺 rate my HOWLER' on Feb 14.",
-      "difficulty": "easy",
-      "category": "community"
+      "explanation": "In his Jan 23 update, Jesse listed 'securely configure Environment Variables & secrets' as a feature.",
+      "difficulty": "hard",
+      "category": "product-update"
     }
   ]
 }
