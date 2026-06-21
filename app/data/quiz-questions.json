@@ -1,807 +1,807 @@
 {
-  "lastUpdated": "2026-06-14T04:40:42.645537Z",
-  "weekNumber": 24,
+  "lastUpdated": "2026-06-21T04:47:27.247434Z",
+  "weekNumber": 25,
   "totalQuestions": 50,
   "questions": [
     {
       "id": 1,
-      "question": "What simple criteria did Jesse Pollak outline for adding Farcaster validators as of late May 2026?",
+      "question": "Who reported running into unexpected AWS-related downtime in June 2026 that affected Neynar APIs?",
       "options": [
-        "Run Snapchain, not be Neynar, and be in a geographical region different from the current validator set",
-        "Stake at least 32 ETH, run Geth, and operate in North America",
-        "Be an official Coinbase partner, run hub-nodejs, and have a verified Farcaster account",
-        "Run a custom fork of Snapchain, be outside the US, and pass a developer review"
+        "Brian Armstrong",
+        "Jesse Pollak",
+        "Dan Romero",
+        "Mircea Pasoi"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "In his post on May 27, 2026, Jesse stated that their criteria for adding validators right now is: run snapchain, not be neynar and be in a geographical region different from the current validator set.",
+      "explanation": "Jesse Pollak posted on June 15, 2026, about unexpected downtime impacting Neynar API, webhook, and data products, which they were sorting out with AWS support.",
       "difficulty": "easy",
       "category": "technology"
     },
     {
       "id": 2,
-      "question": "According to Jesse Pollak's May 27, 2026 post, what are the top two priorities in order for adding new validators?",
+      "question": "Which specific Neynar products were impacted by the AWS-related downtime on June 15, 2026?",
       "options": [
-        "Speed and efficiency",
-        "Geo and no majority",
-        "Low latency and storage capacity",
-        "Open-source compatibility and codebase verification"
+        "Neynar API, webhook and data products",
+        "Neynar hub and node infrastructure",
+        "Farcaster DB and Web App",
+        "AWS Route 53 and CloudFront"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse explicitly highlighted: 'top 2 priorities in order right now - geo and no majority.'",
+      "explanation": "According to Jesse's post, the maintenance-induced downtime impacted the Neynar API, webhook, and data products.",
       "difficulty": "medium",
       "category": "technology"
     },
     {
       "id": 3,
-      "question": "When did the Neynar acquisition deal fully close according to Jesse Pollak's team timeline?",
+      "question": "As of May 27, 2026, what three criteria must a new Farcaster validator meet according to Jesse Pollak?",
       "options": [
-        "Late February",
-        "Beginning of April",
-        "End of May",
-        "Mid-March"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse's post mentions that 'the deal had fully closed at the beginning of april' in 2026.",
-      "difficulty": "medium",
-      "category": "ecosystem"
-    },
-    {
-      "id": 4,
-      "question": "Why does the core team decline to onboard validators running modified or forked versions of Snapchain right now?",
-      "options": [
-        "They are trying to avoid open-source codebase contributions",
-        "Modified clients require too much network bandwidth",
-        "A validator running a fork creates risk they don't have systems to verify from the outside and lack the dev capacity to take on",
-        "Forked clients violate the strict terms of the Neynar acquisition agreement"
-      ],
-      "correctIndex": 2,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse explains that a validator running a fork creates risk they don't currently have systems set up to verify from the outside and don't have the dev capacity to take on right now.",
-      "difficulty": "hard",
-      "category": "technology"
-    },
-    {
-      "id": 5,
-      "question": "Jesse Pollak noted they merged PR contributions from which community developer, while clarifying that merged PRs do not guarantee 1:1 compatibility?",
-      "options": [
-        "cassie",
-        "dan_romero",
-        "brian_armstrong",
-        "mirceap"
+        "Run snapchain, not be neynar, and be in a different geographical region",
+        "Run hub-nodejs, be neynar, and operate in North America",
+        "Run a modified snapchain fork, be an open contributor, and have high uptime",
+        "Hold at least 100,000 Farcaster tokens and run an AWS node"
       ],
       "correctIndex": 0,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse's post says, 'yes, we've merged contributions that came through PRs from outside the core team, including from cassie.'",
+      "explanation": "Jesse explicitly stated: 'our criteria for adding validators right now is simple: run snapchain, not be neynar and be in a geographical region different from the current validator set.'",
+      "difficulty": "hard",
+      "category": "technology"
+    },
+    {
+      "id": 4,
+      "question": "What are Jesse Pollak's top two priorities for adding more Farcaster validators to prioritize stability?",
+      "options": [
+        "Transaction speed and low gas fees",
+        "Client diversity and ledger compression",
+        "Geo and no majority",
+        "Token rewards and validator staking limits"
+      ],
+      "correctIndex": 2,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "Jesse Pollak noted: 'top 2 priorities in order right now - geo and no majority.'",
+      "difficulty": "medium",
+      "category": "ecosystem"
+    },
+    {
+      "id": 5,
+      "question": "Why won't the Farcaster team currently onboard a validator running a modified fork of snapchain?",
+      "options": [
+        "It is a proprietary system that requires a paid enterprise license",
+        "The core team lacks verification systems and dev capacity to manage external forks on live consensus",
+        "Modified forks require too much bandwidth for AWS servers",
+        "It creates compatibility issues with historical ENS domains"
+      ],
+      "correctIndex": 1,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "Jesse explained that snapchain is a live consensus system, and running a fork creates verification risks they don't have systems to verify from the outside or dev capacity to take on.",
       "difficulty": "medium",
       "category": "technology"
     },
     {
       "id": 6,
-      "question": "In early May 2026, what did Jesse Pollak test moving to a different continent to pave the way for geo-decentralized validators?",
+      "question": "According to Jesse Pollak, when did the acquisition deal of Neynar fully close?",
       "options": [
-        "A testnet node",
-        "The main Neynar API database",
-        "The Frontier Tower proxy server",
-        "A localized client frontend"
+        "January 2026",
+        "Beginning of April 2026",
+        "Late May 2026",
+        "November 2023"
+      ],
+      "correctIndex": 1,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "Jesse mentions that they advocated decentralization when running Neynar's own validator node 'before the acquisition, during the transition, and once the deal had fully closed at the beginning of april.'",
+      "difficulty": "medium",
+      "category": "ecosystem"
+    },
+    {
+      "id": 7,
+      "question": "Which external contributor's pull request (PR) contributions were specifically edited and merged into the mainnet codebase, as referenced by Jesse on May 27, 2026?",
+      "options": [
+        "@grin",
+        "cassie",
+        "mcilroyc",
+        "mirceap"
+      ],
+      "correctIndex": 1,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "Jesse wrote: 'on the question of compatibility, yes, we've merged contributions that came through PRs from outside the core team, including from cassie.'",
+      "difficulty": "hard",
+      "category": "technology"
+    },
+    {
+      "id": 8,
+      "question": "What was the testing schedule described by Jesse Pollak on May 1, 2026, to pave the way for geo-decentralized validators?",
+      "options": [
+        "Moving one testnet node to a different continent, followed by a mainnet validator",
+        "Migrating all databases to PostgreSQL, followed by shard replication",
+        "Upgrading shard 1 to version 2, followed by validator rotation",
+        "Adding zero-knowledge validators, followed by testnet deprecation"
       ],
       "correctIndex": 0,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "In his May 1, 2026 post, Jesse stated: 'this week - we're testing moving one our testnet nodes to a different continent.'",
-      "difficulty": "easy",
+      "explanation": "Jesse wrote: 'this week - we're testing moving one our testnet nodes to a different continent. next week - we'll move one of our farcaster mainnet validators over to another continent.'",
+      "difficulty": "medium",
       "category": "technology"
     },
     {
-      "id": 7,
-      "question": "Which FIP (Farcaster Improvement Proposal) did Jesse Pollak seek reviews on in late April 2026?",
+      "id": 9,
+      "question": "In April 2026, Jesse Pollak requested feedback and reviews on which Farcaster Improvement Proposal (FIP)?",
       "options": [
-        "The Neynar Studio FIP",
-        "The Snapchain Signers FIP",
-        "The Farcaster Gasless FIP",
-        "The Gnomie ASCII FIP"
+        "Neynar Studio FIP",
+        "Snapchain Signers FIP",
+        "Farcaster Geo-Decentralization FIP",
+        "Shard Cutover FIP"
       ],
       "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
       "explanation": "On April 23, 2026, Jesse posted: 'Looking for feedback or reviews on the Snapchain Signers FIP'.",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "category": "product-update"
     },
     {
-      "id": 8,
-      "question": "What did Jesse Pollak claim in the Gnomie Ascii Sanctuary on April 21, 2026?",
+      "id": 10,
+      "question": "What entity did Jesse Pollak claim in the Gnomie Ascii Sanctuary on April 21, 2026?",
       "options": [
         "Scruffy Duskhollow",
-        "Rusty Ironwood",
-        "Mossy Pebble",
-        "Shady Pine"
+        "Silly Mossbeard",
+        "Grumpy Stonebridge",
+        "Tiny Mudpot"
       ],
       "correctIndex": 0,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse posted: 'I claimed Scruffy Duskhollow in the Gnomie Ascii Sanctuary! 🌲'",
-      "difficulty": "easy",
-      "category": "community"
-    },
-    {
-      "id": 9,
-      "question": "On April 11, 2026, which shard on the Snapchain mainnet halted, prompting active resolution efforts from the team?",
-      "options": [
-        "Shard 0",
-        "Shard 1",
-        "Shard 2",
-        "Shard 3"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse posted on April 11, 2026: 'snapchain mainnet shard 1 has halted at ~32M height.'",
-      "difficulty": "hard",
-      "category": "technology"
-    },
-    {
-      "id": 10,
-      "question": "For his planned appearance at /frontiertower in April 2026, how did Jesse Pollak describe his planned outfit and appearance?",
-      "options": [
-        "Whale face, orange t-shirt",
-        "Frog face, blue t-shirt",
-        "Gnomie face, green t-shirt",
-        "Cat face, purple t-shirt"
-      ],
-      "correctIndex": 0,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse's April 9, 2026 post states: 'I'll be the one with the whale face, orange t-shirt.'",
+      "explanation": "Jesse's post says: 'I claimed Scruffy Duskhollow in the Gnomie Ascii Sanctuary!'",
       "difficulty": "easy",
       "category": "community"
     },
     {
       "id": 11,
-      "question": "In March 2026, Jesse reported that wallet balances were showing up inaccurately due to backend changes. What was the specific known edge case still in progress?",
+      "question": "Which cities are contrasted in the AI quote shared by Jesse Pollak on April 12, 2026?",
       "options": [
-        "Tokens with super low liquidity USDC pairs were not priced correctly",
-        "Ethereum balances showing up as zero",
-        "Optimism mainnet gas limits showing negative numbers",
-        "Farcaster storage units not syncing with wallets"
+        "Detroit and San Jose",
+        "New York and San Francisco",
+        "Austin and Seattle",
+        "London and Tokyo"
       ],
       "correctIndex": 0,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "On March 13, 2026, Jesse posted: '1 known edge case fix that's in progress. > tokens with super low liquidity USDC pair' are not priced correctly.'",
+      "explanation": "The quote shared was: 'when it comes to AI, you don't get a Detroit or a San Jose'.",
       "difficulty": "medium",
-      "category": "product-update"
-    },
-    {
-      "id": 12,
-      "question": "Which major sports tournament final did Jesse Pollak celebrate watching with his kids in March 2026?",
-      "options": [
-        "Soccer World Cup",
-        "Cricket World Cup",
-        "Rugby World Cup",
-        "T20 World Cup"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "On March 9, 2026, Jesse posted: 'Had so much fun watching the cricket World Cup final yesterday 🇮🇳🏆'.",
-      "difficulty": "easy",
       "category": "community"
     },
     {
-      "id": 13,
-      "question": "Following the cricket World Cup final, what did Jesse's kids discover about New Zealand's national team colors?",
+      "id": 12,
+      "question": "At approximately what height did the snapchain mainnet shard 1 halt on April 11, 2026?",
       "options": [
-        "Their colors are green",
-        "Their colors are black",
-        "Their colors are blue",
-        "Their colors are white"
+        "~10M height",
+        "~32M height",
+        "~50M height",
+        "~100M height"
       ],
       "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse wrote: 'They now know New Zealand is a team and their colors are black.'",
-      "difficulty": "medium",
+      "explanation": "Jesse's incident update states: 'snapchain mainnet shard 1 has halted at ~32M height.'",
+      "difficulty": "hard",
+      "category": "technology"
+    },
+    {
+      "id": 13,
+      "question": "Where did Jesse Pollak plan to meet builders on Friday, April 10, 2026, at 5:00 PM?",
+      "options": [
+        "/base-hq",
+        "/frontiertower",
+        "/far-house",
+        "/farcaster-lounge"
+      ],
+      "correctIndex": 1,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "Jesse posted: 'planning to be at /frontiertower this Friday at 5pm.'",
+      "difficulty": "easy",
       "category": "community"
     },
     {
       "id": 14,
-      "question": "On February 24, 2026, Jesse Pollak warned of expected instability on the Farcaster network layer around 12:00 PM UTC due to what event?",
+      "question": "What was Jesse Pollak's planned outfit for his meetup at /frontiertower in April 2026?",
       "options": [
-        "Shard 0 cutting over to the updated validator set",
-        "A complete database layer migration",
-        "An unexpected fiber optic cable failure",
-        "The launch of Neynar Studio web client"
+        "A blue Base hoodie and sunglasses",
+        "A Gnomie shirt and a wizard hat",
+        "A Farcaster hat and green sneakers",
+        "An orange t-shirt and a whale face"
+      ],
+      "correctIndex": 3,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "Jesse said: 'I'll be the one with the whale face, orange t-shirt.'",
+      "difficulty": "easy",
+      "category": "community"
+    },
+    {
+      "id": 15,
+      "question": "What specific wallet balance pricing edge case was being resolved by Jesse's team on March 13, 2026?",
+      "options": [
+        "Tokens with a 'super low liquidity USDC pair'",
+        "Double counting ERC-20 tokens on Ethereum Mainnet",
+        "Negative balance errors on multi-sig wallets",
+        "Lagging balances on testnet accounts"
       ],
       "correctIndex": 0,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse's post on Feb 24, 2026 mentions: 'expecting some additional instability around 12:00 PM UTC on Feb 24 when shard 0 cuts over to the updated validator set.'",
-      "difficulty": "medium",
+      "explanation": "Jesse mentioned: '1 known edge case fix that's in progress. > tokens with super low liquidity USDC pair' are not priced correctly.'",
+      "difficulty": "hard",
       "category": "technology"
     },
     {
-      "id": 15,
-      "question": "When Base Official posted on March 15, 2024, what milestone did they highlight before sharing a blog link?",
-      "options": [
-        "They reached 1 million transactions per day",
-        "They doubled their revenue last week",
-        "They successfully migrated to Bedrock",
-        "They hired a new product designer"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Base Official posted: 'last week we doubled our revenue and I have no idea why...'",
-      "difficulty": "medium",
-      "category": "ecosystem"
-    },
-    {
       "id": 16,
-      "question": "A November 2022 post from Base Official linked to a piece comparing early media coverage of the internet revolution to what?",
+      "question": "Which sports championship final did Jesse Pollak enjoy watching with his children in March 2026?",
       "options": [
-        "AI reporting of today",
-        "Crypto reporting of today",
-        "E-sports journalism",
-        "Social media's initial rise"
+        "NBA Finals",
+        "Cricket World Cup final",
+        "Super Bowl",
+        "Football World Cup"
       ],
       "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "The post shared a link to a piece on 'how early media coverage of the internet revolution compares to that of crypto reporting of today'.",
-      "difficulty": "easy",
+      "explanation": "Jesse posted: 'Had so much fun watching the cricket World Cup final yesterday' on March 9, 2026.",
+      "difficulty": "medium",
       "category": "community"
     },
     {
       "id": 17,
-      "question": "Dan Romero expressed excitement in April 2026 about working with which mainstream company as a highly tangible crypto use case?",
+      "question": "Which national team did Jesse's kids learn has 'black' colors after watching the Cricket World Cup final?",
       "options": [
-        "DoorDash",
-        "UberEats",
-        "Instacart",
-        "Starbucks"
+        "Australia",
+        "India",
+        "New Zealand",
+        "England"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Dan Romero posted: 'Particularly excited about working with DoorDash. Most tangible mainstream use case for crypto in my 12+ years in crypto.'",
-      "difficulty": "easy",
+      "explanation": "Jesse posted: 'They now know New Zealand is a team and their colors are black.'",
+      "difficulty": "medium",
       "category": "ecosystem"
     },
     {
       "id": 18,
-      "question": "What AI assistant and automation tool did Brian Armstrong use on Day 1 of his DoorDash testing in mid-May 2026?",
+      "question": "What technical change on February 24, 2026, was expected to cause network instability at 12:00 PM UTC?",
       "options": [
-        "GitHub Copilot",
-        "Claude Code",
-        "Cursor AI",
-        "v0 by Vercel"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Brian Armstrong posted on May 15, 2026: 'day 1 of doordash & claude code my hourly rate not looking so bright chat'.",
-      "difficulty": "medium",
-      "category": "product-update"
-    },
-    {
-      "id": 19,
-      "question": "Which referral link did Brian Armstrong share on April 23, 2026, thanking @ace for the 1-month-free promo?",
-      "options": [
-        "noscroll.com",
-        "neynar.com",
-        "beeper.com",
-        "farcaster.xyz"
+        "Shard 0 cutting over to the updated validator set",
+        "AWS migration of the main database",
+        "Shard 1 cut over to Neynar's validator",
+        "Deprecating old hub-nodejs endpoints"
       ],
       "correctIndex": 0,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Brian Armstrong posted: 'get 1 mo free! thanks for the referral @ace https://www.noscroll.com/ref/dRcX36wZ'.",
+      "explanation": "Jesse warned: 'expecting some additional instability around 12:00 PM UTC on Feb 24 when shard 0 cuts over to the updated validator set.'",
       "difficulty": "medium",
-      "category": "community"
+      "category": "technology"
+    },
+    {
+      "id": 19,
+      "question": "Which platform's studio offered daily reward credits to builders in late February 2026?",
+      "options": [
+        "Base Studio",
+        "Gnomie Studio",
+        "Farcaster Hub",
+        "Neynar Studio"
+      ],
+      "correctIndex": 3,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "Jesse posted: 'daily reward credits to build on neynar.com/studio' on February 28, 2026.",
+      "difficulty": "medium",
+      "category": "product-update"
     },
     {
       "id": 20,
-      "question": "Why did Brian Armstrong miss a physical meetup in April 2026, attending only in spirit?",
+      "question": "What gaming lab did Jesse Pollak attend in grad school that he compared to his experience of building Farcaster software in 2026?",
       "options": [
-        "He was traveling in Asia",
-        "His waifu needed help changing their little one's diapers",
-        "He was in an all-night coding sprint for Claude Code",
-        "He forgot his orange t-shirt and whale mask"
+        "USC's GamePipe Lab",
+        "MIT Media Lab",
+        "Stanford Interactive Lab",
+        "NYU Game Center"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Brian Armstrong posted on April 10, 2026: 'i wish i could go, my waifu needs help changing our little one's diapers will be there in spirit 🙏'.",
+      "explanation": "Jesse mentioned playing DoTA or LoL with friends at USC’s GamePipe Lab during grad school.",
       "difficulty": "easy",
       "category": "community"
     },
     {
       "id": 21,
-      "question": "Brian Armstrong shared a link to which multiplayer game where 'we can all play together on the same screen'?",
+      "question": "Between noon and 1:00 PM PST on February 5, 2026, why did Farcaster users face potential client degradation?",
       "options": [
-        "pokemon-snap.host.neynar.app",
-        "doom-snap-fc.host.neynar.app",
-        "fruitling-valley.xyz",
-        "gnomie-ascii.com"
+        "Significant database layer changes on Farcaster's backend",
+        "Upgrading all validator nodes to Snapchain v2",
+        "Changing the geographical hosting of shard 0",
+        "Deprecating legacy hub-nodejs services"
       ],
       "correctIndex": 0,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Brian Armstrong posted on April 9, 2026: 'but what if we can all play pokemon together on the same screen... https://pokemon-snap.host.neynar.app/game'.",
-      "difficulty": "medium",
-      "category": "product-update"
+      "explanation": "Jesse stated: 'we're making some significant changes at the database layer on Farcaster's backend today between noon - 1PM PST. Might potentially see a mild degradation...'",
+      "difficulty": "hard",
+      "category": "technology"
     },
     {
       "id": 22,
-      "question": "On April 7, 2026, Brian Armstrong shared a Neynar-hosted application link to show that a system could run which classic game?",
+      "question": "Which humanoid robot model did Jesse Pollak reference when discussing OpenClaw agent home automation on February 3, 2026?",
       "options": [
-        "pokemon-snap.host.neynar.app",
-        "doom-snap-fc.host.neynar.app",
-        "farcaster-tetris.app",
-        "base-doom.org"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Brian Armstrong asked 'But can it run DOOM?' and linked to 'https://doom-snap-fc.host.neynar.app/'.",
-      "difficulty": "easy",
-      "category": "product-update"
-    },
-    {
-      "id": 23,
-      "question": "What did Brian Armstrong ask Neynar for an API to check in March 2026?",
-      "options": [
-        "Whether a user is a builder (e.g. miniapp dev, project owner)",
-        "Whether a user is active on both Base and Farcaster",
-        "Whether a user has a certain amount of USDC",
-        "Whether a user has a verified Farcaster badge"
-      ],
-      "correctIndex": 0,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Brian Armstrong asked: '@neynar do you have an api to check if a user is a builder or not? for example miniapp dev, project owner, etc'.",
-      "difficulty": "medium",
-      "category": "technology"
-    },
-    {
-      "id": 24,
-      "question": "How much did Brian Armstrong charge to answer any question using @bigeon in March 2026?",
-      "options": [
-        "Free",
-        "$0.25",
-        "$1.00",
-        "$5.00"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Brian Armstrong posted: 'thanks for the beep @bigeon ask me anything for $0.25'.",
-      "difficulty": "medium",
-      "category": "ecosystem"
-    },
-    {
-      "id": 25,
-      "question": "What was the first role coinbase (Mircea Pasoi)'s project was hiring for after closing their fundraising in November 2023?",
-      "options": [
-        "Product designer",
-        "Solidity engineer",
-        "Protocol researcher",
-        "DevOps engineer"
-      ],
-      "correctIndex": 0,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "According to the November 17, 2023 post, coinbase (Mircea Pasoi) stated: 'We just closed our fundraising, and the first role we're hiring for is a product designer...'.",
-      "difficulty": "medium",
-      "category": "ecosystem"
-    },
-    {
-      "id": 26,
-      "question": "What personal news did coinbase (Mircea Pasoi) share in a blog post on November 9, 2023?",
-      "options": [
-        "He discovered he is on the autism spectrum",
-        "He was moving to New Zealand",
-        "He was retiring from Coinbase",
-        "He was returning to grad school"
-      ],
-      "correctIndex": 0,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Mircea Pasoi shared: 'I don't really share personal stories, but I’ve recently found out I’m on the autism spectrum.'",
-      "difficulty": "medium",
-      "category": "community"
-    },
-    {
-      "id": 27,
-      "question": "What Python repository did coinbase (Mircea Pasoi) build in April 2023 to learn more about how Farcaster Hubs work?",
-      "options": [
-        "hub_py (an incomplete port of @farcaster/hub-nodejs)",
-        "hub_rust (an incomplete port of @farcaster/hub-go)",
-        "farcaster_py",
-        "base_hub_py"
-      ],
-      "correctIndex": 0,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "He posted: 'I wanted to learn more about how Hubs work so I built an (incomplete) Python port of @farcaster/hub-nodejs. Here's a link to the repo: https://github.com/mirceapasoi/hub_py'.",
-      "difficulty": "hard",
-      "category": "technology"
-    },
-    {
-      "id": 28,
-      "question": "Who is 'on a mission to send bugs right to jail!' according to Jesse Pollak's Neynar-themed post in February 2026?",
-      "options": [
-        "@grin",
-        "@cassie",
-        "@bigeon",
-        "@mcilroyc"
-      ],
-      "correctIndex": 0,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse posted: '@grin is on a mission to send bugs right to jail!... This is the Neynar way 🪐'.",
-      "difficulty": "hard",
-      "category": "ecosystem"
-    },
-    {
-      "id": 29,
-      "question": "According to Jesse Pollak, which step is NOT part of the 'Neynar way' to handle bugs?",
-      "options": [
-        "Detailed linear ticket",
-        "Test + review",
-        "Post a bounty on Github",
-        "Ship"
+        "Figure 01",
+        "Optimus",
+        "G1",
+        "Atlas"
       ],
       "correctIndex": 2,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "The 5 steps listed are: 1. Detailed linear ticket 2. magic 3. test + review 4. ship 5. reply back to the bug reporter. Post a bounty is not one of them.",
+      "explanation": "Jesse wrote: 'Has someone already given an OpenClaw agent access to a humanoid like the G1 to move around their home?'",
+      "difficulty": "medium",
+      "category": "technology"
+    },
+    {
+      "id": 23,
+      "question": "Which fictional object did Jesse Pollak compare to the potential of LLMs and folding displays on January 30, 2026?",
+      "options": [
+        "The Sorcerer's Stone",
+        "Tom Riddle’s diary",
+        "The Marauder's Map",
+        "The Goblet of Fire"
+      ],
+      "correctIndex": 1,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "Jesse wrote: 'Tom Riddle’s diary will no longer be fiction... LLMs/agents have matured to a point where they can role play young Voldemort flawlessly...'",
       "difficulty": "medium",
       "category": "product-update"
     },
     {
-      "id": 30,
-      "question": "What farm did Jesse Pollak's kids ask for in February 2026?",
+      "id": 24,
+      "question": "Whose global p95 latency did Jesse Pollak report was reduced by 50% in January 2026?",
       "options": [
-        "/gnomie-ascii",
-        "/fruitling-valley",
-        "/base-gardens",
-        "/snap-farm"
+        "@grin",
+        "@mcilroyc",
+        "cassie",
+        "@v"
       ],
       "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse posted: 'My kids are now asking for their own /fruitling-valley farms'.",
+      "explanation": "Jesse posted: 'how it started yesterday vs. how its going today for @mcilroyc. 50% less global p95 latency'.",
+      "difficulty": "hard",
+      "category": "technology"
+    },
+    {
+      "id": 25,
+      "question": "Which national team was praised by Jesse Pollak for bringing 'S tier shit posting' to cricket in January 2026?",
+      "options": [
+        "Iceland",
+        "New Zealand",
+        "India",
+        "Australia"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "Jesse shared: 'Cricket was missing S tier shit posting until Iceland showed up' with a link to @icelandcricket.",
+      "difficulty": "easy",
+      "category": "ecosystem"
+    },
+    {
+      "id": 26,
+      "question": "Which features were added when Neynar Studio was put on the web in January 2026?",
+      "options": [
+        "Native Apple Pay, SMS authentication, and token swaps",
+        "Secure Environment Variables, Browse files, and faster dev container availability",
+        "OpenAI's Sora video generation and IPFS hosting",
+        "Automatic Solana and Base cross-chain bridge deployments"
+      ],
+      "correctIndex": 1,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "Jesse's post listed: 'securely configure Environment Variables & secrets - Browse files - faster availability for the dev container (goal is to get to always ready)'.",
+      "difficulty": "medium",
+      "category": "product-update"
+    },
+    {
+      "id": 27,
+      "question": "Who posted a photo from their morning walk and simply wrote 'gm' on June 16, 2026?",
+      "options": [
+        "Jesse Pollak",
+        "Dan Romero",
+        "Brian Armstrong",
+        "Cassie"
+      ],
+      "correctIndex": 1,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "Dan Romero posted on June 16, 2026: 'From my walk this morning' followed by another post stating 'gm'.",
       "difficulty": "easy",
       "category": "community"
     },
     {
-      "id": 31,
-      "question": "Where did Jesse Pollak pull all-nighters playing games during grad school?",
+      "id": 28,
+      "question": "Which food delivery giant's collaboration did Dan Romero highlight as particularly exciting in April 2026?",
       "options": [
-        "MIT's Media Lab",
-        "USC's GamePipe Lab",
-        "Stanford's Blockchain Lab",
-        "NYU's Game Center"
+        "DoorDash",
+        "Uber Eats",
+        "Grubhub",
+        "Instacart"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse posted: 'In grad school, there were days I pulled all nighters playing DoTA or LoL with friends at USC’s GamePipe Lab.'",
+      "explanation": "Dan Romero posted: 'Particularly excited about working with DoorDash.'",
+      "difficulty": "medium",
+      "category": "ecosystem"
+    },
+    {
+      "id": 29,
+      "question": "Why did Dan Romero call the DoorDash collaboration the most exciting crypto event in his 12+ years in the space?",
+      "options": [
+        "It represents the most tangible mainstream use case for crypto",
+        "It gives a 50% discount to all Farcaster frame users",
+        "It runs on a dedicated Coinbase Layer 3 gasless rollup",
+        "It enables delivery tracking inside Farcaster client interfaces"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "Dan Romero's post noted: 'Most tangible mainstream use case for crypto in my 12+ years in crypto.'",
+      "difficulty": "hard",
+      "category": "ecosystem"
+    },
+    {
+      "id": 30,
+      "question": "Why did Dan Romero joke on May 4, 2026, that he had 'really fallen off'?",
+      "options": [
+        "Jesse Pollak had more commits than him",
+        "He got lost on his morning walk",
+        "His DoorDash integration had a bug",
+        "User @v was higher than him on a posting leaderboard"
+      ],
+      "correctIndex": 3,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "Dan Romero wrote: 'i’ve really fallen of if @v is higher on a poasting leaderboard'.",
       "difficulty": "medium",
       "category": "community"
     },
     {
-      "id": 32,
-      "question": "Jesse compared modern multiplayer software building with coding agents to what highly rewarding activity?",
+      "id": 31,
+      "question": "What Pokémon-themed food did Brian Armstrong stubbornly repeatedly declare he would not buy in June 2026?",
       "options": [
-        "A puzzle",
-        "A video game",
-        "Trading stocks",
-        "Assembling furniture"
+        "Cereal",
+        "SpaghettiOs",
+        "Macaroni & Cheese",
+        "Pop-Tarts"
       ],
       "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse wrote: 'Coding agents have shortened the time span of the effort reward cycle enough for it to feel as rewarding as a game today.'",
+      "explanation": "Brian Armstrong posted three times in a row: 'I will not buy SpaghettiOs just because they are Pokémon themed.'",
+      "difficulty": "easy",
+      "category": "community"
+    },
+    {
+      "id": 32,
+      "question": "Which combination of delivery service and developer AI tool did Brian Armstrong use in May 2026?",
+      "options": [
+        "DoorDash & Claude Code",
+        "Uber Eats & GitHub Copilot",
+        "Instacart & ChatGPT Plus",
+        "Postmates & Cursor"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "Brian Armstrong posted on May 15, 2026: 'day 1 of doordash & claude code'.",
       "difficulty": "medium",
       "category": "technology"
     },
     {
       "id": 33,
-      "question": "Jesse Pollak announced backend Farcaster database layer changes on Feb 5, 2026, during what specific time window?",
+      "question": "Whose referral did Brian Armstrong thank to get 1 month free of noscroll.com?",
       "options": [
-        "Noon - 1PM PST",
-        "Midnight - 1AM UTC",
-        "9AM - 10AM EST",
-        "6PM - 7PM PST"
+        "@v",
+        "@dan_romero",
+        "@ace",
+        "@jesse_pollak"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse posted: 'we're making some significant changes at the database layer on Farcaster's backend today between noon - 1PM PST.'",
-      "difficulty": "hard",
-      "category": "technology"
+      "explanation": "Brian Armstrong posted: 'get 1 mo free! thanks for the referral @ace' on April 23, 2026.",
+      "difficulty": "medium",
+      "category": "community"
     },
     {
       "id": 34,
-      "question": "Jesse Pollak asked if anyone had given an OpenClaw agent access to which humanoid robot to move around their home?",
+      "question": "Why was Brian Armstrong unable to attend a builder meetup in person on April 10, 2026?",
       "options": [
-        "G1",
-        "Optimus",
-        "Atlas",
-        "Unitree H1"
+        "His waifu needed help changing their little one's diapers",
+        "He had an urgent AWS service review with Jesse Pollak",
+        "He was stuck in a game of USC GamePipe Lab DoTA",
+        "He was flying to Iceland for a cricket match"
       ],
       "correctIndex": 0,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "On Feb 3, 2026, Jesse posted: 'Has someone already given an OpenClaw agent access to a humanoid like the G1 to move around their home?'",
-      "difficulty": "hard",
-      "category": "technology"
+      "explanation": "Brian Armstrong posted: 'i wish i could go, my waifu needs help changing our little one's diapers  will be there in spirit 🙏'.",
+      "difficulty": "medium",
+      "category": "community"
     },
     {
       "id": 35,
-      "question": "Jesse wrote that which fictional object 'will no longer be fiction' thanks to folding displays and mature LLM roleplay?",
+      "question": "What retro video game did Brian Armstrong share a Neynar-hosted link for on April 7, 2026, asking 'But can it run'?",
       "options": [
-        "Tom Riddle’s diary",
-        "The Marauder's Map",
-        "Tony Stark's J.A.R.V.I.S.",
-        "The Hitchhiker's Guide to the Galaxy"
+        "Tetris",
+        "Super Mario Bros.",
+        "DOOM",
+        "Pac-Man"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse posted on Jan 30, 2026: 'Tom Riddle’s diary will no longer be fiction... LLMs/agents have matured to a point where they can role play young Voldemort flawlessly...'",
+      "explanation": "Brian shared the link 'https://doom-snap-fc.host.neynar.app/' with the text 'But can it run DOOM?'.",
       "difficulty": "medium",
       "category": "product-update"
     },
     {
       "id": 36,
-      "question": "Who achieved '50% less global p95 latency' on Jan 30, 2026, according to Jesse's post?",
+      "question": "What multiplayer game host link did Brian Armstrong share on April 9, 2026?",
       "options": [
-        "@mcilroyc",
-        "@grin",
-        "@v",
-        "@cassie"
+        "pokemon-snap.host.neynar.app/game",
+        "pocket-monsters.base.org",
+        "poke-farcaster.xyz",
+        "play-pokemon.coinbase.com"
       ],
       "correctIndex": 0,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse wrote: 'how it started yesterday vs. how its going today for @mcilroyc 50% less global p95 latency'.",
-      "difficulty": "hard",
+      "explanation": "Brian Armstrong posted: 'but what if we can all play pokemon together on the same screen' along with the pokemon-snap.host.neynar.app link.",
+      "difficulty": "easy",
       "category": "product-update"
     },
     {
       "id": 37,
-      "question": "Which country's cricket account did Jesse Pollak praise on Jan 28, 2026, for bringing 'S tier shit posting' to the sport?",
+      "question": "What API request did Brian Armstrong query @neynar for on March 25, 2026?",
       "options": [
-        "India",
-        "Iceland",
-        "New Zealand",
-        "Australia"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse posted: 'Cricket was missing S tier shit posting until Iceland showed up' with a link to @icelandcricket.",
-      "difficulty": "easy",
-      "category": "community"
-    },
-    {
-      "id": 38,
-      "question": "What major update did Neynar make to its Studio platform on Jan 23, 2026?",
-      "options": [
-        "They launched Neynar Studio on the web",
-        "They integrated gas sponsorships natively",
-        "They deprecated the CLI in favor of Discord",
-        "They launched a native iOS App"
-      ],
-      "correctIndex": 0,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse posted: 'We put Studio on web. for some more real estate neynar.com/studio'.",
-      "difficulty": "medium",
-      "category": "product-update"
-    },
-    {
-      "id": 39,
-      "question": "Which of the following was NOT highlighted as a feature in the Neynar Studio web update on Jan 23, 2026?",
-      "options": [
-        "Securely configure Environment Variables & secrets",
-        "Browse files",
-        "Integrated AI pair programmer chat",
-        "Faster availability for the dev container"
+        "If they support gasless execution on Base",
+        "If there is an API to query historical ENS records",
+        "If they have an API to check if a user is a builder or not (e.g., miniapp dev, project owner)",
+        "If they have an API to check if a user owns a Gnomie NFT"
       ],
       "correctIndex": 2,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "The post listed: secure configure of environment variables, browse files, and faster dev container availability, but did not mention an AI pair programmer chat.",
-      "difficulty": "medium",
-      "category": "product-update"
+      "explanation": "Brian asked: '@neynar do you have an api to check if a user is a builder or not? for example miniapp dev, project owner, etc'.",
+      "difficulty": "hard",
+      "category": "technology"
     },
     {
-      "id": 40,
-      "question": "Jesse stated in January 2026 that 'tool call visibility' specifically helps them do what?",
+      "id": 38,
+      "question": "Which app did Brian Armstrong ask 'why' about on March 25, 2026?",
       "options": [
-        "Onboard validators faster",
-        "Improve the bot faster",
-        "Track database query speeds",
-        "Visualize mempool backlogs"
+        "Signal",
+        "Beeper",
+        "Telegram",
+        "WhatsApp"
       ],
       "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse wrote: 'tool call visibility helps us improve the bot faster'.",
+      "explanation": "Brian Armstrong asked: 'why @beeper?' on March 25, 2026.",
+      "difficulty": "easy",
+      "category": "ecosystem"
+    },
+    {
+      "id": 39,
+      "question": "How much did Brian Armstrong offer to charge users to 'ask me anything' in March 2026?",
+      "options": [
+        "$1.00",
+        "Free",
+        "$0.25",
+        "$5.00"
+      ],
+      "correctIndex": 2,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "Brian Armstrong posted: 'thanks for the beep @bigeon ask me anything for $0.25' on March 20, 2026.",
+      "difficulty": "easy",
+      "category": "community"
+    },
+    {
+      "id": 40,
+      "question": "What is the name of the incomplete Python port of @farcaster/hub-nodejs built by Mircea Pasoi?",
+      "options": [
+        "hub_py",
+        "hub_nodejs_py",
+        "farcaster_hub_python",
+        "hub_port"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "Mircea Pasoi posted a link to his GitHub repository 'https://github.com/mirceapasoi/hub_py'.",
       "difficulty": "hard",
       "category": "technology"
     },
     {
       "id": 41,
-      "question": "Dan Romero joked about falling off because who was higher than him on a posting leaderboard in May 2026?",
+      "question": "What personal discovery did Mircea Pasoi share on his blog in November 2023?",
       "options": [
-        "@v",
-        "@jesse_pollak",
-        "@brian_armstrong",
-        "@grin"
+        "He is retiring from Coinbase",
+        "He is moving to Iceland to play cricket",
+        "He found out he is on the autism spectrum",
+        "He is launching a new blockchain called Gnomie"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Dan Romero posted on May 4, 2026: 'i’ve really fallen of if @v is higher on a poasting leaderboard'.",
+      "explanation": "The post states: 'I don't really share personal stories, but I’ve recently found out I’m on the autism spectrum.'",
       "difficulty": "medium",
       "category": "community"
     },
     {
       "id": 42,
-      "question": "What quote did Jesse share on April 12, 2026, in relation to AI geographic hubs?",
+      "question": "After closing fundraising in November 2023, what was the first role Coinbase's Mircea Pasoi advertised hiring for?",
       "options": [
-        "'when it comes to AI, you don't get a Detroit or a San Jose'",
-        "'AI agents are the new validators'",
-        "'AI will build the next layer of Farcaster'",
-        "'Base is the home of AI agents'"
+        "Devops Engineer",
+        "Community Manager",
+        "Solidity Developer",
+        "Product Designer"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse shared a video link with the quote: 'when it comes to AI, you don't get a Detroit or a San Jose'.",
-      "difficulty": "medium",
-      "category": "product-update"
+      "explanation": "The post states: 'the first role we're hiring for is a product designer to help shape our product from the ground up.'",
+      "difficulty": "easy",
+      "category": "ecosystem"
     },
     {
       "id": 43,
-      "question": "What was the skeleton holding in Brian Armstrong's quote-cast ASCII art challenge on April 2, 2026?",
+      "question": "Which NFT did Mircea Pasoi (posting from coinbase) mint on October 12, 2023?",
       "options": [
-        "A sword",
-        "A pager (📟)",
-        "A smartphone",
-        "A bag of coins"
+        "Farcaster Genesis Hub",
+        "Base Initial Commemorative NFT",
+        "Farcaster Is Open For Everyone",
+        "Neynar Early Builder Pass"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Brian Armstrong posted a skeleton holding a pager/📟: 'Quote cast this cast but change what the skeleton is holding. 💀 |{I}_📟 I/ \\ /_ \\_' .",
+      "explanation": "He posted: 'I just minted Farcaster Is Open For Everyone'.",
       "difficulty": "medium",
-      "category": "community"
+      "category": "technology"
     },
     {
       "id": 44,
-      "question": "What percentage did Brian Armstrong post on March 25, 2026, without further context?",
+      "question": "What financial milestone did Base Official report reaching in their post on March 15, 2024?",
       "options": [
-        "42%",
-        "69%",
-        "100%",
-        "50%"
+        "They doubled their revenue last week",
+        "They crossed 1 million active wallets",
+        "They launched Base mainnet",
+        "They integrated Neynar as the default backend"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Brian Armstrong simply posted: '69%' on March 25, 2026.",
-      "difficulty": "easy",
-      "category": "community"
+      "explanation": "Base Official posted: 'last week we doubled our revenue and I have no idea why'.",
+      "difficulty": "medium",
+      "category": "ecosystem"
     },
     {
       "id": 45,
-      "question": "When did Base Official post their first-ever cast on Farcaster?",
+      "question": "Who is the author of the newsletter 'i just wanna go viral on tiktok help' shared by Base Official in March 2024?",
       "options": [
-        "October 24, 2022",
-        "November 8, 2022",
-        "April 18, 2023",
-        "March 15, 2024"
+        "Ash Prabaker",
+        "Jesse Pollak",
+        "Dan Romero",
+        "Mircea Pasoi"
       ],
       "correctIndex": 0,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Base Official's post history shows: 'First cast - can’t wait to see where this road takes me!' on 2022-10-24.",
+      "explanation": "The link provided is 'https://www.ashprabaker.com/p/i-just-wanna-go-viral-on-tiktok-help'.",
       "difficulty": "hard",
-      "category": "community"
+      "category": "ecosystem"
     },
     {
       "id": 46,
-      "question": "What Farcaster-related NFT did coinbase (Mircea Pasoi) mint on October 12, 2023?",
+      "question": "What comparison did the Quorum Media article linked by Base Official in November 2022 explore?",
       "options": [
-        "Farcaster Is Open For Everyone",
-        "Base Genesis",
-        "Neynar Builder Pass",
-        "Hub-py Developer Mint"
+        "Comparing gas fees on Base to Ethereum mainnet",
+        "Comparing early internet journalism to crypto reporting of today",
+        "Comparing Farcaster's growth to early Twitter",
+        "Comparing Bitcoin's energy usage to traditional banking"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "coinbase (Mircea Pasoi) posted on Oct 12, 2023: 'I just minted Farcaster Is Open For Everyone'.",
-      "difficulty": "medium",
-      "category": "community"
+      "explanation": "The title of the piece was: 'Comparing early internet journalism to crypto reporting of today'.",
+      "difficulty": "easy",
+      "category": "ecosystem"
     },
     {
       "id": 47,
-      "question": "What did Jesse Pollak post as a daily reward for builders in late February 2026?",
+      "question": "What advice did Base Official seek from gym goers in March 2023?",
       "options": [
-        "Free Base gas vouchers",
-        "Daily reward credits to build on neynar.com/studio",
-        "Custom Farcaster storage unit allocations",
-        "Neynar premium API keys"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "On Feb 28, 2026, Jesse posted: 'daily reward credits to build on neynar.com/studio'.",
-      "difficulty": "easy",
-      "category": "product-update"
-    },
-    {
-      "id": 48,
-      "question": "What did Brian Armstrong state he will NOT buy just because they are Pokémon themed?",
-      "options": [
-        "Oreos",
-        "SpaghettiOs",
-        "Pop-Tarts",
-        "Lunchables"
-      ],
-      "correctIndex": 1,
-      "sourceUrl": "https://warpcast.com/~/channel/base",
-      "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Brian Armstrong repeated three times on June 3, 2026: 'I will not buy SpaghettiOs just because they are Pokémon themed.'",
-      "difficulty": "easy",
-      "category": "community"
-    },
-    {
-      "id": 49,
-      "question": "On May 27, 2026, Jesse reiterated that decentralized protocol progress requires prioritizing what above all else?",
-      "options": [
-        "Stability and growth of the network",
-        "Decentralizing all variables simultaneously",
-        "Merging all external PRs",
-        "Moving faster than competitors"
+        "What’s the best advice you have for staying consistent but still pushing yourself?",
+        "What is your favorite pre-workout supplement?",
+        "Should gym memberships be paid in crypto?",
+        "How many days a week do you lift weights?"
       ],
       "correctIndex": 0,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse noted: 'stability and growth of the network has to come first - a decentralized protocol that nobody uses doesn't serve anyone.'",
+      "explanation": "Base Official casted: 'Gym goers: What’s the best advice you have for staying consistent but still pushing yourself?'.",
+      "difficulty": "easy",
+      "category": "community"
+    },
+    {
+      "id": 48,
+      "question": "When did Base Official publish their first cast on Farcaster?",
+      "options": [
+        "March 15, 2024",
+        "April 9, 2023",
+        "October 24, 2022",
+        "June 16, 2026"
+      ],
+      "correctIndex": 2,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "Base Official's post is dated 2022-10-24 stating: 'First cast - can’t wait to see where this road takes me!'.",
+      "difficulty": "easy",
+      "category": "ecosystem"
+    },
+    {
+      "id": 49,
+      "question": "According to Jesse's Neynar studio update in February 2026, what is @grin's mission?",
+      "options": [
+        "To send bugs right to jail!",
+        "To decentralize snapchain validators",
+        "To build the Gnomie Ascii Sanctuary",
+        "To migrate Farcaster to Python"
+      ],
+      "correctIndex": 0,
+      "sourceUrl": "https://warpcast.com/~/channel/base",
+      "sourceCast": "Base ecosystem on Farcaster",
+      "explanation": "Jesse posted: '@grin is on a mission to send bugs right to jail!' outlining the 5-step Neynar way.",
       "difficulty": "medium",
       "category": "ecosystem"
     },
     {
       "id": 50,
-      "question": "What was the status of the Snapchain network after the April 11, 2026 incident was resolved?",
+      "question": "In February 2026, Jesse Pollak noted that his kids were asking for their own farms in which application?",
       "options": [
-        "Shard 1 was back to producing blocks and the backlog of messages in the mempool was cleared",
-        "Shard 0 was merged with Shard 1 to handle traffic",
-        "Geth client was upgraded to prevent further halts",
-        "Shard 1 was permanently halted and replaced"
+        "/gnomie-sanctuary",
+        "/fruitling-valley",
+        "/farcaster-farms",
+        "/base-fields"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "sourceUrl": "https://warpcast.com/~/channel/base",
       "sourceCast": "Base ecosystem on Farcaster",
-      "explanation": "Jesse posted: 'network is back to being stable now. shard 1 is now producing blocks. backlog of messages in the mempool is cleared as well.'",
-      "difficulty": "hard",
-      "category": "technology"
+      "explanation": "Jesse posted: 'My kids are now asking for their own /fruitling-valley farms' on February 15, 2026.",
+      "difficulty": "medium",
+      "category": "product-update"
     }
   ]
 }
